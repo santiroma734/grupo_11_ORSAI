@@ -6,3 +6,15 @@ En cuanto a general como grupo, llegamosen acuerdo a este tema gracias a nuestro
 
 Tomo la posta que dejó Santiago, mi nombre es Ignacio Cordero soy Licenciado en Dirección de Empresas y tengo mas de 10 años de experiencia en el area de ventas, ejercí el rol de supervisor en un cuerpo de 6 vendedores en más de 300 clientes, me gusta el trabajo en equipo, la responsabilidad y el cumplimiento de objetivos. Espero poder disfrutar de esta gran primer experiencia colaborativa en el mundo de la programación.
 
+
+
+
+
+A continuacion dejo un listado de paginas webs que tendremos como ejemplos:
+1.  sitio de referencia 1
+2.  sitio de referencia 2
+3.  sitio de referencia 3
+4.  sitio de refeencia 4
+5.  sitiod e referencia 5
+
+
