@@ -1,6 +1,8 @@
 # Grupo_11_CasaDePizzaYEmpanadas
 ##Proyecto Integrador Casa de comida 
-Esta pagina seria un e-commerce dedicado a la venta de empanadas y pizza
+Nuestro sitio sera una casa de ventas de pizzas y empanadas
+
+
 
 En cuanto a inidividuos, yo soy Santiago Romano, me gusta mucho el deporte y la programacion. Por el momento estudio ingieneria en Inteligencia artficial asi que la tecnologia es algo que me apasiona y me entretiene. me entusiasma mucho aprender dia a dia mediante distintas fuentes. Me gusta mucho trabajar en grupo y aprender de otros integrantes. Soy bastante comunicativo y me gusta mucho liderar en casos de trabajos como este. Les dejo para que escriban muchahchos...
 
@@ -13,10 +15,10 @@ Ahora es mi turno. Mi nombre es Joaquín Ducant, actualmente tengo 23 años y vi
 Me mando como el ultimo. Mi nombre es Santiago Valentin, tengo 19 años, en el 2020 cuando termine el secundario la verdad es que estaba super perdido, no sabia que carrera estudiar. Despues de bastante tiempo y con la pandemia en el medio empece a estudiar ingles y un amigo me dijo que ya que estaba estudiando el lenguaje si me interesaba la programacion que empiece por que me iba a gustar y con el idioma iba a tener mas facilidades para trabajos en el exterior, despues de averiguar un poco me intereso bastante y por recomendacion me meti a este curso.
 
 A continuacion dejo un listado de paginas webs que tendremos como ejemplos:
-1.  sitio de referencia 1
-2.  sitio de referencia 2
-3.  sitio de referencia 3
-4.  sitio de refeencia 4
-5.  sitio de referencia 5
+1.  sitio de referencia 1:https://www.pizzahut.com/
+2.  sitio de referencia 2:https://kentucky.com.ar/
+3.  sitio de referencia 3:https://www.migustoesdiferente.com.ar/
+4.  sitio de refeencia 4:https://littlecaesars.com/en-us/
+5.  sitio de referencia 5:https://www.dominos.com.gt/es/
 
 
