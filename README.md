@@ -1,4 +1,4 @@
-# Grupo_11_CasaDePizza
+# Grupo_11_ORSAI PIZZAS
 ##Proyecto Integrador ORSAI Pizzas y empanadas
 Nuestro sitio sera una casa de ventas de pizza
 Nosotros no conquistamos Napoles como el diego pero conquistamos el sabor de la pizza napolitana. 
