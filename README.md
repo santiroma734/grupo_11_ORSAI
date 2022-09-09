@@ -21,5 +21,5 @@ A continuacion dejo un listado de paginas webs que tendremos como ejemplos:
 3.  sitio de referencia 3:https://www.migustoesdiferente.com.ar/
 4.  sitio de refeencia 4:https://littlecaesars.com/en-us/
 5.  sitio de referencia 5:https://www.dominos.com.gt/es/
-
+6.  sitio de referencia 6: https://www.papajohns.cl/
 
