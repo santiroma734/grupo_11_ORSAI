@@ -1,5 +1,5 @@
 # Grupo_11_CasaDePizzaYEmpanadas
-##Proyecto Integrador Mundial
+##Proyecto Integrador Casa de comida 
 Esta pagina seria un e-commerce dedicado a la venta de empanadas y pizza
 
 En cuanto a inidividuos, yo soy Santiago Romano, me gusta mucho el deporte y la programacion. Por el momento estudio ingieneria en Inteligencia artficial asi que la tecnologia es algo que me apasiona y me entretiene. me entusiasma mucho aprender dia a dia mediante distintas fuentes. Me gusta mucho trabajar en grupo y aprender de otros integrantes. Soy bastante comunicativo y me gusta mucho liderar en casos de trabajos como este. Les dejo para que escriban muchahchos...
@@ -17,6 +17,6 @@ A continuacion dejo un listado de paginas webs que tendremos como ejemplos:
 2.  sitio de referencia 2
 3.  sitio de referencia 3
 4.  sitio de refeencia 4
-5.  sitiod e referencia 5
+5.  sitio de referencia 5
 
 
