@@ -1,8 +1,9 @@
-# Grupo_11_CasaDePizzaYEmpanadas
-##Proyecto Integrador Casa de comida 
-Nuestro sitio sera una casa de ventas de pizzas y empanadas
+# Grupo_11_CasaDePizza
+##Proyecto Integrador ORSAI Pizzas y empanadas
+Nuestro sitio sera una casa de ventas de pizza
+Nosotros no conquistamos Napoles como el diego pero conquistamos el sabor de la pizza napolitana. 
 
-
+Este lugar va a estar centrado en reunir la pasion y la tradicion que tenemos por el futbol y la comida, para eso creamos el lugar perfecto, si sos fanatico del Diego y de la verdadera pizza Italiana te esperamos en ORSAI Pizzas y empanadas. 
 
 En cuanto a inidividuos, yo soy Santiago Romano, me gusta mucho el deporte y la programacion. Por el momento estudio ingieneria en Inteligencia artficial asi que la tecnologia es algo que me apasiona y me entretiene. me entusiasma mucho aprender dia a dia mediante distintas fuentes. Me gusta mucho trabajar en grupo y aprender de otros integrantes. Soy bastante comunicativo y me gusta mucho liderar en casos de trabajos como este. Les dejo para que escriban muchahchos...
 
