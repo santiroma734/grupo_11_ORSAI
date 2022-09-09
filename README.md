@@ -2,6 +2,7 @@
 ##Proyecto Integrador ORSAI Pizzas y empanadas
 Nuestro sitio sera una casa de ventas de pizza
 Nosotros no conquistamos Napoles como el diego pero conquistamos el sabor de la pizza napolitana. 
+Sino llegas para viajar a Qatar veni a ORSAI a catar pizza 
 
 Este lugar va a estar centrado en reunir la pasion y la tradicion que tenemos por el futbol y la comida, para eso creamos el lugar perfecto, si sos fanatico del Diego y de la verdadera pizza Italiana te esperamos en ORSAI Pizzas y empanadas.
 
