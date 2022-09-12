@@ -8,7 +8,7 @@ Este lugar va a estar centrado en reunir la pasion y la tradicion que tenemos po
 
 En cuanto a inidividuos, yo soy Santiago Romano, me gusta mucho el deporte y la programacion. Por el momento estudio ingieneria en Inteligencia artficial asi que la tecnologia es algo que me apasiona y me entretiene. me entusiasma mucho aprender dia a dia mediante distintas fuentes. Me gusta mucho trabajar en grupo y aprender de otros integrantes. Soy bastante comunicativo y me gusta mucho liderar en casos de trabajos como este. Les dejo para que escriban muchahchos...
 
-Tomo la posta que dejó Santiago, mi nombre es Ignacio Cordero soy Licenciado en Dirección de Empresas y tengo mas de 10 años de experiencia en el area de ventas, ejercí el rol de supervisor en un cuerpo de 6 vendedores en más de 300 clientes, me gusta el trabajo en equipo, la responsabilidad y el cumplimiento de objetivos. Espero poder disfrutar de esta gran primer experiencia colaborativa en el mundo de la programación.
+Tomo la posta que dejó Santiago, mi nombre es Ignacio Cordero soy Licenciado en Dirección de Empresas y tengo mas de 10 años de experiencia en el area de ventas, me gusta el trabajo en equipo, la responsabilidad y el cumplimiento de objetivos. Espero poder disfrutar de esta gran primer experiencia colaborativa en el mundo de la programación.
 
 Mi nombre es Santiago Leklere, vengo de estudiar Diseño de Imagen y Sonido y este año me empecé a meter en el mundo de la programación, de a poco interesandome más, hasta hoy en día estar en este curso de Digital House, entre otras cosas.
 
