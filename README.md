@@ -22,3 +22,4 @@ A continuacion dejo un listado de paginas webs que tendremos como ejemplos:
 5.  sitio de referencia 5:https://www.dominos.com.gt/es/
 6.  sitio de referencia 6: https://www.papajohns.cl/
 
+Tablero de trabajo: https://trello.com/b/DDlTSrtw/proyecto-integrador-dh-grupo-11
