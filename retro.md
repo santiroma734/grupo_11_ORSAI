@@ -1,1 +1,2 @@
 Comenzamos buscando algo que tenga interes mutuo entre todos los participantes, llegando a que todos nos gustaba mucho el futbol. Primero pensamos en una pagina de venta de tickets pero nos terminamos dando cuenta de que era algo bastante complejo, por lo que nos terminamos guiando por la venta de empanadas y pizzas que seguia juntando todos nuestros gustos. Ahora estamos utilizando el metodo de la estrella de mar 
+![Untitled-2022-09-20-1656](https://user-images.githubusercontent.com/111028265/191622380-675d416c-12e6-4684-96e4-ba9e2d4ab0b9.png) Modelo de estrella de mar. 
