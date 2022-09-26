@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <ion-icon name="pizza-outline"></ion-icon>
+      <ul>
+        <a href="#">Productos</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Ingresar</a>
+        <a href="#">Carrito</a>
+      </ul>
+    </header>
+    <div class="container-registro">
+      <form action="" method="post" class="form-registro">
+        <p>
+          <label> <ion-icon name="person-circle"></ion-icon> Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            class="inputs"
+            required
+          />
+        </p>
+        <p>
+          <label><ion-icon name="mail"></ion-icon> Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Dirección email"
+            class="inputs"
+            required
+          />
+        </p>
+        <p>
+          <label><ion-icon name="call"></ion-icon> Teléfono Celular</label>
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="11-0000-0000"
+            class="inputs"
+            required
+          />
+        </p>
+        <p>
+          <label><ion-icon name="lock-closed"></ion-icon> Contraseña</label>
+          <input
+            type="password"
+            name="contraseña"
+            placeholder="Escriba su contraseña"
+            class="inputs"
+            required
+          />
+        </p>
+        <div class="checkboxes">
+          <div class="div-checkbox">
+            <input
+              type="checkbox"
+              name="acepto"
+              value="newsletter"
+              class="checkbox"
+            />
+            Acepto suscribirme al Newsletter.
+          </div>
+
+          <div class="div-checkbox">
+            <input
+              type="checkbox"
+              name="acepto"
+              value="politicasPrivacidad"
+              class="checkbox"
+              required
+            />
+            Acepto las Políticas de Privacidad.
+          </div>
+        </div>
+        <button type="submit" class="btn enviar-registro">Crear Cuenta</button>
+        <p class="cuenta-existente--login">
+          ¿Ya tenés una cuenta? <a href="#">Inicia sesión.</a>
+        </p>
+      </form>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

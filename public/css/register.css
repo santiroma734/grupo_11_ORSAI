@@ -1,0 +1,91 @@
+body {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  background-color: #d9d9cd;
+}
+
+/* contenedor principal */
+.container-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 90vh;
+  justify-content: center;
+}
+
+/* form */
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+  width: 85vw;
+  max-width: 400px;
+}
+
+/* link iniciar sesion */
+.form-registro a {
+  /* color: #5b7a2f; */
+  color: #36bf38;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.form-registro ion-icon {
+  font-size: 2.3rem;
+  color: #ae7e33;
+  margin-right: 5px;
+}
+
+.container-registro form p label {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+/* input fields, che */
+.inputs {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}
+
+.inputs:focus {
+  outline: 1px solid #ffcc33;
+}
+
+.checkboxes {
+  margin: 15px 0;
+}
+
+.div-checkbox {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.enviar-registro {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  height: 4.5rem;
+  font-size: 1.6rem;
+}
+
+.cuenta-existente--login {
+  margin: 0 auto;
+}

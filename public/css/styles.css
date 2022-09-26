@@ -13,8 +13,39 @@ verde: #88dba3 #3ac569
 #873e23
 */
 
+/* ///////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Porcentage del font-size del browser del user */
+  font-size: 62.5%;
+}
+
+/* ///////////////// */
 
 img {
   width: 100px;
 }
 
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #d99e40;
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.6rem;
+}
