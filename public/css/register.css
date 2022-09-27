@@ -3,8 +3,9 @@ Colores
 #d9d9cd
 #5b7a2f
 #36bf38
-#ae7e33
 #ffcc33
+#d99e40
+#ae7e33
 */
 
 
@@ -69,7 +70,7 @@ Colores
   margin: 15px 0;
 }
 
-.div-checkbox {
+.div-checkbox label {
   display: flex;
   align-items: center;
 
@@ -90,6 +91,18 @@ Colores
   font-size: 1.6rem;
 }
 
+.enviar-registro:hover {
+  /* text-decoration: underline; */
+  background-color: #be8a36;
+  transition: all 0.4s;
+}
+
 .cuenta-existente--login {
   margin: 0 auto;
+}
+
+.cuenta-existente--login a:hover {
+  /* text-decoration: underline; */
+  color: #43e245;
+  transition: all 0.2s;
 }
