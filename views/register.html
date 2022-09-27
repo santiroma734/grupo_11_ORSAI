@@ -38,40 +38,50 @@
     <div class="container-registro">
       <form action="" method="post" class="form-registro">
         <p>
-          <label> <ion-icon name="person-circle"></ion-icon> Nombre</label>
+          <label for="nombre">
+            <ion-icon name="person-circle"></ion-icon> Nombre</label
+          >
           <input
             type="text"
             name="nombre"
+            id="nombre"
             placeholder="Nombre"
             class="inputs"
             required
           />
         </p>
         <p>
-          <label><ion-icon name="mail"></ion-icon> Email</label>
+          <label for="mail"><ion-icon name="mail"></ion-icon> Email</label>
           <input
             type="email"
             name="email"
+            id="mail"
             placeholder="Dirección email"
             class="inputs"
             required
           />
         </p>
         <p>
-          <label><ion-icon name="call"></ion-icon> Teléfono Celular</label>
+          <label for="tel"
+            ><ion-icon name="call"></ion-icon> Teléfono Celular</label
+          >
           <input
             type="tel"
             name="telefono"
+            id="tel"
             placeholder="11-0000-0000"
             class="inputs"
             required
           />
         </p>
         <p>
-          <label><ion-icon name="lock-closed"></ion-icon> Contraseña</label>
+          <label for="contraseña"
+            ><ion-icon name="lock-closed"></ion-icon> Contraseña</label
+          >
           <input
             type="password"
             name="contraseña"
+            id="contraseña"
             placeholder="Escriba su contraseña"
             class="inputs"
             required
@@ -79,27 +89,33 @@
         </p>
         <div class="checkboxes">
           <div class="div-checkbox">
-            <input
-              type="checkbox"
-              name="acepto"
-              value="newsletter"
-              class="checkbox"
-            />
-            Acepto suscribirme al Newsletter.
+            <label for="newsletter">
+              <input
+                type="checkbox"
+                name="acepto"
+                id="newsletter"
+                value="newsletter"
+                class="checkbox"
+              />
+              Acepto suscribirme al Newsletter.
+            </label>
           </div>
 
           <div class="div-checkbox">
-            <input
-              type="checkbox"
-              name="acepto"
-              value="politicasPrivacidad"
-              class="checkbox"
-              required
-            />
-            Acepto las Políticas de Privacidad.
+            <label for="privacidad">
+              <input
+                type="checkbox"
+                name="acepto"
+                id="privacidad"
+                value="politicasPrivacidad"
+                class="checkbox"
+                required
+              />
+              Acepto las Políticas de Privacidad.
+            </label>
           </div>
         </div>
-        <button type="submit" class="btn enviar-registro">Crear Cuenta</button>
+        <button type="submit" class="btn enviar-registro">Registrarse</button>
         <p class="cuenta-existente--login">
           ¿Ya tenés una cuenta? <a href="#">Inicia sesión.</a>
         </p>

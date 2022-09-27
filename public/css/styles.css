@@ -42,6 +42,10 @@ img {
   font-weight: 700;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 p {
   font-size: 1.6rem;
 }
