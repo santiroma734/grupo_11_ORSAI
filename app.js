@@ -19,3 +19,7 @@ app.get("/register", (req, res) => {
 app.get("/pedido", (req, res) => {
   res.sendFile(path.join(__dirname + "/views/productCart.html"));
 });
+
+app.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/views/login.html");
+});

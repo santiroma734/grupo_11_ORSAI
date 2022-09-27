@@ -1,0 +1,44 @@
+/* 
+Colores
+#d9d9cd
+#5b7a2f
+#36bf38
+#ae7e33
+#ffcc33
+*/
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 90vh;
+  justify-content: center;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 85vw;
+  max-width: 400px;
+}
+
+.inputs {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}
+.sin-cuenta-existente--login {
+  margin: 0 auto;
+}
+.enviar-login {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  height: 4.5rem;
+  font-size: 1.6rem;
+}
