@@ -15,6 +15,7 @@ verde: #88dba3 #3ac569
 
 /* ///////////////// */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,13 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Porcentage del font-size del browser del user */
   font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  background-color: #d9d9cd;
 }
 
 /* ///////////////// */
