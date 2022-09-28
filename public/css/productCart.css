@@ -78,7 +78,7 @@
 }
 .vaciar{
     display: flex;
-    width: 48%;
+    width: 48.5%;
     height: 40px;
     padding: 5px;
     justify-content: center;
@@ -93,7 +93,7 @@
 }
 .agregar{
     display: flex;
-    width: 48%;
+    width: 48.5%;
     height: 40px;
     padding: 5px;
     justify-content: center;
