@@ -23,9 +23,9 @@
           <a href="#">Carrito</a>
         </ul>
       </header>
-      <main>
+      <main class="main-carrito">
         <div class="container-carrito">
-            <form action="/" method="GET">
+            <form class="form-carrito" action="/" method="GET">
                 <div class="titulo-carrito">
                     <p>MI PEDIDO</p>
                 </div>
@@ -39,13 +39,15 @@
                     </div>
                 </div>
                 <div class="subtotal-carrito">
-                    <p
+                    <p class="subtotal">Subtotal:</p>
+                    <p class="precio-subtotal">$1000</p>
                 </div>
                 <div class="vaciar-agregar-carrito">
-    
+                    <button class="vaciar" type="reset">Vaciar Pedido</button>
+                    <button class="agregar" type="button">Agregar Productos</button>
                 </div>
                 <div class="continuar-carrito">
-                    
+                    <input type="submit" value="Continuar">
                 </div>
             </form>
         </div>

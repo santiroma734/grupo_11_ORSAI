@@ -8,7 +8,7 @@ Colores
 #ae7e33
 */
 
-
+/* ///////////////////// */
 
 /* contenedor principal */
 .container-registro {
@@ -30,14 +30,6 @@ Colores
   max-width: 400px;
 }
 
-/* link iniciar sesion */
-.form-registro a {
-  /* color: #5b7a2f; */
-  color: #36bf38;
-  text-decoration: none;
-  font-weight: 700;
-}
-
 .form-registro ion-icon {
   font-size: 2.3rem;
   color: #ae7e33;
@@ -51,7 +43,7 @@ Colores
   margin-bottom: 5px;
 }
 
-/* input fields, che */
+/* input fields */
 .inputs {
   margin-bottom: 15px;
   width: 100%;
@@ -89,20 +81,26 @@ Colores
   margin-bottom: 17px;
   height: 4.5rem;
   font-size: 1.6rem;
+  transition: all 0.4s;
 }
 
 .enviar-registro:hover {
-  /* text-decoration: underline; */
   background-color: #be8a36;
-  transition: all 0.4s;
 }
 
 .cuenta-existente--login {
   margin: 0 auto;
 }
 
-.cuenta-existente--login a:hover {
-  /* text-decoration: underline; */
-  color: #43e245;
+/* link iniciar sesion */
+.cuenta-existente--login a {
+  color: #36bf38;
+  font-weight: 700;
+  text-decoration: underline;
   transition: all 0.2s;
+}
+
+.cuenta-existente--login a:hover {
+  text-decoration: none;
+  color: #43e245;
 }
