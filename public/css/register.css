@@ -16,7 +16,8 @@ Colores
   flex-direction: column;
   align-items: center;
 
-  height: 90vh;
+  /* height: 90vh; */
+  margin-top: 10vh;
   justify-content: center;
 }
 
@@ -74,6 +75,10 @@ Colores
   width: auto;
   margin-bottom: 0;
   margin-right: 5px;
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .enviar-registro {

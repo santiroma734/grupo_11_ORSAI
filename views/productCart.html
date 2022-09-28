@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/productCart.css" />
 
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
@@ -27,7 +32,7 @@
         <div class="container-carrito">
             <form class="form-carrito" action="/" method="GET">
                 <div class="titulo-carrito">
-                    <p>MI PEDIDO</p>
+                    <p class="titulo">MI PEDIDO</p>
                 </div>
                 <div class="productos-carrito">
                     <div class="productos">
@@ -38,6 +43,15 @@
                         <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
                     </div>
                 </div>
+                <div class="productos-carrito">
+                  <div class="productos">
+                      <p class="producto-carrito">Messirve + 2 Cervezas</p>
+                      <p class="precio-producto-carrito">$1000</p>
+                  </div>
+                  <div class="cantidad">
+                      <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
+                  </div>
+              </div>
                 <div class="subtotal-carrito">
                     <p class="subtotal">Subtotal:</p>
                     <p class="precio-subtotal">$1000</p>
@@ -47,7 +61,7 @@
                     <button class="agregar" type="button">Agregar Productos</button>
                 </div>
                 <div class="continuar-carrito">
-                    <input type="submit" value="Continuar">
+                    <input class="input-continuar-carrito" type="submit" value="Continuar">
                 </div>
             </form>
         </div>
