@@ -15,7 +15,6 @@ verde: #88dba3 #3ac569
 
 /* ///////////////// */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -60,4 +59,40 @@ p {
 
 a {
   font-size: 1.6rem;
+}
+
+/* ///////////////// */
+/* Header */
+/* ///////////////// */
+
+header {
+  display: flex;
+}
+
+/* ///////////////// */
+
+main {
+  padding: 0 5vw;
+}
+
+/* ///////////////// */
+/* Sección Promociones - Sección pizzas */
+/* ///////////////// */
+
+.promociones img,
+.pizzas img {
+  width: 100%;
+}
+.promocion,
+.pizza {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.info-promocion,
+.info-pizza {
+  display: flex;
+  flex-direction: column;
 }

@@ -96,13 +96,17 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #ff7f50;
+  background-color: crimson;
   border: none;
   box-shadow: 7px 8px 5px -4px rgba(0, 0, 0, 0.3);
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: white;
   gap: 5px;
+}
+.vaciar:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .agregar {
   display: flex;
@@ -120,6 +124,10 @@ body {
   color: white;
   gap: 5px;
 }
+.agregar:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
 ion-icon {
   font-size: 20px;
 }
@@ -130,6 +138,10 @@ ion-icon {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+}
+.continuar-carrito:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .input-continuar-carrito {
   display: flex;
