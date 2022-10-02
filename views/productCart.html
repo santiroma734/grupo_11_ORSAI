@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/productCart.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/productCart.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-    <title>Mis Compras</title>
-  </head>
-  <body>
-    <header>
-        <ion-icon name="pizza-outline"></ion-icon>
-        <ul>
-          <a href="#">Productos</a>
-          <a href="#">Quienes somos</a>
-          <a href="#">Ingresar</a>
-          <a href="#">Carrito</a>
-        </ul>
-      </header>
-      <main class="main-carrito">
-        <div class="container-carrito">
-            <form class="form-carrito" action="/" method="GET">
-                <div class="titulo-carrito">
-                    <p class="titulo">MI PEDIDO</p>
-                </div>
-                <div class="productos-carrito">
-                    <div class="productos">
-                        <p class="producto-carrito">Scaloneta + 2 Cervezas</p>
-                        <p class="precio-producto-carrito">$1000</p>
-                    </div>
-                    <div class="cantidad">
-                        <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
-                    </div>
-                </div>
-                <div class="productos-carrito">
-                  <div class="productos">
-                      <p class="producto-carrito">Messirve + 2 Cervezas</p>
-                      <p class="precio-producto-carrito">$1000</p>
-                  </div>
-                  <div class="cantidad">
-                      <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
-                  </div>
-              </div>
-                <div class="subtotal-carrito">
-                    <p class="subtotal">Subtotal:</p>
-                    <p class="precio-subtotal">$1000</p>
-                </div>
-                <div class="vaciar-agregar-carrito">
-                    <button class="vaciar" type="reset">Vaciar Pedido</button>
-                    <button class="agregar" type="button">Agregar Productos</button>
-                </div>
-                <div class="continuar-carrito">
-                    <input class="input-continuar-carrito" type="submit" value="Continuar">
-                </div>
-            </form>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Mis Compras</title>
+</head>
+
+<body>
+  <header>
+    <ion-icon name="pizza-outline"></ion-icon>
+    <ul>
+      <a href="#">Productos</a>
+      <a href="#">Quienes somos</a>
+      <a href="#">Ingresar</a>
+      <a href="#">Carrito</a>
+    </ul>
+  </header>
+  <main class="main-carrito">
+    <div class="container-carrito">
+      <form class="form-carrito" action="/" method="GET">
+        <div class="titulo-carrito">
+          <p class="titulo">MI PEDIDO</p>
         </div>
-      </main>
-  </body>
+        <div class="productos-carrito">
+          <div class="productos">
+            <p class="producto-carrito">Scaloneta + 2 Cervezas</p>
+            <p class="precio-producto-carrito">$1000</p>
+          </div>
+          <div class="cantidad">
+            <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
+          </div>
+        </div>
+        <div class="productos-carrito">
+          <div class="productos">
+            <p class="producto-carrito">Messirve + 2 Cervezas</p>
+            <p class="precio-producto-carrito">$1000</p>
+          </div>
+          <div class="cantidad">
+            <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0">
+          </div>
+        </div>
+        <div class="subtotal-carrito">
+          <p class="subtotal">Subtotal:</p>
+          <p class="precio-subtotal">$1000</p>
+        </div>
+        <div class="vaciar-agregar-carrito">
+          <button class="vaciar" type="reset">
+            <ion-icon name="trash-bin-outline"></ion-icon>Vaciar Pedido
+          </button>
+          <button class="agregar" type="button">
+            <ion-icon name="cart-outline"></ion-icon>Agregar Productos
+          </button>
+        </div>
+        <div class="continuar-carrito">
+          <input class="input-continuar-carrito" type="submit" value="Continuar">
+        </div>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

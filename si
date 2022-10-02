@@ -1,0 +1,192 @@
+[33mcommit 8f25921df17654cc913525fd8df06a25f77c2a1c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 6e163b8 e7eeab9
+Author: SantiagoValentin10 <santiagovalentin100@gmail.com>
+Date:   Tue Sep 27 20:23:20 2022 -0300
+
+    Merge branch 'main' of https://github.com/santiroma734/grupo_11_ORSAI
+
+[33mcommit 6e163b82626b5a835259fe1dcda12de0702f750b[m
+Author: SantiagoValentin10 <santiagovalentin100@gmail.com>
+Date:   Tue Sep 27 20:15:27 2022 -0300
+
+    empezando el html y css del login
+
+[33mcommit e7eeab9bf2891dde6df413e3e38b9093abea8679[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sleklere <santiagoleklere@gmail.com>
+Date:   Tue Sep 27 17:57:15 2022 -0300
+
+    animacion color boton
+
+[33mcommit f245545e68003706ef7e6e444e8f9c600fa50c98[m
+Author: sleklere <santiagoleklere@gmail.com>
+Date:   Tue Sep 27 17:46:53 2022 -0300
+
+    registro terminado?
+
+[33mcommit de67ad4ead1dbf40fde35d2bf7f08e869139a2ff[m
+Author: sleklere <santiagoleklere@gmail.com>
+Date:   Mon Sep 26 18:03:27 2022 -0300
+
+    .
+
+[33mcommit 6d789a97c3c8cf0f19b95e3984feaf412673ca7e[m
+Author: sleklere <santiagoleklere@gmail.com>
+Date:   Mon Sep 26 17:51:34 2022 -0300
+
+    primer commit vista registro
+
+[33mcommit 2baa145031b73daddc060a37d3b16a6136b24e9f[m
+Author: sleklere <89280495+sleklere@users.noreply.github.com>
+Date:   Thu Sep 22 21:15:24 2022 -0300
+
+    Add files via upload
+
+[33mcommit 1c13be73f25fbe6565bf92862b0a1b84601be159[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Wed Sep 21 19:36:49 2022 -0300
+
+    Update retro.md
+
+[33mcommit 9634331e47f5687a24a824ef79b18a344dd048ed[m
+Author: SantiagoValentin10 <santiagovalentin100@gmail.com>
+Date:   Tue Sep 20 19:27:57 2022 -0300
+
+    Estructura de la app
+
+[33mcommit 631fe1d119717cb0c7bb6654090a4a425afa8154[m
+Author: sleklere <89280495+sleklere@users.noreply.github.com>
+Date:   Tue Sep 20 17:24:14 2022 -0300
+
+    link al trello agregado
+
+[33mcommit 7f0ba2d62b0e0ef8c056b2a3201b015500daa147[m
+Author: santiroma734 <101480835+santiroma734@users.noreply.github.com>
+Date:   Tue Sep 20 17:09:56 2022 -0300
+
+    Create retro.md
+
+[33mcommit 91e0c5f77823d385337fefa5d3cb1394073768a2[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Mon Sep 19 20:59:42 2022 -0300
+
+    Update README.md
+
+[33mcommit cb07ae2266035072d9f94ed1c822b48210b1a166[m
+Author: sleklere <89280495+sleklere@users.noreply.github.com>
+Date:   Mon Sep 19 13:35:16 2022 -0300
+
+    wireframes subidos para entrega
+
+[33mcommit cf2197d55fe98b68e4b77d6718bbb57208806ebf[m
+Author: Ignacio Cordero <83915774+IgnacioCordero@users.noreply.github.com>
+Date:   Sun Sep 11 21:16:26 2022 -0300
+
+    Update README.md
+
+[33mcommit 5a212f42cfe8d876af1d0321338a2aa1ab580a41[m
+Author: Ignacio Cordero <83915774+IgnacioCordero@users.noreply.github.com>
+Date:   Fri Sep 9 18:17:59 2022 -0300
+
+    Update README.md
+
+[33mcommit d7d158d2aba4a6666d82cdaea7973a5927f4d658[m
+Author: Ignacio Cordero <83915774+IgnacioCordero@users.noreply.github.com>
+Date:   Fri Sep 9 18:17:09 2022 -0300
+
+    Update README.md
+
+[33mcommit 3f70a3c133c16f1c1ba5c533588941d71adebfe7[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 17:47:22 2022 -0300
+
+    Update README.md
+
+[33mcommit 04ccbf9b305b0bd597edee9d26fd0a1a0b4f48e3[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 17:34:38 2022 -0300
+
+    Update README.md
+
+[33mcommit 3f35793832218066aefb3afe629aa1371a7d456c[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 17:17:53 2022 -0300
+
+    Update README.md
+
+[33mcommit 3a900c0924a90ac296f6721c087ea3dc77e3112d[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 17:09:50 2022 -0300
+
+    Update README.md
+
+[33mcommit 9dccff06188a71e9104a678a75506a84e64db054[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 16:58:29 2022 -0300
+
+    Update README.md
+
+[33mcommit c57ed429c9a64afb0e91372ee90edb5e1ba3360e[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 16:31:53 2022 -0300
+
+    Update README.md
+
+[33mcommit 0889e42357887db637f792b45b1e97eb8852190a[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Fri Sep 9 16:30:02 2022 -0300
+
+    Update README.md
+
+[33mcommit 3790617f405862985355311dcfa30a7f25a996ec[m
+Author: SantiagoValentin10 <111028265+SantiagoValentin10@users.noreply.github.com>
+Date:   Wed Sep 7 21:43:41 2022 -0300
+
+    Update README.md
+
+[33mcommit 0edfc45daf8554c1b78f03e7d57be003bb595305[m
+Author: joaducant <111028076+joaducant@users.noreply.github.com>
+Date:   Wed Sep 7 19:34:31 2022 -0300
+
+    Update README.md
+
+[33mcommit e4809da782cc2957bc03c326cba58f72eea0c733[m
+Author: joaducant <111028076+joaducant@users.noreply.github.com>
+Date:   Wed Sep 7 19:30:23 2022 -0300
+
+    Update README.md
+
+[33mcommit 5a6ec4849d4526ab7c17cd794b5ab44446e62006[m
+Author: sleklere <89280495+sleklere@users.noreply.github.com>
+Date:   Tue Sep 6 19:18:00 2022 -0300
+
+    Update README.md
+
+[33mcommit fa7995a1433b5f825b4c49af9c7863207ff30e30[m
+Author: santiroma734 <101480835+santiroma734@users.noreply.github.com>
+Date:   Tue Sep 6 13:06:34 2022 -0300
+
+    Update README.md
+
+[33mcommit 3100395c444528e7eb871164a68077158d2d461e[m
+Author: santiroma734 <101480835+santiroma734@users.noreply.github.com>
+Date:   Tue Sep 6 11:51:18 2022 -0300
+
+    Update README.md
+
+[33mcommit cee0a53cb2df18e4d7bc28d5c3102a7b7c3ef9b1[m
+Author: Ignacio Cordero <83915774+IgnacioCordero@users.noreply.github.com>
+Date:   Mon Sep 5 22:28:23 2022 -0300
+
+    Update README.md
+
+[33mcommit b5154f424e0ec716c3f9b0e12e34e4914a102b69[m
+Author: santiroma734 <101480835+santiroma734@users.noreply.github.com>
+Date:   Mon Sep 5 21:38:56 2022 -0300
+
+    Descripcion general y de santiago romano
+
+[33mcommit dfee7194e49013ec9c20d88025d813feeb8e77f7[m
+Author: santiroma734 <101480835+santiroma734@users.noreply.github.com>
+Date:   Mon Sep 5 21:19:12 2022 -0300
+
+    Initial commit
