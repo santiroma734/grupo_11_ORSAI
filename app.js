@@ -23,3 +23,7 @@ app.get("/pedido", (req, res) => {
 app.get("/login", (req, res) => {
   res.sendFile(__dirname + "/views/login.html");
 });
+
+app.get("/productos", (req, res) => {
+  res.sendFile(__dirname + "/views/productos.html");
+});

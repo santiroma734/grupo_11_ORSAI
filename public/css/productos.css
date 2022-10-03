@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Porcentage del font-size del browser del user */
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  height: 100vh;
+  /* background-image: linear-gradient(
+    to bottom left,
+    rgb(255, 149, 78),
+    rgb(255, 196, 140)
+  ); */
+  background-color: #d9d9cd;
+}
+
+main {
+  padding: 0 5vw;
+}
+
+.titulo-seccion {
+  font-size: 4rem;
+  padding: 3rem 3rem 3rem 0;
+  color: #333;
+  /* text-shadow: 1px 1px 2px #888; */
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.pizza {
+  /* width: 400px;
+  height: 400px; */
+  overflow: hidden;
+  /* border: 2px solid black; */
+  position: relative;
+  /* background-image: url("/imgs/saundarya-srinivasan-60nzTP7_hMQ-unsplash.jpg"); */
+  background-size: cover;
+  /* background-position-y: -85px; */
+  display: flex;
+  align-items: center;
+}
+
+.pizza img {
+  width: 100%;
+  /* transform: translateY(-85px); */
+  transition: all 0.4s;
+}
+
+.info-pizza {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.descrip-producto {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.pizza:hover .descrip-producto,
+.pizza:hover .agregar-carrito {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.pizza:hover .info-pizza {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pizza:hover .img-producto {
+  transform: scale(1.075);
+}
+
+.agregar-carrito {
+  opacity: 0;
+  height: 20%;
+  position: absolute;
+
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgba(150, 150, 150, 0.5);
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transition: all 0.4s;
+}
+
+.agregar-carrito:hover {
+  cursor: pointer;
+  background-color: #36bf388e;
+}
+
+@media (min-width: 600px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  /* main {
+    padding: 0 5vw;
+  } */
+
+  .productos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

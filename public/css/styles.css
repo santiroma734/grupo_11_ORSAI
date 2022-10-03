@@ -35,10 +35,8 @@ body {
 }
 
 /* ///////////////// */
-
-img {
-  width: 100px;
-}
+/* Generales */
+/* ///////////////// */
 
 .btn {
   padding: 1rem;
@@ -47,10 +45,12 @@ img {
   background-color: #d99e40;
   color: #fff;
   font-weight: 700;
+  transition: all 0.4s;
 }
 
 .btn:hover {
   cursor: pointer;
+  background-color: #be8a36;
 }
 
 p {
@@ -67,6 +67,36 @@ a {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5vw;
+}
+
+/* burger menu, titulo orsai, carrito */
+.header-link {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.header-link ion-icon {
+  font-size: 4rem;
+}
+
+.orsai-titulo ion-icon {
+  font-size: 3rem;
+}
+
+.burger-menu,
+.carrito {
+  font-size: 2.8rem;
+}
+
+.main-nav {
+  display: none;
 }
 
 /* ///////////////// */
@@ -79,20 +109,186 @@ main {
 /* Sección Promociones - Sección pizzas */
 /* ///////////////// */
 
+.promociones {
+  padding-bottom: 2rem;
+}
+.pizzas {
+  padding: 4rem 0;
+  border-top: 1px solid #adb5bd;
+}
+
 .promociones img,
 .pizzas img {
   width: 100%;
 }
+
+.titulo-seccion {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .promocion,
 .pizza {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+  border-radius: 6px;
+  /* border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; */
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.promocion:hover,
+.pizza:hover {
+  /* transform: scale(1.03); */
+  transform: translateY(-1rem);
+  cursor: pointer;
 }
 
 .info-promocion,
 .info-pizza {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.nombre-producto {
+  font-weight: 700;
+  color: #333;
+}
+
+.precio {
+  color: #666;
+}
+
+.agregar-carrito {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 1.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+/* ///////////////// */
+/* Sección Empanadas */
+/* ///////////////// */
+
+.empanada {
+  display: flex;
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.empanada img {
+  width: 50%;
+  height: max-content;
+}
+
+.info-empanada {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  width: 50%;
+  /* justify-content: space-between; */
+}
+
+.nombre-precio p {
+  font-size: 1.4rem;
+}
+
+.nombre-precio {
+  padding: 0.5rem 1rem 0 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+}
+
+.agregar-emp-2 {
+  display: none;
+}
+
+.empanada button {
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
+  border-radius: 0 0 6px 0;
+  height: 40%;
+  width: 100%;
+  align-self: flex-end;
+}
+
+/* ///////////////// */
+/* Queries */
+/* ///////////////// */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .burger-menu,
+  .carrito {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .promocion,
+  .pizza {
+    width: 30%;
+  }
+
+  .empanada {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .empanada {
+    width: 32%;
+  }
+
+  .agregar-emp-1 {
+    display: none;
+  }
+
+  .agregar-emp-2 {
+    display: block;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  main {
+    padding: 0 10vw;
+  }
+
+  header {
+    padding: 2rem 10vw;
+  }
+
+  .empanada {
+    width: 32%;
+  }
+
+  .nombre-precio p {
+    font-size: 1.8rem;
+  }
+
+  .nombre-precio {
+    font-size: 1.6rem;
+  }
 }

@@ -1,97 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <title>Orsai Pizzas y Empanadas</title>
-</head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header>
-    <ion-icon name="pizza-outline"></ion-icon>
-    <ul>
-      <a href="#">Productos</a>
-      <a href="#">Quienes somos</a>
-      <a href="#">Ingresar</a>
-      <a href="/pedido">Carrito</a>
-    </ul>
-  </header>
-  <main>
-    <section class="seccion-heroe"></section>
-    <section class="promociones">
-      <article class="promocion">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-promocion">
-          <p class="nombre-producto">
-            Pizza de Dios + 2 cervezas o 1 gasesosa
-          </p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-      <article class="promocion">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-promocion">
-          <p class="nombre-producto">
-            Pizza el Dibu + 2 cervezas o 1 gaseosa
-          </p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-      <article class="promocion">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-promocion">
-          <p class="nombre-producto">
-            Pizza Messirve + 2 cervezas o 1 gasesosa
-          </p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-    </section>
-    <section class="pizzas">
-      <article class="pizza">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-pizza">
-          <p class="nombre-producto">Pizza la Scaloneta</p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-      <article class="pizza">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-pizza">
-          <p class="nombre-producto">Pizza el Kuni</p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-      <article class="pizza">
-        <img src="/imgs/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="" />
-        <div class="info-pizza">
-          <p class="nombre-producto">Pizza el Diego</p>
-          <span class="precio">$1000</span>
-          <p class="descripcion-promo">Descripción</p>
-        </div>
-        <button>Agregar al Carrito</button>
-      </article>
-    </section>
-    <section class="empanadas"></section>
-  </main>
-  <footer>
+    <title>Orsai Pizzas y Empanadas</title>
+  </head>
 
-  </footer>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+  <body>
+    <header>
+      <a href="#" class="header-link burger-menu">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </a>
+      <a href="#" class="header-link orsai-titulo">
+        ORSAI
+        <ion-icon name="pizza-outline"></ion-icon>
+      </a>
+      <a href="/pedido" class="header-link carrito">
+        <ion-icon name="cart-sharp"></ion-icon>
+      </a>
+      <ul class="main-nav">
+        <a href="/productos">Productos</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Ingresar</a>
+        <a href="/pedido">Carrito</a>
+      </ul>
+    </header>
+    <main>
+      <section class="seccion-heroe"></section>
+      <section class="promociones">
+        <h2 class="titulo-seccion">Promociones</h2>
+        <div class="productos">
+          <article class="promocion">
+            <img src="/imgs/pizza-producto-3.jpg" alt="" />
+            <div class="info-promocion">
+              <p class="nombre-producto">
+                Pizza de Dios + 2 cervezas o 1 gasesosa
+              </p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+          <article class="promocion">
+            <img src="/imgs/pizza-producto-1.jpg" alt="" />
+            <div class="info-promocion">
+              <p class="nombre-producto">
+                Pizza el Dibu + 2 cervezas o 1 gaseosa
+              </p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+          <article class="promocion">
+            <img src="/imgs/pizza-producto-4.jpg" alt="" />
+            <div class="info-promocion">
+              <p class="nombre-producto">
+                Pizza Messirve + 2 cervezas o 1 gasesosa
+              </p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+        </div>
+      </section>
+      <section class="pizzas">
+        <h2 class="titulo-seccion">Pizzas</h2>
+        <div class="productos">
+          <article class="pizza">
+            <img src="/imgs/pizza-producto-6.jpg" alt="" />
+            <div class="info-pizza">
+              <p class="nombre-producto">Pizza la Scaloneta</p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+          <article class="pizza">
+            <img src="/imgs/pizza-producto-5.jpg" alt="" />
+            <div class="info-pizza">
+              <p class="nombre-producto">Pizza el Kuni</p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+          <article class="pizza">
+            <img src="/imgs/pizza-producto-2.jpg" alt="" />
+            <div class="info-pizza">
+              <p class="nombre-producto">Pizza el Diego</p>
+              <span class="precio">$1000</span>
+              <p class="descripcion-promo">Descripción</p>
+            </div>
+            <button class="btn agregar-carrito">Agregar al Pedido</button>
+          </article>
+        </div>
+      </section>
+      <section class="empanadas">
+        <h2 class="titulo-seccion">Empanadas</h2>
+        <div class="productos">
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+          <article class="empanada">
+            <img src="/imgs/empanadas.jpg" />
+            <div class="info-empanada">
+              <div class="nombre-precio">
+                <p class="nombre-producto">Carne a cuchillo</p>
+                <span class="precio">$200</span>
+              </div>
+              <button class="btn agregar-emp-1">Agregar</button>
+              <button class="btn agregar-emp-2">Agregar al Pedido</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
