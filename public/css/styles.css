@@ -42,7 +42,8 @@ body {
   padding: 1rem;
   border: none;
   border-radius: 5px;
-  background-color: #d99e40;
+  /* background-color: #d99e40; */
+  background-color: #f59f00;
   color: #fff;
   font-weight: 700;
   transition: all 0.4s;
@@ -50,7 +51,9 @@ body {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #be8a36;
+  /* background-color: #be8a36; */
+  /* background-color: #ac6f00; */
+  background-color: #c47f00;
 }
 
 p {
@@ -70,6 +73,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 5vw;
+  background-color: rgb(217, 217, 205, 0.8);
 }
 
 /* burger menu, titulo orsai, carrito */
@@ -103,6 +107,39 @@ header {
 
 main {
   padding: 0 5vw;
+}
+
+/* ///////////////// */
+
+.seccion-heroe {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.seccion-heroe img {
+  width: 100%;
+}
+
+.seccion-heroe ion-icon {
+  display: none;
+  position: absolute;
+  font-size: 5rem;
+  color: #999;
+  z-index: 1000;
+}
+
+.flecha-anterior {
+  left: 10px;
+}
+
+.flecha-siguiente {
+  right: 10px;
 }
 
 /* ///////////////// */
@@ -230,14 +267,43 @@ main {
 /* ///////////////// */
 
 /* Tablet */
-@media (min-width: 600px) {
+@media (min-width: 685px) {
   .burger-menu,
   .carrito {
     display: none;
   }
+  header {
+    padding: 3rem 5vw;
+    border-bottom: 1px solid #989890;
+    /* box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0; */
+    /* margin-bottom: 30px; */
+  }
+  .main-nav a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+  }
+
+  .main-nav a:hover {
+    color: crimson;
+  }
+
+  .main-nav ion-icon {
+    margin-right: 3px;
+    font-size: 3rem;
+  }
 
   .main-nav {
     display: flex;
+  }
+
+  .seccion-heroe ion-icon {
+    display: block;
   }
 
   .productos {
@@ -254,41 +320,53 @@ main {
   .empanada {
     width: 47%;
   }
-}
 
-@media (min-width: 1000px) {
-  .empanada {
-    width: 32%;
+  @media (min-width: 1000px) {
+    .empanada {
+      width: 32%;
+    }
+
+    .agregar-emp-1 {
+      display: none;
+    }
+
+    .agregar-emp-2 {
+      display: block;
+    }
   }
 
-  .agregar-emp-1 {
-    display: none;
-  }
+  /* Desktop */
+  @media (min-width: 1200px) {
+    .orsai-titulo {
+      font-size: 2.8rem;
+    }
 
-  .agregar-emp-2 {
-    display: block;
-  }
-}
+    header {
+      padding: 3rem 10vw;
+    }
 
-/* Desktop */
-@media (min-width: 1200px) {
-  main {
-    padding: 0 10vw;
-  }
+    /* //// */
+    .promociones,
+    .pizzas,
+    .empanadas {
+      padding: 0;
+    }
 
-  header {
-    padding: 2rem 10vw;
-  }
+    main {
+      padding: 0 10vw;
+    }
 
-  .empanada {
-    width: 32%;
-  }
+    /* //// */
+    .empanada {
+      width: 32%;
+    }
 
-  .nombre-precio p {
-    font-size: 1.8rem;
-  }
+    .nombre-precio p {
+      font-size: 1.8rem;
+    }
 
-  .nombre-precio {
-    font-size: 1.6rem;
+    .nombre-precio {
+      font-size: 1.6rem;
+    }
   }
 }

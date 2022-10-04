@@ -12,12 +12,6 @@ Colores
 
 body {
   height: 100vh;
-  /* background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.05)
-    ),
-    url("/imgs/nik-owens-40OJLYVWeeM-unsplash.jpg"); */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
@@ -33,7 +27,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  /* height: 90vh; */
   margin-top: 10vh;
   align-items: center;
   justify-content: center;
@@ -120,8 +113,8 @@ body {
 .cuenta-existente--login a {
   color: #36bf38;
   font-weight: 700;
-  text-decoration: underline;
-  transition: all 0.2s;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .cuenta-existente--login a:hover {

@@ -22,7 +22,7 @@ body {
   align-items: center;
   border-radius: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
 }
 .form-carrito {
   display: flex;
@@ -103,10 +103,11 @@ body {
   font-weight: bold;
   color: white;
   gap: 5px;
+  transition: all 0.3s;
 }
 .vaciar:hover {
   transform: scale(1.05);
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
 }
 .agregar {
   display: flex;
@@ -123,10 +124,10 @@ body {
   font-weight: bold;
   color: white;
   gap: 5px;
+  transition: all 0.3s;
 }
 .agregar:hover {
   transform: scale(1.05);
-  transition: transform 0.3s;
 }
 ion-icon {
   font-size: 20px;
@@ -138,6 +139,7 @@ ion-icon {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  transition: all 0.3s;
 }
 .continuar-carrito:hover {
   transform: scale(1.05);

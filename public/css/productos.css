@@ -14,7 +14,7 @@ body {
   /* font-family: "Lato", sans-serif; */
   font-family: "Nunito", sans-serif;
   /* font-family: "Libre Baskerville", serif; */
-  height: 100vh;
+  /* height: 100vh; */
   /* background-image: linear-gradient(
     to bottom left,
     rgb(255, 149, 78),
@@ -27,40 +27,33 @@ main {
   padding: 0 5vw;
 }
 
-.titulo-seccion {
-  font-size: 4rem;
+h2 {
+  font-size: 3rem;
   padding: 3rem 3rem 3rem 0;
   color: #333;
-  /* text-shadow: 1px 1px 2px #888; */
 }
 
-.productos {
+.pizzas-menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.pizza {
-  /* width: 400px;
-  height: 400px; */
+.pizza-menu {
   overflow: hidden;
-  /* border: 2px solid black; */
   position: relative;
-  /* background-image: url("/imgs/saundarya-srinivasan-60nzTP7_hMQ-unsplash.jpg"); */
   background-size: cover;
-  /* background-position-y: -85px; */
   display: flex;
   align-items: center;
 }
 
-.pizza img {
+.pizza-menu img {
   width: 100%;
-  /* transform: translateY(-85px); */
   transition: all 0.4s;
 }
 
-.info-pizza {
+.info-pizza-menu {
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -77,32 +70,34 @@ main {
   transition: all 0.4s;
 }
 
-.descrip-producto {
+.descrip-producto-menu {
   opacity: 0;
   transition: all 0.4s;
 }
 
-.pizza:hover .descrip-producto,
-.pizza:hover .agregar-carrito {
+.pizza-menu:hover .descrip-producto-menu,
+.pizza-menu:hover .agregar-carrito-menu {
   opacity: 1;
   cursor: pointer;
 }
 
-.pizza:hover .info-pizza {
+.pizza-menu:hover .info-pizza-menu {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.pizza:hover .img-producto {
+.pizza-menu:hover .img-producto-menu {
   transform: scale(1.075);
 }
 
-.agregar-carrito {
+.agregar-carrito-menu {
   opacity: 0;
   height: 20%;
   position: absolute;
 
   border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -115,23 +110,24 @@ main {
   transition: all 0.4s;
 }
 
-.agregar-carrito:hover {
+.agregar-carrito-menu:hover {
   cursor: pointer;
   background-color: #36bf388e;
 }
 
-@media (min-width: 600px) {
-  .productos {
+@media (min-width: 685px) {
+  .pizzas-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1000px) {
-  /* main {
-    padding: 0 5vw;
-  } */
-
-  .productos {
+  .pizzas-menu {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 0 10vw;
   }
 }

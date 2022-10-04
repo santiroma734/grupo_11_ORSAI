@@ -27,3 +27,7 @@ app.get("/login", (req, res) => {
 app.get("/productos", (req, res) => {
   res.sendFile(__dirname + "/views/productos.html");
 });
+
+app.get("/detalle-producto", (req, res) => {
+  res.sendFile(__dirname + "/views/productDetail.html");
+});
