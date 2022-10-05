@@ -6,7 +6,7 @@
   max-height: 40rem;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .img-det-producto {
@@ -20,6 +20,7 @@ h1 {
 
 .descripcion-producto {
   margin-bottom: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .selects {
@@ -30,7 +31,6 @@ h1 {
 .aclaraciones {
   display: flex;
   flex-direction: column;
-
 }
 
 .input-aclaraciones {
@@ -46,7 +46,6 @@ h1 {
   border: none;
   border-radius: 5px;
   padding-left: 0.5rem;
-  
 }
 
 label {
@@ -59,8 +58,8 @@ label {
   width: 100%;
 }
 
-.aclaraciones{
-margin: auto;
+.aclaraciones {
+  margin: auto;
 }
 
 @media (min-width: 1000px) {
@@ -71,22 +70,24 @@ margin: auto;
 
   .detail-div-1 {
     width: 50%;
-    padding-top: 2rem 0;
   }
 
   .detail-div-2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 2rem 0;
+    justify-content: space-between;
     width: 40%;
   }
 
-  .selects .select:nth-child(2) {
+  .selects .select:nth-child(4) {
     margin-bottom: 0;
   }
 
   .select {
     max-width: 50rem;
+  }
+
+  .input-aclaraciones {
+    height: 12rem;
   }
 }

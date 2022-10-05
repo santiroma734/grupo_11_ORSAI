@@ -9,6 +9,7 @@ body {
   background-position-y: center;
   height: 100vh;
 }
+
 .main-carrito {
   display: flex;
   justify-content: center;
@@ -29,6 +30,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  font-size: 1.6rem;
 }
 .titulo-carrito {
   display: flex;
@@ -107,6 +109,7 @@ body {
 }
 .vaciar:hover {
   transform: scale(1.05);
+  cursor: pointer;
   /* transition: transform 0.3s; */
 }
 .agregar {
@@ -128,6 +131,7 @@ body {
 }
 .agregar:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 ion-icon {
   font-size: 20px;
@@ -139,12 +143,12 @@ ion-icon {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-  transition: all 0.3s;
 }
-.continuar-carrito:hover {
+.input-continuar-carrito:hover {
   transform: scale(1.05);
-  transition: transform 0.3s;
+  cursor: pointer;
 }
+
 .input-continuar-carrito {
   display: flex;
   width: 100%;
@@ -160,6 +164,7 @@ ion-icon {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
+  transition: all 0.3s;
 }
 
 /* #eab676 */

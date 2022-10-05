@@ -62,7 +62,7 @@ p label {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: t;
+  font-size: 1.6rem;
 }
 .enviar-login {
   margin-top: 10px;
@@ -101,6 +101,7 @@ p label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-size: 1.6rem;
 }
 
 .iniciar-con-f-g {

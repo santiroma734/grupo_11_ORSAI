@@ -56,14 +56,6 @@ body {
   background-color: #c47f00;
 }
 
-p {
-  font-size: 1.6rem;
-}
-
-a {
-  font-size: 1.6rem;
-}
-
 /* ///////////////// */
 /* Header */
 /* ///////////////// */
@@ -263,6 +255,31 @@ main {
 }
 
 /* ///////////////// */
+/* Footer */
+/* ///////////////// */
+
+footer {
+  background-color: #a9a9a9;
+  font-size: 1rem;
+}
+
+.orsai-titulo-footer {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.seguinos-en-redes {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* ///////////////// */
 /* Queries */
 /* ///////////////// */
 
@@ -369,10 +386,4 @@ main {
       font-size: 1.6rem;
     }
   }
-}
-footer {
-  background-color: #A9A9A9
-}
-.seguinos-en-redes{
-  
 }
