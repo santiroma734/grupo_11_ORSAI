@@ -268,26 +268,79 @@ footer {
   display: inline-flex;
   align-items: center;
 }
-
-.apps.gp.ap {
-  font-size: 1rem;
+.descarga-nuestras-apps {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.apps-gp-ap {
+  font-size: 1.5rem;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.google-play {
+  font-size: 15px;
+  background-color: white;
+  /* border: 1.5px solid #d34836; */
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+  color: #d34836;
+  margin-top: 15px;
+  width: 40%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+.appstore {
+  font-size: 15px;
+  background-color: white;
+  /* border: 1.5px solid #d34836; */
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+  color: #366dd3;
+  margin-top: 15px;
+  width: 40%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
 }
 .navegacion-footer {
+  text-decoration: none;
+  font-size: 1.8rem;
   border: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-
+.fa-facebook {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.fa-instagram {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.fa-twitter {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
 .seguinos-en-redes {
+  font-size: 1.4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
+}
+.derechos-reservados {
+  font-size: 1.3rem;
 }
 
 /* ///////////////// */
