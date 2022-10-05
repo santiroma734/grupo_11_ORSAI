@@ -257,12 +257,9 @@ main {
 /* ///////////////// */
 /* Footer */
 /* ///////////////// */
-
 footer {
-  background-color: #a9a9a9;
-  font-size: 1rem;
+  background-color: #f59f00;
 }
-
 .orsai-titulo-footer {
   font-size: 2.4rem;
   text-decoration: none;
@@ -272,10 +269,24 @@ footer {
   align-items: center;
 }
 
-.seguinos-en-redes {
-  flex-direction: column;
+.apps.gp.ap {
+  font-size: 1rem;
+  text-decoration: none;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.navegacion-footer {
+  border: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.seguinos-en-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
