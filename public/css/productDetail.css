@@ -2,7 +2,15 @@
   padding-bottom: 2rem;
 }
 
+.detail-div-img {
+  max-height: 40rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
 .img-det-producto {
+  object-position: 0 40%;
   width: 100%;
 }
 
@@ -53,4 +61,32 @@ label {
 
 .aclaraciones{
 margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .sub-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .detail-div-1 {
+    width: 50%;
+    padding-top: 2rem 0;
+  }
+
+  .detail-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 2rem 0;
+    width: 40%;
+  }
+
+  .selects .select:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .select {
+    max-width: 50rem;
+  }
 }

@@ -86,7 +86,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.pizza-menu:hover .img-producto-menu {
+.pizza-menu:hover .img-producto {
   transform: scale(1.075);
 }
 
