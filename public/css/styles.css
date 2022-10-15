@@ -253,95 +253,78 @@ main {
   width: 100%;
   align-self: flex-end;
 }
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color:black;
+  transition-duration: 0.5s;
+}
+a:hover {
+  border-bottom: 1px solid;
+  color: white;
+}
+a:active {
+  color: white
+}
 
 /* ///////////////// */
 /* Footer */
 /* ///////////////// */
-footer {
-  background-color: #f59f00;
+
+.footer {
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  background-color:grey;
 }
-.orsai-titulo-footer {
-  font-size: 2.4rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
+
+.footer-texto,.footer-subtitulo{
+  color: black;
+  padding: 3px 15px;
+  display: block;
 }
-.descarga-nuestras-apps {
-  display: flex;
-  text-decoration: none;
-  font-size: 1.8rem;
+
+.footer-hr {
+  height: 1px;
+  border: none;
+  background: black;
 }
-.apps-gp-ap {
-  font-size: 1.5rem;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.google-play {
-  font-size: 15px;
-  background-color: white;
-  /* border: 1.5px solid #d34836; */
-  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
-  color: #d34836;
-  margin-top: 15px;
-  width: 40%;
-  height: 40px;
+
+.footer-Secciones {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
+  padding: 0;
 }
-.appstore {
-  font-size: 15px;
-  background-color: white;
-  /* border: 1.5px solid #d34836; */
-  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
-  color: #366dd3;
-  margin-top: 15px;
-  width: 40%;
-  height: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
+
+.footer-seccion{
+  box-sizing: border-box;
+  width: 25%;
+  padding: 15px 0;
+  flex-shrink: 0;
 }
-.navegacion-footer {
-  text-decoration: none;
-  font-size: 1.8rem;
-  border: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+
+.footer-subtitulo {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.fa-facebook {
-  font-size: 1.8rem;
+
+.footer-Secciones .footer-seccion a{
   text-decoration: none;
 }
-.fa-instagram {
-  font-size: 1.8rem;
-  text-decoration: none;
+
+.footer-Secciones .footer-seccion a:hover{
+  color: #cccccc;
 }
-.fa-twitter {
-  font-size: 1.8rem;
-  text-decoration: none;
+
+@media screen and (max-width: 768px) {
+  .footer__section { width: 50%; }
 }
-.seguinos-en-redes {
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+
+@media screen and (max-width: 480px) {
+  .footer__section { width: 100%; }
 }
-.derechos-reservados {
-  font-size: 1.3rem;
-}
+
 
 /* ///////////////// */
 /* Queries */
