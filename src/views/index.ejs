@@ -18,8 +18,8 @@
   </head>
 
   <body class="body-home">
-     <%- include('./partials/header.ejs') %>
-    
+    <%- include('./partials/header.ejs') %>
+
     <main class="main-home">
       <section class="seccion-heroe">
         <ion-icon name="chevron-back-circle" class="flecha-anterior"></ion-icon>
@@ -32,60 +32,27 @@
       <section class="promociones">
         <h2 class="titulo-seccion">Promociones</h2>
         <div class="productos">
-          <% for (let pizza of promos) { %>
-            <article class="pizza">
-              <img src=<%=pizza.src%> alt="" />
-              <div class="info-pizza">
-                <p class="nombre-producto">
-                  <%=pizza.nombre%></p%>
-                <span class="precio">$<%=pizza.precio%></span>
-                <p class="descripcion-promo"><%=pizza.descripcion%></p>
-              </div>
-              <button class="btn agregar-carrito">Agregar al Pedido</button>
-            </article>
-          <% } %>
+          <% for (let pizza of promos) { %> <%-
+          include('./partials/promocion.ejs', {pizza: pizza}) %> <% } %>
         </div>
       </section>
       <section class="pizzas">
         <h2 class="titulo-seccion">Pizzas</h2>
         <div class="productos">
-          <% for (let pizza of pizzas) { %>
-            <article class="pizza">         
-              <img src=<%=pizza.src%> alt="" />
-              <div class="info-pizza">
-                <p class="nombre-producto">
-                  <%=pizza.nombre%></p%>
-                <span class="precio">$<%=pizza.precio%></span>
-                <p class="descripcion-promo"><%=pizza.descripcion%></p>
-              </div>
-              <button class="btn agregar-carrito">Agregar al Pedido</button>
-            </article>
-          <% } %>
-         
+          <% for (let pizza of pizzas) { %> <%-
+          include('./partials/promocion.ejs', {pizza: pizza}) %> <% } %>
         </div>
       </section>
       <section class="empanadas">
         <h2 class="titulo-seccion">Empanadas</h2>
         <div class="productos">
-          <% for (let empanada of empanadas) { %>
-            <article class="empanada">          
-              <img src=<%=empanada.src%> alt="" />
-              <div class="info-empanada">
-                <div class="nombre-precio">
-                  <p class="nombre-producto"><%=empanada.nombre%></p>
-                  <span class="precio">$<%=empanada.precio%></span>
-                </div>
-                <button class="btn agregar-emp-1">Agregar</button>
-                <button class="btn agregar-emp-2">Agregar al Pedido</button>
-              </div>
-            </article>
-          <% } %>
-          
+          <% for (let empanada of empanadas) { %> <%-
+          include('./partials/empanada.ejs', {empanada: empanada}) %> <% } %>
         </div>
       </section>
     </main>
-    
-      <%- include('./partials/footer.ejs') %>
+
+    <%- include('./partials/footer.ejs') %>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
