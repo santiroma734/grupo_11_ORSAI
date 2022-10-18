@@ -1,25 +1,5 @@
 const controller = {
-  index: (req, res) => {
-    const promos = [
-      {
-        src: "/imgs/pizza-producto-3.jpg",
-        nombre: "Pizza de Dios + 2 cervezas o 2 gasesosas",
-        precio: 1200,
-        descripcion: "descripción",
-      },
-      {
-        src: "/imgs/pizza-producto-1.jpg",
-        nombre: "Pizza el Dibu + 1 cerveza o 1 gaseosa",
-        precio: 1000,
-        descripcion: "descripción",
-      },
-      {
-        src: "/imgs/pizza-producto-4.jpg",
-        nombre: "Pizza Messirve + 2 cervezas o 2 gasesosas",
-        precio: 1100,
-        descripcion: "descripción",
-      },
-    ];
+  view: (req, res) => {
     const pizzas = [
       {
         src: "/imgs/pizza-producto-6.jpg",
@@ -57,8 +37,7 @@ const controller = {
         precio: 200,
       },
     ];
-    res.render("../src/views/index.ejs", {
-      promos: promos,
+    res.render("../src/views/productos.ejs", {
       pizzas: pizzas,
       empanadas: empanadas,
     });

@@ -17,14 +17,16 @@ body {
   background-size: cover;
   background-position-y: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container-login {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-top: 10vh;
+  margin: 10rem 0;
   justify-content: center;
 }
 
@@ -169,7 +171,6 @@ form ion-icon {
 @media (min-width: 1200px) {
   .container-login {
     align-items: flex-end;
-    margin-right: 10vw;
   }
 }
 p {

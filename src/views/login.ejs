@@ -17,25 +17,8 @@
 </head>
 
 <body>
-   <header>
-      <a href="#" class="header-link burger-menu">
-        <ion-icon name="menu-sharp"></ion-icon>
-      </a>
-      <a href="/" class="header-link orsai-titulo">
-        ORSAI
-        <ion-icon name="pizza-outline"></ion-icon>
-      </a>
-      <a href="/pedido" class="header-link carrito">
-        <ion-icon name="cart-sharp"></ion-icon>
-      </a>
-      <ul class="main-nav">
-        <a href="/productos">Menú</a>
-        <a href="#">Quienes somos</a>
-        <a href="/login"><ion-icon name="person-circle"></ion-icon>Ingresar</a>
-        <a href="/pedido"><ion-icon name="cart-sharp"></ion-icon>$0.00</a>
-      </ul>
-   </header>
-  <div class="container-login">
+  <%- include('./partials/header.ejs') %>
+  <main class="container-login">
     <form action="/" method="post" class="form-login">
       <p>
         <label for="mail">
@@ -50,34 +33,35 @@
         <input required type="password" ; name="Contraseña" ; placeholder="Escriba la contraseña" ;
         class="inputs contrasenia"; id="contraseña" />
       </p>
-          <div class="checkboxes">
-          <div class="remember-me">
-            <label for="remember">
-              <input
+      <div class="checkboxes">
+        <div class="remember-me">
+          <label for="remember">
+            <input
                 type="checkbox"
                 name="remember me"
                 id="remember"
                 value="remember me"
                 class="checkbox"
-              />
-              Recuerdame
-            </label>
+                />
+                Recuerdame
+              </label>
+            </div>
+            <a href="#">Recuperar Contraseña</a>
           </div>
-          <a href="#">Recuperar Contraseña</a>
-          </div>
-      <button type="submit" class="btn enviar-login">Ingresar</button>
-      <p class="sin-cuenta-existente--login">
-        Aun no tienes cuenta? <a class="registrate" href="/register"> Regístrate</a> </p>
-      <p class="inicia-sesion-con"> O inicia sesión con </p>
-      <div class="iniciar-con-f-g"><button type="" class="btn facebook" href="https://es-la.facebook.com"><img
-            src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />Facebook</button>
-
-        <button type="" class="btn google" href="https://www.google.com.ar/?hl=es"><img
-            src="https://img.icons8.com/color/48/000000/google-logo.png" /> Google</button>
-      </div>
-      </p>
+          <button type="submit" class="btn enviar-login">Ingresar</button>
+          <p class="sin-cuenta-existente--login">
+            Aun no tienes cuenta? <a class="registrate" href="/register"> Regístrate</a> </p>
+            <p class="inicia-sesion-con"> O inicia sesión con </p>
+            <div class="iniciar-con-f-g"><button type="" class="btn facebook" href="https://es-la.facebook.com"><img
+              src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />Facebook</button>
+              
+              <button type="" class="btn google" href="https://www.google.com.ar/?hl=es"><img
+                src="https://img.icons8.com/color/48/000000/google-logo.png" /> Google</button>
+            </div>
+          </p>
     </form>
-  </div>
+  </main>
+      <%- include('./partials/footer.ejs') %>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

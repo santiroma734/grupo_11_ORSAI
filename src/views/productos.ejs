@@ -16,24 +16,8 @@
   </head>
 
   <body>
-    <header>
-      <a href="#" class="header-link burger-menu">
-        <ion-icon name="menu-sharp"></ion-icon>
-      </a>
-      <a href="/" class="header-link orsai-titulo">
-        ORSAI
-        <ion-icon name="pizza-outline"></ion-icon>
-      </a>
-      <a href="/pedido" class="header-link carrito">
-        <ion-icon name="cart-sharp"></ion-icon>
-      </a>
-      <ul class="main-nav">
-        <a href="/productos">Menú</a>
-        <a href="#">Quienes somos</a>
-        <a href="/login"><ion-icon name="person-circle"></ion-icon>Ingresar</a>
-        <a href="/pedido"><ion-icon name="cart-sharp"></ion-icon>$0.00</a>
-      </ul>
-    </header>
+    <%- include('./partials/header.ejs') %>
+
     <main>
       <section>
         <h2>Pizzas</h2>
@@ -216,6 +200,7 @@
         </div>
       </section>
     </main>
+    <%- include('./partials/footer.ejs') %>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

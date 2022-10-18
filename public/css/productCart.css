@@ -8,6 +8,8 @@ body {
   background-size: cover;
   background-position-y: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-carrito {
@@ -16,6 +18,7 @@ body {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-grow: 1;
 }
 .container-carrito {
   display: flex;

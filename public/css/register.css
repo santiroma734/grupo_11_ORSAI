@@ -11,7 +11,7 @@ Colores
 /* ///////////////////// */
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
@@ -20,14 +20,18 @@ body {
     url("/imgs/blake-wisz-pPA-_q5v1a8-unsplash.jpg");
   background-size: cover;
   background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 11rem;
 }
 
 /* contenedor principal */
 .container-registro {
   display: flex;
   flex-direction: column;
-
-  margin-top: 10vh;
+  /* margin: 12rem 0; */
+  margin-top: 10rem 0;
   align-items: center;
   justify-content: center;
 }

@@ -29,7 +29,15 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #d9d9cd;
+  /* background-color: #eab676; */
+}
+
+.body-home {
+  /* background-color: rgb(222, 196, 166); */
+  /* background-color: #fff;*/
+  /* background: linear-gradient(to right, #867733, #bdb49e, #867733) */
+  background-image: url("../imgs/fondo-ladrillos.jpg");
+  background-size: cover;
 }
 
 /* ///////////////// */
@@ -100,7 +108,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 5vw;
-  background-color: rgb(217, 217, 205, 0.5);
+  background-color: rgb(217, 217, 205, 0.8);
 }
 
 /* burger menu, titulo orsai, carrito */
@@ -136,6 +144,10 @@ main {
   padding: 0 5vw;
 }
 
+/* .main-home {
+  background-color: #eab676;
+
+} */
 /* ///////////////// */
 
 .seccion-heroe {
@@ -178,7 +190,7 @@ main {
 }
 .pizzas {
   padding: 4rem 0;
-  border-top: 1px solid #adb5bd;
+  /* border-top: 1px solid #adb5bd; */
 }
 
 .promociones img,
@@ -203,6 +215,7 @@ main {
   border-radius: 6px;
   transition: all 0.4s;
   overflow: hidden;
+  background-color: #d5d5d5;
 }
 
 .promocion:hover,
@@ -245,6 +258,7 @@ main {
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
   border-radius: 6px;
   margin-bottom: 25px;
+  background-color: #d5d5d5;
 }
 
 .empanada img {
@@ -304,12 +318,103 @@ a:active {
 
 .footer {
   font-size: 0.85rem;
-  padding: 20px 0;
+  padding: 1rem 0 0 0;
   line-height: 1.6;
-  background-color: grey;
+  background-color: rgb(217, 217, 205, 0.8);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.footer a {
+  text-decoration: none;
+  color: #222;
+}
+.footer li {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: #222;
+  transition: all 0.4s;
+  list-style: none;
+}
+.footer li :hover {
+  border-bottom: 1px solid;
+  color: white;
+  cursor: pointer;
+}
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo-footer ion-icon {
+  font-size: 3rem;
+}
+.lista-links {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
 }
 
-.footer-texto,
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  margin: 1;
+  padding: 1rem 1rem 0 1rem;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+.aplicaciones {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+.lista-redes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  font-size: 3rem;
+  gap: 0.5rem;
+}
+.lista-aplicaciones {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-direction: row;
+  text-align: center;
+  font-size: 3rem;
+  gap: 0.5rem;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.footer-top,
 .footer-subtitulo {
   color: black;
   padding: 3px 15px;
@@ -322,39 +427,17 @@ a:active {
   background: black;
 }
 
-.footer-Secciones {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.footer-seccion {
-  box-sizing: border-box;
-  width: 25%;
-  padding: 15px 0;
-  flex-shrink: 0;
-}
-
 .footer-subtitulo {
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
-.footer-Secciones .footer-seccion a {
-  text-decoration: none;
-}
-
-.footer-Secciones .footer-seccion a:hover {
-  color: #cccccc;
-}
-
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .footer__section {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 480px) {
   .footer__section {
     width: 100%;
   }
@@ -365,6 +448,13 @@ a:active {
 /* ///////////////// */
 
 /* Tablet */
+/* @media (min-width: 550px) {
+  .lista-links{
+    flex-direction: row;
+    gap: 3rem;
+  }
+} */
+
 @media (min-width: 685px) {
   .burger-menu,
   .carrito {
@@ -425,54 +515,69 @@ a:active {
   .empanada {
     width: 47%;
   }
+  .lista-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+}
 
-  @media (min-width: 1000px) {
-    .empanada {
-      width: 32%;
-    }
-
-    .agregar-emp-1 {
-      display: none;
-    }
-
-    .agregar-emp-2 {
-      display: block;
-    }
+@media (min-width: 1000px) {
+  .empanada {
+    width: 32%;
   }
 
-  /* Desktop */
-  @media (min-width: 1200px) {
-    .orsai-titulo {
-      font-size: 2.8rem;
-    }
+  .agregar-emp-1 {
+    display: none;
+  }
 
-    header {
-      padding: 3rem 10vw;
-      padding-bottom: 0;
-    }
+  .agregar-emp-2 {
+    display: block;
+  }
+  .lista-links {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
 
-    /* //// */
-    .promociones,
-    .pizzas,
-    .empanadas {
-      padding: 0;
-    }
+/* Desktop */
+@media (min-width: 1200px) {
+  .orsai-titulo {
+    font-size: 2.8rem;
+  }
 
-    main {
-      padding: 0 10vw;
-    }
+  header {
+    padding: 3rem 10vw;
+    padding-bottom: 0;
+  }
 
-    /* //// */
-    .empanada {
-      width: 32%;
-    }
+  /* //// */
+  .promociones,
+  .pizzas,
+  .empanadas {
+    padding: 0;
+  }
 
-    .nombre-precio p {
-      font-size: 1.8rem;
-    }
+  main {
+    padding: 0 10vw;
+  }
 
-    .nombre-precio {
-      font-size: 1.6rem;
-    }
+  /* //// */
+  .empanada {
+    width: 32%;
+  }
+
+  .nombre-precio p {
+    font-size: 1.8rem;
+  }
+
+  .nombre-precio {
+    font-size: 1.6rem;
+  }
+  .lista-links {
+    flex-direction: row;
+    gap: 3rem;
   }
 }
