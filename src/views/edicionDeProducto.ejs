@@ -10,42 +10,46 @@
     <body>
         <%- include('./partials/header.ejs') %>
             <main class="edicionProducto">
-                <div>
-                    <p class="Titulo">Edicion de Producto</p>
+                <div class="container-product-edit">
+                    <div class="titulo-edicion-producto">
+                        <p class="Titulo">Edicion de Producto</p>
+                    </div>
+                    <form action="/" method="POST">
+                        <div class="nombre-producto-edit">
+                            <label for="nombre-producto-edit">Nombre del Producto</label>
+                            <input type="text" name="nombre-producto-edit" ; value="Nombre" ; id="nombre-producto-edit">
+                            </input>
+                        </div>
+                        <div class="descripcion-producto">
+                            <label for="descripcion-producto">Descripción</label>
+                            <input type="text" name="descripcion-producto" ; value="Descripcion" ; id="descripcion-producto">
+                            </input>
+                        </div>
+                        <div class="imagen-producto">
+                            <label for="imagen-producto">Imagen</label>
+                            <div class="file-select">
+                                <input type="file" ; name="imagen-producto" ; id="imagen-producto" ; accept=".jpg">
+                                </input>
+                            </div>
+                        </div>
+                        <div class="categoria-producto">
+                            <label for="categoria-producto">Categoría</label>
+                            <select name="categoria-producto">
+                                <option value="pizza">Pizza</option>
+                                <option value="empanada">Empanada</option>
+                                <option value="promocion">Promoción</option>
+                            </select>
+                        </div>
+                        <div class="precio-producto">
+                            <label for="precio-producto">Precio</label>
+                            <input type="text" ; name="ingredientes" ;value=1000; id="precio-producto"></input>
+                        </div>
+                        <div class="botones-edicion">
+                            <button class="save-changes"type="submit" id="botones-edicion">Guardar Cambios</button>
+                            <button class="clear-all"type="reset" id="botones-ediccion">Borrar Cambios</button>
+                        </div>
+                    </form>
                 </div>
-                <form action="/" method="POST">
-                    <div class="nombre-producto">
-                        <label for="nombre-producto">Nombre del Producto</label>
-                        <input type="text" name="nombre-producto" ; value="nombre" ; id="nombre-producto">
-                        </input>
-                    </div>
-                    <div class="descripcion-producto">
-                        <label for="descripcion-producto">Descripción</label>
-                        <input type="text" name="descripcion-producto" ; value="nombre" ; id="descripcion-producto">
-                        </input>
-                    </div>
-                    <div class="imagen-producto">
-                        <label for="imagen-producto">Imagen</label>
-                        <input type="file" ; name="imagen" ; id="imagen-producto" ; accept=".jpg .png">
-                        </input>
-                    </div>
-                    <div class="categoria-producto">
-                        <label for="categoria-producto">Categoría</label>
-                        <select name="categoria-producto">
-                            <option value="pizza">Pizza</option>
-                            <option value="empanada">Empanada</option>
-                            <option value="promocion">Promoción</option>
-                        </select>
-                    </div>
-                    <div class="precio-producto">
-                        <label for="precio-producto">Precio</label>
-                        <input type="text" ; name="ingredientes" ;value=1000; id="precio-producto"></input>
-                    </div>
-                    <div class="botones-edicion">
-                        <button type="submit" id="botones-edicion">Guardar Cambios</button>
-                        <button type="reset" id="botones-ediccion">Borrar Cambios</button>
-                    </div>
-                </form>
             </main>
             <%- include('./partials/footer.ejs') %>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

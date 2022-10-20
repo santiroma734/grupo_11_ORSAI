@@ -3,16 +3,187 @@ body {
   flex-direction: column;
   height: 100vh;
   background-color: rgb(182, 158, 130);
+  font-family: "Nunito", sans-serif;
 }
 main {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .container-product-edit {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
-  width: 90%;
   max-width: 400px;
+  margin: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.titulo-edicion-producto{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nombre-producto-edit{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.nombre-producto-edit label{
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.nombre-producto-edit input{
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+.descripcion-producto{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.descripcion-producto label{
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.descripcion-producto input{
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+.imagen-producto{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.imagen-producto label{
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  content: 'Seleccionar'; /* texto por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: 'Seleccionar Archivo 1';
+}
+
+#src-file2::before {
+  content: 'Seleccionar Archivo 2';
+}
+
+.categoria-producto{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.categoria-producto label{
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.categoria-producto select{
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+.precio-producto{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.precio-producto label{
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.precio-producto input{
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+.botones-edicion{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.botones-edicion button{
+  display: flex;
+  width: 49%;
+  height: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s;
+}
+.save-changes{
+  background-color: #36bf38;
+  color: white;
+}
+.save-changes:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color:#36bf38;
+   
+}
+.clear-all{
+  background-color: crimson;
+  color: white;
+}
+.clear-all:hover{
+   transform: scale(1.05);
+  cursor: pointer;
+  background-color: crimson;
+
 }
