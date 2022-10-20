@@ -2,68 +2,54 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/login.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-  <title>Login</title>
+  <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <title>Login</title>
 </head>
 
 <body>
   <%- include('./partials/header.ejs') %>
-  <main class="container-login">
-    <form action="/" method="post" class="form-login">
-      <p>
-        <label for="mail">
-          <ion-icon name="mail"></ion-icon> Email
-        </label>
-        <input required type="email" ; name="email" ; placeholder="Email address" ; class="inputs" id="mail" />
-      </p>
-      <p>
-        <label for="contraseña">
-          <ion-icon name="lock-closed"></ion-icon> Contraseña
-        </label>
-        <input required type="password" ; name="Contraseña" ; placeholder="Escriba la contraseña" ;
-        class="inputs contrasenia"; id="contraseña" />
-      </p>
-      <div class="checkboxes">
-        <div class="remember-me">
-          <label for="remember">
-            <input
-                type="checkbox"
-                name="remember me"
-                id="remember"
-                value="remember me"
-                class="checkbox"
-                />
-                Recuerdame
-              </label>
-            </div>
-            <a href="#">Recuperar Contraseña</a>
+    <main class="container-login">
+      <form action="/" method="post" class="form-login">
+        <p>
+          <label for="mail">
+            <ion-icon name="mail"></ion-icon> Email
+          </label>
+          <input required type="email" ; name="email" ; placeholder="Email address" ; class="inputs" id="mail" />
+        </p>
+        <p>
+          <label for="contraseña">
+            <ion-icon name="lock-closed"></ion-icon> Contraseña
+          </label>
+          <input required type="password" ; name="Contraseña" ; placeholder="Escriba la contraseña" ;
+            class="inputs contrasenia" ; id="contraseña" />
+        </p>
+        <div class="checkboxes">
+          <div class="remember-me">
+            <label for="remember">
+              <input type="checkbox" name="remember me" id="remember" value="remember me" class="checkbox" />
+              Recuerdame
+            </label>
           </div>
-          <button type="submit" class="btn enviar-login">Ingresar</button>
-          <p class="sin-cuenta-existente--login">
-            Aun no tienes cuenta? <a class="registrate" href="/register"> Regístrate</a> </p>
-            <p class="inicia-sesion-con"> O inicia sesión con </p>
-            <div class="iniciar-con-f-g"><button type="" class="btn facebook" href="https://es-la.facebook.com"><img
+          <a href="#">Recuperar Contraseña</a>
+        </div>
+        <button type="submit" class="btn enviar-login">Ingresar</button>
+        <p class="sin-cuenta-existente--login">
+          Aun no tienes cuenta? <a class="registrate" href="/register"> Regístrate</a> </p>
+        <p class="inicia-sesion-con"> O inicia sesión con </p>
+        <div class="iniciar-con-f-g"><button type="" class="btn facebook" href="https://es-la.facebook.com"><img
               src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />Facebook</button>
-              
-              <button type="" class="btn google" href="https://www.google.com.ar/?hl=es"><img
-                src="https://img.icons8.com/color/48/000000/google-logo.png" /> Google</button>
-            </div>
-          </p>
-    </form>
-  </main>
-      <%- include('./partials/footer.ejs') %>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+          <button type="" class="btn google" href="https://www.google.com.ar/?hl=es"><img
+              src="https://img.icons8.com/color/48/000000/google-logo.png" /> Google</button>
+        </div>
+        </p>
+      </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

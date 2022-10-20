@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+<head>
+  <%- include('./partials/head.ejs') %>
     <link rel="stylesheet" href="/css/productCart.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
     <title>Mis Compras</title>
-  </head>
+</head>
 
-  <body>
-    <%- include("./partials/header") %>
+<body>
+  <%- include("./partials/header") %>
     <main class="main-carrito">
       <div class="container-carrito">
         <form class="form-carrito" action="/" method="GET">
@@ -36,14 +22,7 @@
               <p class="precio-producto-carrito">$1000</p>
             </div>
             <div class="cantidad">
-              <input
-                class="input-cantidad"
-                type="number"
-                name="cantidad"
-                id="cantidad"
-                min="0"
-                placeholder="0"
-              />
+              <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0" placeholder="0" />
             </div>
           </div>
           <div class="productos-carrito">
@@ -52,14 +31,7 @@
               <p class="precio-producto-carrito">$1000</p>
             </div>
             <div class="cantidad">
-              <input
-                class="input-cantidad"
-                type="number"
-                name="cantidad"
-                id="cantidad"
-                min="0"
-                placeholder="0"
-              />
+              <input class="input-cantidad" type="number" name="cantidad" id="cantidad" min="0" placeholder="0" />
             </div>
           </div>
           <div class="subtotal-carrito">
@@ -83,13 +55,8 @@
       </div>
     </main>
     <%- include("./partials/footer") %>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

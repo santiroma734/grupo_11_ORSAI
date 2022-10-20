@@ -1,105 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+<head>
+  <%- include('./partials/head.ejs') %>
     <link rel="stylesheet" href="/css/register.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-
     <title>Registro</title>
-  </head>
-  <body>
-    <%- include('./partials/header.ejs') %>
+</head>
+
+<body>
+  <%- include('./partials/header.ejs') %>
 
     <div class="container-registro">
       <form action="" method="post" class="form-registro">
         <p>
           <label for="nombre">
-            <ion-icon name="person-circle"></ion-icon> Nombre</label
-          >
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre"
-            class="inputs"
-            required
-          />
+            <ion-icon name="person-circle"></ion-icon> Nombre
+          </label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputs" required />
         </p>
         <p>
-          <label for="mail"><ion-icon name="mail"></ion-icon> Email</label>
-          <input
-            type="email"
-            name="email"
-            id="mail"
-            placeholder="Dirección email"
-            class="inputs"
-            required
-          />
+          <label for="mail">
+            <ion-icon name="mail"></ion-icon> Email
+          </label>
+          <input type="email" name="email" id="mail" placeholder="Dirección email" class="inputs" required />
         </p>
         <p>
-          <label for="tel"
-            ><ion-icon name="call"></ion-icon> Teléfono Celular</label
-          >
-          <input
-            type="tel"
-            name="telefono"
-            id="tel"
-            placeholder="11-0000-0000"
-            class="inputs"
-            required
-          />
+          <label for="tel">
+            <ion-icon name="call"></ion-icon> Teléfono Celular
+          </label>
+          <input type="tel" name="telefono" id="tel" placeholder="11-0000-0000" class="inputs" required />
         </p>
         <p>
-          <label for="contraseña"
-            ><ion-icon name="lock-closed"></ion-icon> Contraseña</label
-          >
-          <input
-            type="password"
-            name="contraseña"
-            id="contraseña"
-            placeholder="Escriba su contraseña"
-            class="inputs"
-            required
-          />
+          <label for="contraseña">
+            <ion-icon name="lock-closed"></ion-icon> Contraseña
+          </label>
+          <input type="password" name="contraseña" id="contraseña" placeholder="Escriba su contraseña" class="inputs"
+            required />
         </p>
         <div class="checkboxes">
           <div class="div-checkbox">
             <label for="newsletter">
-              <input
-                type="checkbox"
-                name="acepto"
-                id="newsletter"
-                value="newsletter"
-                class="checkbox"
-              />
+              <input type="checkbox" name="acepto" id="newsletter" value="newsletter" class="checkbox" />
               Acepto suscribirme al Newsletter.
             </label>
           </div>
 
           <div class="div-checkbox">
             <label for="privacidad">
-              <input
-                type="checkbox"
-                name="acepto"
-                id="privacidad"
-                value="politicasPrivacidad"
-                class="checkbox"
-                required
-              />
+              <input type="checkbox" name="acepto" id="privacidad" value="politicasPrivacidad" class="checkbox"
+                required />
               Acepto las Políticas de Privacidad.
             </label>
           </div>
@@ -112,13 +62,8 @@
     </div>
     <%- include("./partials/footer") %>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

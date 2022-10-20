@@ -57,7 +57,7 @@ const controller = {
         precio: 200,
       },
     ];
-    res.render("../src/views/index.ejs", {
+    res.render("index", {
       promos: promos,
       pizzas: pizzas,
       empanadas: empanadas,

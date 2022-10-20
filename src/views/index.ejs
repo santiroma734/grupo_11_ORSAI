@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/7e9e5417b5.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+  <%- include('./partials/head.ejs') %>
 
     <title>Orsai Pizzas y Empanadas</title>
-  </head>
+</head>
 
-  <body class="body-home">
-    <%- include('./partials/header.ejs') %>
+<body class="body-home">
+  <%- include('./partials/header.ejs') %>
 
     <main class="main-home">
       <section class="seccion-heroe">
         <ion-icon name="chevron-back-circle" class="flecha-anterior"></ion-icon>
         <img src="/imgs/foto-carousel-5.jpg" />
-        <ion-icon
-          name="chevron-forward-circle"
-          class="flecha-siguiente"
-        ></ion-icon>
+        <ion-icon name="chevron-forward-circle" class="flecha-siguiente"></ion-icon>
       </section>
       <section class="promociones">
         <h2 class="titulo-seccion">Promociones</h2>
         <div class="productos">
-          <% for (let pizza of promos) { %> <%-
-          include('./partials/promocion.ejs', {pizza: pizza}) %> <% } %>
+          <% for (let pizza of promos) { %>
+            <%- include('./partials/pizzaIndex.ejs', {pizza: pizza}) %>
+              <% } %>
         </div>
       </section>
       <section class="pizzas">
         <h2 class="titulo-seccion">Pizzas</h2>
         <div class="productos">
-          <% for (let pizza of pizzas) { %> <%-
-          include('./partials/promocion.ejs', {pizza: pizza}) %> <% } %>
+          <% for (let pizza of pizzas) { %>
+            <%- include('./partials/pizzaIndex.ejs', {pizza: pizza}) %>
+              <% } %>
         </div>
       </section>
       <section class="empanadas">
         <h2 class="titulo-seccion">Empanadas</h2>
         <div class="productos">
-          <% for (let empanada of empanadas) { %> <%-
-          include('./partials/empanada.ejs', {empanada: empanada}) %> <% } %>
+          <% for (let empanada of empanadas) { %>
+            <%- include('./partials/empanada.ejs', {empanada: empanada}) %>
+              <% } %>
         </div>
       </section>
     </main>
 
     <%- include('./partials/footer.ejs') %>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

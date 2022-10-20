@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(182, 158, 130);
+}
+main {
+  display: flex;
+  flex-grow: 1;
+}
+.container-product-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}

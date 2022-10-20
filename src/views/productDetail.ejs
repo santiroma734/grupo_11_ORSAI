@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/productDetail.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Detalle de Producto</title>
-  </head>
-  <body>
-    <%- include('./partials/header.ejs') %>
 
-    <main>
+<head>
+  <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/productDetail.css" />
+    <title>Detalle de Producto</title>
+</head>
+
+<body>
+  <%- include('./partials/header.ejs') %>
+
+    <main class="main-product-detail">
       <div class="container-det-producto">
         <div class="detail-div-img">
-          <img
-            src="/imgs/nik-owens-40OJLYVWeeM-unsplash.jpg"
-            alt=""
-            class="img-det-producto"
-          />
+          <img src="/imgs/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="" class="img-det-producto" />
         </div>
         <h1>La Scaloneta</h1>
         <div class="sub-container">
@@ -35,25 +26,28 @@
               </p>
             </div>
             <div class="selects">
-              <label>Toppings</label>
-              <select name="toppings" class="select">
-                <option>Champiniones</option>
-                <option>Pickles</option>
-                <option>Pepperoni</option>
-              </select>
-              <label>Bebida</label>
-              <select name="bebida" class="select">
-                <option value="cerveza">Cerveza</option>
-                <option value="gaseosa">Gaseosa</option>
-              </select>
+              <div class="selects-sub-container">
+
+                <label>Toppings</label>
+                <select name="toppings" class="select">
+                  <option>Champiniones</option>
+                  <option>Pickles</option>
+                  <option>Pepperoni</option>
+                </select>
+              </div>
+              <div class="selects-sub-container">
+
+                <label>Bebida</label>
+                <select name="bebida" class="select">
+                  <option value="cerveza">Cerveza</option>
+                  <option value="gaseosa">Gaseosa</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="detail-div-2">
             <div>
-              <textarea
-                class="input-aclaraciones"
-                placeholder="Aclaraciones"
-              ></textarea>
+              <textarea class="input-aclaraciones" placeholder="Aclaraciones"></textarea>
             </div>
             <div class="div-button-carrito">
               <a href="/">
@@ -67,13 +61,8 @@
       </div>
     </main>
     <%- include('./partials/footer.ejs') %>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

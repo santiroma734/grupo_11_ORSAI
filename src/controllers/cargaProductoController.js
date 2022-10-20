@@ -1,6 +1,6 @@
 const controller = {
   view: (req, res) => {
-    res.render("register");
+    res.render("cargaDeProducto");
   },
 };
 

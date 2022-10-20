@@ -1,0 +1,17 @@
+<article class="pizza-menu">
+    <img src=<%=pizza.src %> alt="" class="img-producto" />
+    <div class="descrip-producto-menu">
+        <div class="info-pizza-menu">
+            <p class="nombre-producto-menu">
+                <%= pizza.nombre %>
+            </p>
+            <span class="precio-menu">$<%= pizza.precio %></span>
+            <p class="descripcion-promo-menu">
+                <%= pizza.descripcion %>
+            </p>
+        </div>
+        <button class="btn agregar-carrito-menu">
+            Agregar al Pedido
+        </button>
+    </div>
+</article>

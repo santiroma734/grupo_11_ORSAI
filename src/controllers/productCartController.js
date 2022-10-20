@@ -1,6 +1,6 @@
 const controller = {
   view: (req, res) => {
-    res.render("../src/views/productCart.ejs");
+    res.render("productCart");
   },
 };
 module.exports = controller;
