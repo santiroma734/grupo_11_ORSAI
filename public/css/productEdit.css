@@ -24,6 +24,7 @@ form{
   align-items: center;
   max-width: 400px;
   margin: 2rem;
+  margin-top: 3rem;
   font-size: 1.5rem;
   width: 100%;
 }
@@ -50,6 +51,7 @@ form{
   border-radius: 5px;
   border: none;
   padding-left: 0.5rem;
+  font-family: "Nunito", sans-serif;
 }
 .descripcion-producto{
   display: flex;
@@ -68,6 +70,7 @@ form{
   border-radius: 5px;
   border: none;
   padding-left: 0.5rem;
+  font-family: "Nunito", sans-serif;
 }
 .imagen-producto{
   display: flex;
@@ -79,41 +82,12 @@ form{
   align-items: flex-start;
   font-weight: bold;
 }
-
-.file-select {
-  position: relative;
-  display: inline-block;
-}
-
-.file-select::before {
-  background-color: white;
+.imagen-producto input{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  content: 'Seleccionar'; /* texto por defecto */
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  font-family: "Nunito", sans-serif;
+  margin-top: 0.5rem;
+  width: 100%;
 }
-
-.file-select input[type="file"] {
-  opacity: 0;
-  width: 200px;
-  height: 32px;
-  display: inline-block;
-}
-
-#src-file1::before {
-  content: 'Seleccionar Archivo 1';
-}
-
-#src-file2::before {
-  content: 'Seleccionar Archivo 2';
-}
-
 .categoria-producto{
   display: flex;
   flex-direction: column;
@@ -131,6 +105,7 @@ form{
   border-radius: 5px;
   border: none;
   padding-left: 0.5rem;
+  font-family: "Nunito", sans-serif;
 }
 .precio-producto{
   display: flex;
@@ -149,6 +124,7 @@ form{
   border-radius: 5px;
   border: none;
   padding-left: 0.5rem;
+  font-family: "Nunito", sans-serif;
 }
 .botones-edicion{
   display: flex;
@@ -165,6 +141,7 @@ form{
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
   border-radius: 5px;
   border: none;
+  font-family: "Nunito", sans-serif;
   transition: all 0.4s;
 }
 .save-changes{
