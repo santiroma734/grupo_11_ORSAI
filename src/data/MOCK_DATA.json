@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "nombre": "La Scaloneta",
+    "descripcion": "lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus",
+    "imagen": "PRODUCT-pizza-1",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 2,
+    "nombre": "La Diego Maradona",
+    "descripcion": "est risus auctor sed tristique in tempus sit",
+    "imagen": "PRODUCT-pizza-2",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 3,
+    "nombre": "La Lionel Messi",
+    "descripcion": "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "imagen": "PRODUCT-pizza-3",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 4,
+    "nombre": "La Orsai",
+    "descripcion": "orci nullam molestie nibh in lectus pellentesque at nulla",
+    "imagen": "PRODUCT-pizza-4",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 5,
+    "nombre": "La Albiceleste",
+    "descripcion": "vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci",
+    "imagen": "PRODUCT-pizza-5",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 6,
+    "nombre": "La Tango",
+    "descripcion": "id justo sit amet sapien dignissim vestibulum vestibulum",
+    "imagen": "PRODUCT-pizza-6",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 7,
+    "nombre": "La Doctor Billardo",
+    "descripcion": "eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
+    "imagen": "",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 8,
+    "nombre": "Carne a Cuchillo",
+    "descripcion": "turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
+    "imagen": "PRODUCT-pizza-6",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 9,
+    "nombre": "Jamon y Queso",
+    "descripcion": "molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget",
+    "imagen": "PRODUCT-empanada-1",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 10,
+    "nombre": "Pollo",
+    "descripcion": "sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar",
+    "imagen": "PRODUCT-empanada-2",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 11,
+    "nombre": "Humita",
+    "descripcion": "leo odio condimentum id luctus nec molestie sed",
+    "imagen": "PRODUCT-empanada-3",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 12,
+    "nombre": "Pizza a elección + bebida",
+    "descripcion": "augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo",
+    "imagen": "PRODUCT-empanada-4",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 13,
+    "nombre": "Docena empanadas + bebida",
+    "descripcion": "dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros",
+    "imagen": "PRODUCT-promocion-1",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 14,
+    "nombre": "Pizza + Docena empanadas + bebida",
+    "descripcion": "leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero",
+    "imagen": "PRODUCT-promocion-2",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 15,
+    "nombre": "La Scaloneta",
+    "descripcion": "eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio",
+    "imagen": "PRODUCT-promocion-3",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 16,
+    "nombre": "La Diego Maradona",
+    "descripcion": "nec euismod scelerisque quam turpis adipiscing lorem vitae mattis",
+    "imagen": "PRODUCT-pizza-1",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 17,
+    "nombre": "La Lionel Messi",
+    "descripcion": "in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla",
+    "imagen": "PRODUCT-pizza-2",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 18,
+    "nombre": "La Orsai",
+    "descripcion": "odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a",
+    "imagen": "PRODUCT-pizza-3",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 19,
+    "nombre": "La Albiceleste",
+    "descripcion": "at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio",
+    "imagen": "PRODUCT-pizza-4",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 20,
+    "nombre": "La Tango",
+    "descripcion": "lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu",
+    "imagen": "PRODUCT-pizza-5",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 21,
+    "nombre": "La Doctor Billardo",
+    "descripcion": "montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
+    "imagen": "PRODUCT-pizza-6",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 22,
+    "nombre": "Carne a Cuchillo",
+    "descripcion": "pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus",
+    "imagen": "",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 23,
+    "nombre": "Jamon y Queso",
+    "descripcion": "augue luctus tincidunt nulla mollis molestie lorem quisque ut",
+    "imagen": "PRODUCT-pizza-6",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 24,
+    "nombre": "Pollo",
+    "descripcion": "metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis",
+    "imagen": "PRODUCT-empanada-1",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 25,
+    "nombre": "Humita",
+    "descripcion": "ante ipsum primis in faucibus orci luctus et ultrices posuere",
+    "imagen": "PRODUCT-empanada-2",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 26,
+    "nombre": "Pizza a elección + bebida",
+    "descripcion": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
+    "imagen": "PRODUCT-empanada-3",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 1500
+  },
+  {
+    "id": 27,
+    "nombre": "Docena empanadas + bebida",
+    "descripcion": "adipiscing lorem vitae mattis nibh ligula nec sem",
+    "imagen": "PRODUCT-empanada-4",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 28,
+    "nombre": "Pizza + Docena empanadas + bebida",
+    "descripcion": "etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam",
+    "imagen": "PRODUCT-promocion-1",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 29,
+    "nombre": "La Scaloneta",
+    "descripcion": "porttitor lacus at turpis donec posuere metus vitae ipsum",
+    "imagen": "PRODUCT-promocion-2",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 30,
+    "nombre": "La Diego Maradona",
+    "descripcion": "blandit lacinia erat vestibulum sed magna at nunc commodo placerat",
+    "imagen": "PRODUCT-promocion-3",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  }
+]
