@@ -38,13 +38,13 @@ const controller = {
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-6.jpg",
+        src: "/imgs/pizza-producto-7.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-2.jpg",
+        src: "/imgs/pizza-producto-8.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",

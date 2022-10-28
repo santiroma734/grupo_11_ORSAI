@@ -49,7 +49,8 @@ body {
   border: none;
   border-radius: 5px;
   /* background-color: #d99e40; */
-  background-color: #f59f00;
+  background-color: #de8a01;
+  /* background-color: #f59f00; */
   color: #fff;
   font-weight: 700;
   transition: all 0.4s;
@@ -109,6 +110,8 @@ header {
   justify-content: space-between;
   padding: 2rem 5vw;
   background-color: rgb(217, 217, 205, 0.8);
+  box-shadow: rgb(50 50 93 / 2%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 20%) 0px 8px 16px -8px;
 }
 
 /* burger menu, titulo orsai, carrito */
@@ -215,8 +218,14 @@ main {
   border-radius: 6px;
   transition: all 0.4s;
   overflow: hidden;
-  background-color: #ededed;
+  /* background-color: #ededed; */
   /* background-color: #fff; */
+  background: linear-gradient(to right, #ece9e6, #fff);
+  background: linear-gradient(
+    to right,
+    rgb(255, 183, 94, 0.7),
+    hsla(36, 98%, 47%, 0.7)
+  );
 }
 
 .promocion:hover,
@@ -246,7 +255,7 @@ main {
 .agregar-carrito {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
   font-size: 1.6rem;
 }
 
@@ -260,7 +269,12 @@ main {
   border-radius: 6px;
   margin-bottom: 25px;
   /* background-color: #d5d5d5; */
-  background-color: #ededed;
+  /* background-color: #ededed; */
+  background: linear-gradient(
+    to right,
+    rgb(255, 183, 94, 0.7),
+    hsla(36, 98%, 47%, 0.7)
+  );
 }
 
 .empanada img {
@@ -567,6 +581,11 @@ a:active {
   }
 
   /* //// */
+
+  .pizza {
+    font-size: 1.9rem;
+  }
+
   .empanada {
     width: 32%;
   }
