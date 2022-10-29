@@ -17,7 +17,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.55)
     ),
-    url("/imgs/blake-wisz-pPA-_q5v1a8-unsplash.jpg");
+    url("/imgs/register-background.jpg");
   background-size: cover;
   background-position-x: center;
   display: flex;
@@ -139,7 +139,7 @@ p,
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.4)
       ),
-      url("/imgs/blake-wisz-pPA-_q5v1a8-unsplash.jpg");
+      url("/imgs/register-background.jpg");
   }
 
   .container-registro {

@@ -36,7 +36,7 @@ body {
   /* background-color: rgb(222, 196, 166); */
   /* background-color: #fff;*/
   /* background: linear-gradient(to right, #867733, #bdb49e, #867733) */
-  background-image: url("../imgs/fondo-ladrillos.jpg");
+  background-image: url("../imgs/index-background.jpg");
   background-size: cover;
 }
 
@@ -188,11 +188,8 @@ main {
 /* Sección Promociones - Sección pizzas */
 /* ///////////////// */
 
-.promociones {
-  padding-bottom: 2rem;
-}
 .pizzas {
-  padding: 4rem 0;
+  padding: 0 0;
   /* border-top: 1px solid #adb5bd; */
 }
 
@@ -275,6 +272,12 @@ main {
     rgb(255, 183, 94, 0.7),
     hsla(36, 98%, 47%, 0.7)
   );
+  transition: all 0.4s;
+}
+
+.empanada:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .empanada img {
@@ -386,7 +389,7 @@ a:active {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   font-size: 1.4rem;
   margin: 1;
@@ -542,7 +545,7 @@ a:active {
 
 @media (min-width: 1000px) {
   .empanada {
-    width: 32%;
+    width: 30%;
   }
 
   .agregar-emp-1 {
@@ -584,10 +587,6 @@ a:active {
 
   .pizza {
     font-size: 1.9rem;
-  }
-
-  .empanada {
-    width: 32%;
   }
 
   .nombre-precio p {

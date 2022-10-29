@@ -90,6 +90,15 @@ h2 {
   transform: scale(1.075);
 }
 
+.empanadas .titulo-seccion {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.empanadas {
+  margin-bottom: 3rem;
+}
+
 .agregar-carrito-menu {
   opacity: 0;
   height: 20%;

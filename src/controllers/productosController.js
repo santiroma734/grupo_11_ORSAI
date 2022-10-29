@@ -2,49 +2,49 @@ const controller = {
   view: (req, res) => {
     const pizzas = [
       {
-        src: "/imgs/pizza-producto-6.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-6.jpg",
         nombre: "Pizza la Scaloneta",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-5.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-5.jpg",
         nombre: "Pizza el Kuni",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-2.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-2.jpg",
         nombre: "Pizza el Diego",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-1.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-1.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-4.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-4.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-3.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-3.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-7.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-7.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
       },
       {
-        src: "/imgs/pizza-producto-8.jpg",
+        src: "/imgs/productos/PRODUCTO-pizza-8.jpg",
         nombre: "Pizza",
         precio: 1000,
         descripcion: "descripcion",
@@ -52,32 +52,32 @@ const controller = {
     ];
     const empanadas = [
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Carne a cuchillo",
         precio: 200,
       },
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Pollo",
         precio: 200,
       },
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Jamon y queso",
         precio: 200,
       },
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Jamon y queso",
         precio: 200,
       },
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Jamon y queso",
         precio: 200,
       },
       {
-        src: "/imgs/empanadas.jpg",
+        src: "/imgs/productos/PRODUCTO-empanada.jpg",
         nombre: "Jamon y queso",
         precio: 200,
       },
