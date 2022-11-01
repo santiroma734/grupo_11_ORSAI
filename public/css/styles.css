@@ -232,6 +232,13 @@ main {
   cursor: pointer;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .info-promocion,
 .info-pizza {
   display: flex;
@@ -282,7 +289,7 @@ main {
 
 .empanada img {
   width: 50%;
-  height: max-content;
+  /* height: max-content; */
 }
 
 .info-empanada {

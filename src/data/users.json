@@ -7,7 +7,7 @@
     "email": "jrawet0@github.com",
     "password": "N4UPvbc",
     "imagen": "usuario1",
-    "categoria": "Administrador",
+    "esAdmin": true,
     "telefono": 2034348475
   },
   {
@@ -18,7 +18,7 @@
     "email": "smckenney1@weibo.com",
     "password": "YYQZD31",
     "imagen": "usuario2",
-    "categoria": "Administrador",
+    "esAdmin": true,
     "telefono": 3765407546
   },
   {
@@ -29,9 +29,8 @@
     "email": "epaylor2@nydailynews.com",
     "password": "0XniG2Zk9",
     "imagen": "usuario3",
-    "categoria": "Administrador",
-    "telefono": 8045759175 ,
-
+    "esAdmin": true,
+    "telefono": 8045759175
   },
   {
     "id": 4,
@@ -40,8 +39,7 @@
     "username": "inajera3",
     "email": "inajera3@baidu.com",
     "password": "W7457XnGvHMm",
-    "imagen": "usuario4",
-    "categoria": "Usuario",
+    "esAdmin": true,
     "telefono": 2636482173
   },
   {
@@ -52,7 +50,7 @@
     "email": "lfidilis4@businessinsider.com",
     "password": "wGaDDqIG4",
     "imagen": "usuario5",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9376639806
   },
   {
@@ -63,7 +61,7 @@
     "email": "hcharnley5@marketwatch.com",
     "password": "sZF1Oa5J3",
     "imagen": "usuario6",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 3584638045
   },
   {
@@ -74,7 +72,7 @@
     "email": "aateridge6@redcross.org",
     "password": "1n3OoK",
     "imagen": "usuario7",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 5773717016
   },
   {
@@ -85,7 +83,7 @@
     "email": "tcankett7@sciencedaily.com",
     "password": "40uf1U",
     "imagen": "usuario8",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 6041367869
   },
   {
@@ -96,7 +94,7 @@
     "email": "kclimson8@aol.com",
     "password": "b1JTut",
     "imagen": "usuario9",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9115754002
   },
   {
@@ -107,7 +105,7 @@
     "email": "kwhyteman9@vkontakte.ru",
     "password": "OOFN8cq",
     "imagen": "usuario10",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 4378486336
   },
   {
@@ -118,7 +116,7 @@
     "email": "anormandalea@boston.com",
     "password": "x63pxh7",
     "imagen": "usuario11",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 2716324911
   },
   {
@@ -129,7 +127,7 @@
     "email": "cmartinieb@ucla.edu",
     "password": "QtIwo2h7d",
     "imagen": "usuario12",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 3568645351
   },
   {
@@ -140,7 +138,7 @@
     "email": "thoveec@omniture.com",
     "password": "mpsi7ZoB8HVu",
     "imagen": "usuario13",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 2355711457
   },
   {
@@ -151,7 +149,7 @@
     "email": "fbittertond@foxnews.com",
     "password": "TRoqn1tgp",
     "imagen": "usuario14",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9767161737
   },
   {
@@ -162,7 +160,7 @@
     "email": "dsayere@wsj.com",
     "password": "Q7V1rri70",
     "imagen": "usuario15",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 6899299374
   },
   {
@@ -173,7 +171,7 @@
     "email": "wteagerf@bluehost.com",
     "password": "spO6u3GV3",
     "imagen": "usuario16",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 1839576258
   },
   {
@@ -184,7 +182,7 @@
     "email": "drzehorg@quantcast.com",
     "password": "O4azRlbBf",
     "imagen": "usuario17",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 8193886982
   },
   {
@@ -195,7 +193,7 @@
     "email": "rbraganzah@hao123.com",
     "password": "YwIOVeyMdL",
     "imagen": "usuario18",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9982958680
   },
   {
@@ -206,7 +204,7 @@
     "email": "mivanishchevi@addthis.com",
     "password": "NmRhgBpt",
     "imagen": "usuario19",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9888283425
   },
   {
@@ -217,7 +215,7 @@
     "email": "rhixleyj@ftc.gov",
     "password": "N7c6ZrHe",
     "imagen": "usuario20",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 756900949
   },
   {
@@ -228,7 +226,7 @@
     "email": "creynoolldsk@plala.or.jp",
     "password": "oMizSBZUjh1",
     "imagen": "usuario21",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 8521838532
   },
   {
@@ -239,7 +237,7 @@
     "email": "foppiel@google.pl",
     "password": "4KMtDMEvX",
     "imagen": "usuario22",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 5923297625
   },
   {
@@ -250,7 +248,7 @@
     "email": "bnutonm@ucsd.edu",
     "password": "JS8NBl",
     "imagen": "usuario23",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 7747660640
   },
   {
@@ -261,7 +259,7 @@
     "email": "lpaulsn@comsenz.com",
     "password": "OHsPzkVQK",
     "imagen": "usuario24",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 7914831752
   },
   {
@@ -272,7 +270,7 @@
     "email": "cwildsmitho@sakura.ne.jp",
     "password": "Gjpswn8",
     "imagen": "usuario25",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 3323407254
   },
   {
@@ -283,7 +281,7 @@
     "email": "aclayhillp@washington.edu",
     "password": "a2ydiID7v2",
     "imagen": "usuario26",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 6739246918
   },
   {
@@ -294,7 +292,7 @@
     "email": "dcuffleyq@issuu.com",
     "password": "iHDOcNUSQ",
     "imagen": "usuario27",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 6187101559
   },
   {
@@ -305,7 +303,7 @@
     "email": "pwareingr@arizona.edu",
     "password": "N4NSZL9yMp",
     "imagen": "usuario28",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 1006696947
   },
   {
@@ -316,7 +314,7 @@
     "email": "crichfords@google.cn",
     "password": "cx4Yw1DDmq",
     "imagen": "usuario29",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 9512893758
   },
   {
@@ -327,7 +325,7 @@
     "email": "jalbiont@hugedomains.com",
     "password": "ad6mbv",
     "imagen": "usuario30",
-    "categoria": "Usuario",
+    "esAdmin": false,
     "telefono": 1081978879
   }
 ]

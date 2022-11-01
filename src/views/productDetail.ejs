@@ -13,16 +13,14 @@
     <main class="main-product-detail">
       <div class="container-det-producto">
         <div class="detail-div-img">
-          <img src="/imgs/foto-carousel-1.jpg" alt="" class="img-det-producto" />
+          <img src="/imgs/productos/<%= producto.imagen %>" alt="" class="img-det-producto" />
         </div>
-        <h1>La Scaloneta</h1>
+        <h1> <%= producto.nombre %> </h1>
         <div class="sub-container">
           <div class="detail-div-1">
             <div class="nombre-producto--descripcion">
               <p class="descripcion-producto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                voluptas placeat quos! Repudiandae, ipsam ipsa deleniti ullam
-                dolor dignissimos
+                <%= producto.descripcion %>
               </p>
             </div>
             <div class="selects">

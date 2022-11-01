@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -17,7 +17,7 @@
                 <div class="titulo-edicion-producto">
                     <p class="titulo">Carga de Producto</p>
                 </div>
-                <form action="/" method="POST">
+                <form action="/" method="GET" enctype="multipart/form-data">
                     <div class="nombre-producto-edit">
                         <label for="nombre-producto-edit">Nombre del Producto</label>
                         <input type="text" name="nombre-producto-edit" ; placeholder="Nombre" ; id="nombre-producto-edit">
@@ -31,7 +31,7 @@
                     <div class="imagen-producto">
                         <label for="imagen-producto">Imagen</label>
                         <div class="file-select">
-                            <input type="file" ; name="imagen-producto" ; id="imagen-producto" ; accept=".jpg">
+                            <input type="file" ; name="imagen-producto" ; id="imagen-producto" ; accept=".jpg, .png">
                             </input>
                         </div>
                     </div>
