@@ -82,5 +82,8 @@ const slider = function () {
       currentSlide = Number(slide);
     }
   });
+  setInterval(() => {
+    nextSlide()
+  }, 7000);
 };
 slider();
