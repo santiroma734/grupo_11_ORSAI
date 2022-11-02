@@ -3,6 +3,7 @@
 
 <head>
   <%- include('./partials/head.ejs') %>
+  <script defer src="/js/slider.js"></script>
 
     <title>Orsai Pizzas y Empanadas</title>
 </head>
@@ -10,12 +11,14 @@
 <body class="body-home">
   <%- include('./partials/header.ejs') %>
 
+  <!-- si va aca ocupa 100vw. sino tiene que ir justo antes de "promociones" -->
+  <%- include('./partials/slider.ejs') %> 
     <main class="main-home">
-      <section class="seccion-heroe">
+      <!-- <section class="seccion-heroe">
         <ion-icon name="chevron-back-circle" class="flecha-anterior"></ion-icon>
         <img src="/imgs/foto-carousel-5.jpg" />
         <ion-icon name="chevron-forward-circle" class="flecha-siguiente"></ion-icon>
-      </section>
+      </section> -->
       <section class="promociones">
         <h2 class="titulo-seccion">Promociones</h2>
         <div class="productos">
