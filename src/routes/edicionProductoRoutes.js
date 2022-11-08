@@ -4,5 +4,6 @@ const edicionProductoController = require("../controllers/edicionProductoControl
 const router = express.Router();
 
 router.get("/", edicionProductoController.view);
+router.get("/:id", edicionProductoController.edicion);
 
 module.exports = router;
