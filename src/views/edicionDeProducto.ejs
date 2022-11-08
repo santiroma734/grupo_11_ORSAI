@@ -12,17 +12,21 @@
             <main class="edicionProducto">
                 <div class="container-product-edit">
                     <div class="titulo-edicion-producto">
-                        <p class="Titulo">Edicion de Producto</p>
+                        <p class="titulo">Editando producto<br>
+                            <%= producto.nombre %>
+                        </p>
                     </div>
                     <form action="/" method="POST">
                         <div class="nombre-producto-edit">
                             <label for="nombre-producto-edit">Nombre del Producto</label>
-                            <input type="text" name="nombre-producto-edit" ; value="Nombre" ; id="nombre-producto-edit">
+                            <input type="text" name="nombre-producto-edit" ; value="<%= producto.nombre %>" ;
+                                id="nombre-producto-edit">
                             </input>
                         </div>
                         <div class="descripcion-producto">
                             <label for="descripcion-producto">Descripción</label>
-                            <input type="text" name="descripcion-producto" ; value="Descripcion" ; id="descripcion-producto">
+                            <input type="textarea" name="descripcion-producto" ; value="<%= producto.descripcion %>" ;
+                                id="descripcion-producto">
                             </input>
                         </div>
                         <div class="imagen-producto">
@@ -42,11 +46,12 @@
                         </div>
                         <div class="precio-producto">
                             <label for="precio-producto">Precio</label>
-                            <input type="number" ; name="precio-producto" value="1000" id="precio-producto"></input>
+                            <input type="number" ; name="precio-producto" value="<%= producto.precio %>"
+                                id="precio-producto"></input>
                         </div>
                         <div class="botones-edicion">
-                            <button class="save-changes"type="submit" id="botones-edicion">Guardar Cambios</button>
-                            <button class="clear-all"type="reset" id="botones-ediccion">Borrar Cambios</button>
+                            <button class="save-changes" type="submit" id="botones-edicion">Guardar Cambios</button>
+                            <button class="clear-all" type="reset" id="botones-ediccion">Borrar Cambios</button>
                         </div>
                     </form>
                 </div>
