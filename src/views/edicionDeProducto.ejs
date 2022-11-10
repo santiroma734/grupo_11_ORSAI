@@ -16,42 +16,41 @@
                             <%= producto.nombre %>
                         </p>
                     </div>
-                    <form action="/" method="POST">
+                    <form action="/edicion-producto/<%= producto.id %>?_method=PUT" method="POST"
+                        enctype="multipart/form-data">
                         <div class="nombre-producto-edit">
-                            <label for="nombre-producto-edit">Nombre del Producto</label>
-                            <input type="text" name="nombre-producto-edit" ; value="<%= producto.nombre %>" ;
-                                id="nombre-producto-edit">
+                            <label for="nombre">Nombre del Producto</label>
+                            <input type="text" name="nombre" value="<%= producto.nombre %>" id="nombre">
                             </input>
                         </div>
                         <div class="descripcion-producto">
-                            <label for="descripcion-producto">Descripción</label>
-                            <input type="textarea" name="descripcion-producto" ; value="<%= producto.descripcion %>" ;
-                                id="descripcion-producto">
+                            <label for="descripcion">Descripción</label>
+                            <input type="textarea" name="descripcion" value="<%= producto.descripcion %>"
+                                id="descripcion">
                             </input>
                         </div>
                         <div class="imagen-producto">
-                            <label for="imagen-producto">Imagen</label>
+                            <label for="imagen">Imagen</label>
                             <div class="file-select">
-                                <input type="file" ; name="imagen-producto" ; id="imagen-producto" ; accept=".jpg">
+                                <input type="file" name="imagen" id="imagen" accept=".jpg">
                                 </input>
                             </div>
                         </div>
                         <div class="categoria-producto">
-                            <label for="categoria-producto">Categoría</label>
-                            <select name="categoria-producto">
+                            <label for="categoria">Categoría</label>
+                            <select name="categoria">
                                 <option value="pizza">Pizza</option>
                                 <option value="empanada">Empanada</option>
                                 <option value="promocion">Promoción</option>
                             </select>
                         </div>
                         <div class="precio-producto">
-                            <label for="precio-producto">Precio</label>
-                            <input type="number" ; name="precio-producto" value="<%= producto.precio %>"
-                                id="precio-producto"></input>
+                            <label for="precio">Precio</label>
+                            <input type="number" name="precio" value="<%= producto.precio %>" id="precio"></input>
                         </div>
                         <div class="botones-edicion">
-                            <button class="save-changes" type="submit" id="botones-edicion">Guardar Cambios</button>
-                            <button class="clear-all" type="reset" id="botones-ediccion">Borrar Cambios</button>
+                            <button class="save-changes" type="submit" id="botones">Guardar Cambios</button>
+                            <button class="clear-all" type="reset" id="botones">Borrar Cambios</button>
                         </div>
                     </form>
                 </div>

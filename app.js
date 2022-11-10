@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require("method-override");
 
 const loginRoutes = require("./src/routes/loginRoutes");
 const mainRoutes = require("./src/routes/mainRoutes");
@@ -14,6 +15,7 @@ const edicionProductoRoutes = require("./src/routes/edicionProductoRoutes");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname + "/src/views"));
 app.use(express.static("public"));
+app.use(methodOverride("_method"));
 
 app.listen(3030, () => {
   console.log("Servidor funcionando");
