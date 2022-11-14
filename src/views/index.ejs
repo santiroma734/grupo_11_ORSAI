@@ -22,25 +22,31 @@
       <section class="promociones">
         <h2 class="titulo-seccion">Promociones</h2>
         <div class="productos">
-          <% for (let pizza of promos) { %>
-            <%- include('./partials/pizzaIndex.ejs', {pizza: pizza}) %>
+          <% for (let pizza of productos) { %>
+            <% if (pizza.esPromocion === true) { %> 
+            <%- include('./partials/promocion.ejs', { pizza }) %>
               <% } %>
+            <% } %>
         </div>
       </section>
       <section class="pizzas">
         <h2 class="titulo-seccion">Pizzas</h2>
         <div class="productos">
-          <% for (let pizza of pizzas) { %>
-            <%- include('./partials/pizzaIndex.ejs', {pizza: pizza}) %>
+          <% for (let pizza of productos) { %>
+            <% if (pizza.categoria === "Pizza") { %> 
+            <%- include('./partials/pizzaIndex.ejs', { pizza }) %>
               <% } %>
+            <% } %>
         </div>
       </section>
       <section class="empanadas">
         <h2 class="titulo-seccion">Empanadas</h2>
         <div class="productos">
-          <% for (let empanada of empanadas) { %>
-            <%- include('./partials/empanada.ejs', {empanada: empanada}) %>
+          <% for (let empanada of productos) { %>
+            <% if (empanada.categoria === "Empanadas") { %> 
+            <%- include('./partials/empanada.ejs', { empanada }) %>
               <% } %>
+            <% } %>
         </div>
       </section>
     </main>

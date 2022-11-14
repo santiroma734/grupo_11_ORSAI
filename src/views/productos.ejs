@@ -15,17 +15,21 @@
       <section>
         <h2>Pizzas</h2>
         <div class="pizzas-menu">
-          <% for (let pizza of pizzas) { %>
-            <%- include('./partials/pizzaMenu.ejs', {pizza: pizza}) %>
-              <% } %>
+          <% for (let pizza of productos) { %>
+            <% if (pizza.categoria === "Pizza") { %> 
+              <%- include('./partials/pizzaMenu.ejs', {pizza}) %>
+            <% } %>
+          <% } %>
         </div>
       </section>
       <section class="empanadas">
         <h2 class="titulo-seccion">Empanadas</h2>
         <div class="productos">
-          <% for (let empanada of empanadas) { %>
-            <%- include('./partials/empanada.ejs', {empanada: empanada}) %>
+            <% for (let empanada of productos) { %>
+              <% if (empanada.categoria === "Empanada") { %> 
+                <%- include('./partials/empanada.ejs', {empanada}) %>
               <% } %>
+          <% } %>
         </div>
       </section>
     </main>

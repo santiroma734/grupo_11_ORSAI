@@ -16,8 +16,9 @@
                             <%= producto.nombre %>
                         </p>
                     </div>
-                    <form action="/edicion-producto/<%= producto.id %>?_method=PUT" method="POST"
-                        enctype="multipart/form-data">
+                    <form action="/productos/<%= producto.id %>/editar?_method=PUT" method="POST">
+                    <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
+                        enctype="multipart/form-data"> -->
                         <div class="nombre-producto-edit">
                             <label for="nombre">Nombre del Producto</label>
                             <input type="text" name="nombre" value="<%= producto.nombre %>" id="nombre">
@@ -29,13 +30,14 @@
                                 id="descripcion">
                             </input>
                         </div>
-                        <div class="imagen-producto">
+                        <!-- <div class="imagen-producto">
                             <label for="imagen">Imagen</label>
                             <div class="file-select">
                                 <input type="file" name="imagen" id="imagen" accept=".jpg">
+                                <input type="file" accept=".jpg">
                                 </input>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="categoria-producto">
                             <label for="categoria">Categoría</label>
                             <select name="categoria">
