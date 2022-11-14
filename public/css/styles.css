@@ -137,6 +137,7 @@ header {
 
 main {
   padding: 0 5vw;
+  margin-bottom: 2rem;
 }
 
 /* .main-home {
@@ -180,7 +181,7 @@ main {
 .slider {
   max-height: 25rem;
   height: 50rem;
-  margin: 5rem auto;
+  margin: 3rem auto;
 
   /* si va a ocupar 100vw */
   margin-top: 0;
@@ -304,6 +305,8 @@ main {
     rgb(255, 183, 94, 0.7),
     hsla(36, 98%, 47%, 0.7)
   );
+  text-decoration: none;
+  color: #333;
 }
 
 .promocion:hover,
@@ -338,10 +341,14 @@ main {
 }
 
 .agregar-carrito {
+  display: flex;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 2rem 1rem;
   font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /* ///////////////// */
@@ -361,6 +368,8 @@ main {
     hsla(36, 98%, 47%, 0.7)
   );
   transition: all 0.4s;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 .empanada:hover {
@@ -370,7 +379,8 @@ main {
 
 .empanada img {
   width: 50%;
-  /* height: max-content; */
+  height: 15rem;
+  object-fit: cover;
 }
 
 .info-empanada {
@@ -581,11 +591,10 @@ main {
     display: flex;
   }
 
-
   .slider {
     max-height: 40rem;
   }
-  
+
   /* Sin esto la imagen se ve cortada */
   .slide {
     top: 0;

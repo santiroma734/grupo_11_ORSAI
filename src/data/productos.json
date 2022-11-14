@@ -90,28 +90,28 @@
   "precio": 200
  },
  {
-  "id": 11,
-  "nombre": "Pollo",
-  "descripcion": "Pollo a la Cerveza Desmenuzado.",
-  "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Empanada",
-  "esPromocion": false,
-  "precio": 300
- },
- {
   "id": 12,
   "nombre": "Humita",
   "descripcion": "Pasta de Maíz y Crema.",
   "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Promocion",
+  "categoria": "Empanada",
   "esPromocion": false,
   "precio": 200
  },
  {
+  "id": 12,
+  "nombre": "Pollo",
+  "descripcion": "Pollo braseado a la cerveza.",
+  "imagen": "PRODUCTO-empanada.jpg",
+  "categoria": "Empanada",
+  "esPromocion": false,
+  "precio": 200
+   },
+ {
   "id": 13,
   "nombre": "Pizza a Elección + Bebida",
   "descripcion": "Pizza a elección mas una cerveza o gaseosa.",
-  "imagen": "PRODUCTO-promocion-1.jpg",
+  "imagen": "PRODUCTO-pizza-1.jpg",
   "categoria": "Promocion",
   "esPromocion": true,
   "precio": 2200
@@ -120,7 +120,7 @@
   "id": 14,
   "nombre": "Docena de Empanadas + Bebida",
   "descripcion": "Docena de empanadas a elección más una cerveza o gasesosa.",
-  "imagen": "PRODUCTO-promocion-2.jpg",
+  "imagen": "PRODUCTO-pizza-5.jpg",
   "categoria": "Promocion",
   "esPromocion": true,
   "precio": 2000
@@ -129,8 +129,8 @@
   "id": 15,
   "nombre": "Pizza + Docena de Empanadas + Bebida",
   "descripcion": "Pizza a elección acompañado de una docena de empanadas con una cerveza o gaseosa.",
-  "imagen": "PRODUCTO-promocion-3.jpg",
-  "categoria": "Pizza",
+  "imagen": "PRODUCTO-pizza-2.jpg",
+  "categoria": "Promocion",
   "esPromocion": true,
   "precio": 3100
  }

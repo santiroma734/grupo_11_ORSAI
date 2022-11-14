@@ -32,7 +32,7 @@
       <section class="pizzas">
         <h2 class="titulo-seccion">Pizzas</h2>
         <div class="productos">
-          <% for (let pizza of productos) { %>
+          <% for (let pizza of productos.slice(2,5)) { %>
             <% if (pizza.categoria === "Pizza") { %> 
             <%- include('./partials/pizzaIndex.ejs', { pizza }) %>
               <% } %>
@@ -42,11 +42,13 @@
       <section class="empanadas">
         <h2 class="titulo-seccion">Empanadas</h2>
         <div class="productos">
+          <% let acc = 0 %>
           <% for (let empanada of productos) { %>
-            <% if (empanada.categoria === "Empanadas") { %> 
-            <%- include('./partials/empanada.ejs', { empanada }) %>
-              <% } %>
+            <% if (empanada.categoria === "Empanada" && acc != 3) { %> 
+              <%- include('./partials/empanada.ejs', {empanada}) %>
+              <% acc+= 1 %>
             <% } %>
+          <% } %>
         </div>
       </section>
     </main>

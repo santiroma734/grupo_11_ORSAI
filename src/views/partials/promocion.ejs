@@ -1,13 +1,9 @@
-<article class="pizza">
-  <img src=<%=pizza.imagen%> />
-  <div class="info-pizza">
-    <p class="nombre-producto">
-      <%=pizza.nombre%>
-    </p>
-    <span class="precio">$<%=pizza.precio%></span>
-    <p class="descripcion-promo">
-      <%=pizza.descripcion%>
-    </p>
-  </div>
-  <button class="btn agregar-carrito">Agregar al Pedido</button>
-</article>
+<a href="/productos/<%= pizza.id %>" class="pizza">
+    <img src="/imgs/productos/<%=pizza.imagen%>" />
+    <div class="info-pizza">
+      <p class="nombre-producto"><%=pizza.nombre%></p>
+      <span class="precio">$<%=pizza.precio%></span>
+      <p class="descripcion-promo"><%=pizza.descripcion%></p>
+    </div>
+    <button class="btn agregar-carrito">Agregar al Pedido</button>
+</a>

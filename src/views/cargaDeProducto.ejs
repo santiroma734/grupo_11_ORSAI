@@ -17,36 +17,36 @@
                 <div class="titulo-edicion-producto">
                     <p class="titulo">Carga de Producto</p>
                 </div>
-                <form action="/productos/crear" method="GET" enctype="multipart/form-data">
+                <form action="/productos/crear" method="POST" enctype="multipart/form-data">
                     <div class="nombre-producto-edit">
-                        <label for="nombre-producto-edit">Nombre del Producto</label>
-                        <input type="text" name="nombre-producto-edit" placeholder="Nombre" ; id="nombre-producto-edit">
+                        <label for="nombre">Nombre del Producto</label>
+                        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
                         </input>
                     </div>
                     <div class="descripcion-producto">
-                        <label for="descripcion-producto">Descripción</label>
-                        <input type="text" name="descripcion-producto" ; placeholder="Descripción" ;
-                            id="descripcion-producto">
+                        <label for="descripcion">Descripción</label>
+                        <input type="text" name="descripcion" placeholder="Descripción"
+                            id="descripcion">
                         </input>
                     </div>
                     <div class="imagen-producto">
-                        <label for="imagen-producto">Imagen</label>
+                        <label for="imagen">Imagen</label>
                         <div class="file-select">
-                            <input type="file" ; name="imagen-producto" ; id="imagen-producto" ; accept=".jpg, .png">
+                            <input type="file" name="imagen" id="imagen" accept=".jpg, .png">
                             </input>
                         </div>
                     </div>
                     <div class="categoria-producto">
-                        <label for="categoria-producto">Categoría</label>
-                        <select name="categoria-producto">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria">
                             <option value="Pizza">Pizza</option>
                             <option value="Empanada">Empanada</option>
                             <option value="Promocion">Promoción</option>
                         </select>
                     </div>
                     <div class="precio-producto">
-                        <label for="precio-producto">Precio</label>
-                        <input type="text" ; name="ingredientes" ;placeholder=1000; id="precio-producto"></input>
+                        <label for="precio">Precio</label>
+                        <input type="text" name="precio" placeholder="1000" id="precio"></input>
                     </div>
                     <div class="botones-edicion">
                         <button class="save-changes" type="submit" id="botones-edicion">Cargar Producto</button>

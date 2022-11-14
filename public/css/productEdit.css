@@ -33,6 +33,7 @@ form {
   flex-direction: column;
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 .titulo-edicion-producto .nombre-producto-edit {
   display: flex;

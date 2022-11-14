@@ -14,24 +14,26 @@ const controller = {
     res.render("productDetail", { producto });
   },
 
-  carga: (req, res) => {
+  crear: (req, res) => {
     res.render("cargaDeProducto");
   },
   // Create -  Method to store
   store: (req, res) => {
+    console.log(req.body)
+    console.log(req.file)
     let newProduct = {
       id: Date.now(),
       nombre: req.body.nombre,
       precio: Number(req.body.precio),
-      esPromocion: req.body.esPromocion,
+      esPromocion: req.body.categoria === "Promocion" ? true : false,
       categoria: req.body.categoria,
       descripcion: req.body.descripcion,
-      imagen: req.file.filename,
+      imagen: req.file ? req.file.filename : 'default.jpg',
     };
 
     productos.push(newProduct);
     fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
-    res.redirect("/productos");
+    return res.redirect("/");
   },
 
   edicion: function (req, res) {
@@ -54,6 +56,12 @@ const controller = {
     fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
     res.redirect(`/productos/${id}/editar`);
   },
+  delete: (req, res) => {
+    const id = Number(req.params.id);
+    const productosFiltrados = productos.filter(p => p.id !== id)
+    fs.writeFileSync(productosFilePath, JSON.stringify(productosFiltrados, null, " "))
+    return res.redirect('/')
+  }
 };
 
 module.exports = controller;

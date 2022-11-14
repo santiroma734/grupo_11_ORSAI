@@ -1,5 +1,5 @@
-<article class="empanada">          
-  <img src=<%=empanada.src%> alt="" />
+<a class="empanada"href="/productos/<%= empanada.id %>">
+  <img src="/imgs/productos/<%=empanada.imagen%>" alt="" />
   <div class="info-empanada">
     <div class="nombre-precio">
       <p class="nombre-producto"><%=empanada.nombre%></p>
@@ -8,4 +8,4 @@
     <button class="btn agregar-emp-1">Agregar</button>
     <button class="btn agregar-emp-2">Agregar al Pedido</button>
   </div>
-</article>
+</a>

@@ -7,16 +7,16 @@ const upload = require("../middlewares/upload");
 // Carga de la vista de Productos
 router.get("/", productosController.index);
 
-// Detalle de Producto
-router.get("/:id", productosController.detalle);
-
 // Carga de Producto
-router.get("/crear", productosController.carga);
+router.get("/crear", productosController.crear);
 router.post(
   "/crear",
-  upload.single("imagen-producto"),
+  upload.single("imagen"),
   productosController.store
-);
+  );
+
+// Detalle de Producto
+router.get("/:id", productosController.detalle);
 
 // Edición de Producto
 router.get("/:id/editar", productosController.edicion);
@@ -25,5 +25,8 @@ router.put(
   upload.single("imagen-producto"),
   productosController.save
 );
+
+// Eliminar un producto
+router.delete('/:id', productosController.delete)
 
 module.exports = router;
