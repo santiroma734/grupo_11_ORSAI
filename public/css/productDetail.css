@@ -47,7 +47,7 @@ main {
 }
 
 .input-aclaraciones {
-  min-height: 5rem;
+  min-height: 10rem;
 }
 
 .select,
@@ -178,7 +178,7 @@ label {
 
   .input-aclaraciones {
     min-height: auto;
-    height: 10rem;
+    height: 13rem;
   }
 
   .detail-div-1 {
