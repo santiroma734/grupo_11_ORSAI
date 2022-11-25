@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/styles.css" />
+
+        <title>Perfil</title>
+</head>
+
+<body>
+    <%- include('../partials/header.ejs') %>
+        <main class="container-perfil" id="perfil">
+            <form action="/users/perfil-usuario" method="get" class="form-perfil-user">
+                <p>
+                    <label for="nombre-usuario">
+
+                    </label>
+                    <input type="text" name="Nombre" id="nombre-usuario">
+                </p>
+                <p>
+                    <label for="apellido-usuario">
+
+                    </label>
+                    <input type="text" name="Apellido" id="apellido-usuario">
+                </p>
+                <p>
+                    <label for="imagen-de-usuario">
+
+                    </label>
+                    <input type="image" name="Imagen de Usuario" id="imagen-de-usuario">
+                </p>
+            </form>
+
+        </main>
+
+        <%- include('../partials/footer.ejs') %>
+</body>

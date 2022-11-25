@@ -10,17 +10,19 @@ const controller = {
 
   detalle: function (req, res) {
     const id = Number(req.params.id);
+    // console.log(productos)
     const producto = productos.find((p) => p.id === id);
+    // console.log(producto)
     res.render("productDetail", { producto });
   },
 
   crear: (req, res) => {
-    res.render("cargaDeProducto");
+    res.render("admin/cargaDeProducto");
   },
   // Create -  Method to store
   store: (req, res) => {
-    console.log(req.body)
-    console.log(req.file)
+    // console.log(req.body)
+    // console.log(req.file)
     let newProduct = {
       id: Date.now(),
       nombre: req.body.nombre,
@@ -39,7 +41,7 @@ const controller = {
   edicion: function (req, res) {
     const id = Number(req.params.id);
     const producto = productos.find((p) => p.id === id);
-    res.render("edicionDeProducto", { producto });
+    res.render("admin/edicionDeProducto", { producto });
   },
 
   save: (req, res) => {

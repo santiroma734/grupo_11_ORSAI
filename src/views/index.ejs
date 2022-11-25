@@ -30,7 +30,7 @@
         </div>
       </section>
       <section class="pizzas">
-        <h2 class="titulo-seccion">Pizzas</h2>
+        <h2 class="titulo-seccion"><a href="/productos">Pizzas</a></h2>
         <div class="productos">
           <% for (let pizza of productos.slice(2,5)) { %>
             <% if (pizza.categoria === "Pizza") { %> 
@@ -40,7 +40,7 @@
         </div>
       </section>
       <section class="empanadas">
-        <h2 class="titulo-seccion">Empanadas</h2>
+        <h2 class="titulo-seccion"><a href="/productos">Empanadas</a></h2>
         <div class="productos">
           <% let acc = 0 %>
           <% for (let empanada of productos) { %>

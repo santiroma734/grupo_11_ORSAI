@@ -95,6 +95,11 @@ label {
   width: 100%;
 }
 
+.btn-edit-link {
+  text-decoration: none;
+
+}
+
 .btn-edit {
   background-color: orange;
   margin-top: 1rem;

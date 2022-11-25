@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include ('./partials/head.ejs')%>
+<%- include ('../partials/head.ejs')%>
     <link rel="stylesheet" href="/css/productEdit.css" />
 
     <title>Edicion de producto</title>
     </head>
 
     <body>
-        <%- include('./partials/header.ejs') %>
+        <%- include('../partials/header.ejs') %>
             <main class="edicionProducto">
                 <div class="container-product-edit">
                     <div class="titulo-edicion-producto">
@@ -17,7 +17,7 @@
                         </p>
                     </div>
                     <form action="/productos/<%= producto.id %>/editar?_method=PUT" method="POST">
-                    <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
+                        <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
                         enctype="multipart/form-data"> -->
                         <div class="nombre-producto-edit">
                             <label for="nombre">Nombre del Producto</label>
@@ -57,7 +57,7 @@
                     </form>
                 </div>
             </main>
-            <%- include('./partials/footer.ejs') %>
+            <%- include('../partials/footer.ejs') %>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

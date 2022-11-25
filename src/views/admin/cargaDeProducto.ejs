@@ -3,7 +3,7 @@
 
 <head>
 
-    <%- include('./partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
 
         <link rel="stylesheet" href="/css/productEdit.css" />
 
@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <%- include('./partials/header.ejs') %>
+    <%- include('../partials/header.ejs') %>
         <main class="edicionProducto">
             <div class="container-product-edit">
                 <div class="titulo-edicion-producto">
                     <p class="titulo">Carga de Producto</p>
                 </div>
-                <form action="/productos/crear" method="POST" enctype="multipart/form-data">
+                <form action="/admin/crear-producto" method="POST" enctype="multipart/form-data">
                     <div class="nombre-producto-edit">
                         <label for="nombre">Nombre del Producto</label>
                         <input type="text" name="nombre" placeholder="Nombre" id="nombre">
@@ -25,16 +25,8 @@
                     </div>
                     <div class="descripcion-producto">
                         <label for="descripcion">Descripción</label>
-                        <input type="text" name="descripcion" placeholder="Descripción"
-                            id="descripcion">
+                        <input type="text" name="descripcion" placeholder="Descripción" id="descripcion">
                         </input>
-                    </div>
-                    <div class="imagen-producto">
-                        <label for="imagen">Imagen</label>
-                        <div class="file-select">
-                            <input type="file" name="imagen" id="imagen" accept=".jpg, .png">
-                            </input>
-                        </div>
                     </div>
                     <div class="categoria-producto">
                         <label for="categoria">Categoría</label>
@@ -46,8 +38,27 @@
                     </div>
                     <div class="precio-producto">
                         <label for="precio">Precio</label>
-                        <input type="text" name="precio" placeholder="1000" id="precio"></input>
+                        <input type="number" name="precio" placeholder="1000" id="precio"></input>
                     </div>
+                    <div class="imagen-producto">
+                        <label for="imagen">Imagen</label>
+                        <div class="file-select">
+                            <input type="file" name="imagen" id="imagen" accept=".jpg, .png">
+                            </input>
+                        </div>
+                    </div>
+                    <!-- <div class="categoria-producto">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Empanada">Empanada</option>
+                            <option value="Promocion">Promoción</option>
+                        </select>
+                    </div>
+                    <div class="precio-producto">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" placeholder="1000" id="precio"></input>
+                    </div> -->
                     <div class="botones-edicion">
                         <button class="save-changes" type="submit" id="botones-edicion">Cargar Producto</button>
                         <button class="clear-all" type="reset" id="botones-ediccion">Borrar Datos</button>
@@ -55,7 +66,7 @@
                 </form>
             </div>
         </main>
-        <%- include('./partials/footer.ejs') %>
+        <%- include('../partials/footer.ejs') %>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

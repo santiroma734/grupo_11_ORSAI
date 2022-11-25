@@ -286,6 +286,11 @@ main {
   color: #333;
 }
 
+.titulo-seccion a {
+  text-decoration: none;
+  color: #333;
+}
+
 .promocion,
 .pizza {
   display: flex;
@@ -430,19 +435,22 @@ main {
 .footer a {
   text-decoration: none;
   color: #222;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .footer li {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
   color: #222;
-  transition: all 0.4s;
   list-style: none;
 }
-.footer li :hover {
-  border-bottom: 1px solid;
-  color: white;
+.footer li a:hover {
+  /* color: white; */
+  color: #de8a01;
   cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .logo-footer {
   display: flex;
