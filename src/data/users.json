@@ -299,11 +299,98 @@
   "telefono": 1081978879
  },
  {
-  "id": 1669348324514,
-  "nombre": "Maximo",
-  "apellido": "Cozzetti",
-  "email": "cozzetti@simus.com",
-  "contrasenia": "cozzettigod",
-  "telefono": "1130409589"
+  "id": 1669689418305,
+  "nombre": "santii",
+  "apellido": "lekle",
+  "email": "s@s.com",
+  "telefono": "12312312",
+  "contrasenia": "$2a$07$oT6ziVMG3Fhv8x/CB6gozuERAJEQ.HniqDxyywH59GNOrWn2C91xy"
+ },
+ {
+  "id": 1669689888854,
+  "nombre": "asdasadasasdasdsa",
+  "apellido": "asdas",
+  "email": "adsasdsa@asdas.com",
+  "telefono": "adasdsa",
+  "contrasenia": "$2a$07$tLwx1bW8k2U1s8HsnANL1ekIngVtM32ActVGN/jyBDbxGm8eUsScy"
+ },
+ {
+  "id": 1669690007418,
+  "nombre": "asdasd",
+  "apellido": "asdas",
+  "email": "asdsa@asdsa.com",
+  "telefono": "asdasds"
+ },
+ {
+  "id": 1669690242079,
+  "nombre": "ssdf",
+  "apellido": "sdfsdfd",
+  "email": "s@a.com",
+  "telefono": "3423",
+  "contrasenia": "1234"
+ },
+ {
+  "id": 1669690340034,
+  "nombre": "as",
+  "apellido": "dsf",
+  "email": "s@s.com",
+  "telefono": "12312312",
+  "contrasenia": "123"
+ },
+ {
+  "id": 1669690396721,
+  "nombre": "aaaa",
+  "apellido": "ssss",
+  "email": "s@s",
+  "telefono": "12312",
+  "contrasenia": "123"
+ },
+ {
+  "id": 1669690461211,
+  "nombre": "s",
+  "apellido": "s",
+  "email": "s@a",
+  "telefono": "11",
+  "contrasenia": "12"
+ },
+ {
+  "id": 1669690805100,
+  "nombre": "a",
+  "apellido": "a",
+  "email": "a@a",
+  "telefono": "aaa",
+  "contrasenia": "aaa"
+ },
+ {
+  "id": 1669690878789,
+  "nombre": "a",
+  "apellido": "a",
+  "email": "aa@a",
+  "telefono": "aaa",
+  "contrasenia": "aaa"
+ },
+ {
+  "id": 1669690969672,
+  "nombre": "aaaa",
+  "apellido": "aaaaa",
+  "email": "aaa@aaaa",
+  "telefono": "aaaa",
+  "contrasenia": "aaaa"
+ },
+ {
+  "id": 1669691162299,
+  "nombre": "asas",
+  "apellido": "asa",
+  "email": "asas@asa",
+  "telefono": "asas",
+  "contrasenia": "asas"
+ },
+ {
+  "id": 1669691302236,
+  "nombre": "asd",
+  "apellido": "asd",
+  "email": "asd@asd",
+  "telefono": "asdasd",
+  "contrasenia": "asdasd"
  }
 ]

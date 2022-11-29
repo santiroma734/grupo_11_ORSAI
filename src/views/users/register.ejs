@@ -12,7 +12,7 @@
   <%- include('../partials/header.ejs') %>
 
     <div class="container-registro">
-      <form action="/users/profile" method="post" class="form-registro">
+      <form action="/users/profile" method="post" enctype="multipart/form-data" class="form-registro">
         <p>
           <label for="nombre">
             <ion-icon name="person-circle"></ion-icon> Nombre
@@ -43,6 +43,12 @@
           </label>
           <input type="password" name="contrasenia" id="contrasenia" placeholder="Escriba su contraseña" class="inputs"
             required />
+        </p>
+        <p>
+          <label for="imagen">
+            <ion-icon name="image"></ion-icon> Imagen de perfil
+          </label>
+          <input type="file" name="imagen" id="imagen" class="inputs" accept=".jpg, .png" />
         </p>
         <div class="checkboxes">
           <div class="div-checkbox">

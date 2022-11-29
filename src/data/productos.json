@@ -1,137 +1,137 @@
 [
- {
-  "id": 1,
-  "nombre": "La Scaloneta",
-  "descripcion": "Salsa de Tomate, Rúcula, Aceite de Oliva y Burrata.",
-  "imagen": "PRODUCTO-pizza-1.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1300
- },
- {
-  "id": 2,
-  "nombre": "Diego Armando Maradona",
-  "descripcion": "Mozzarella, Salsa de Tomate, Pepperoni, Champiñones, Pimiento Morrón y Aceitunas Negras.",
-  "imagen": "PRODUCTO-pizza-2.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1400
- },
- {
-  "id": 3,
-  "nombre": "Lionel Andres Messi",
-  "descripcion": "Provolone, Salsa de Tomate, Cantimpalo, Salchicha Italiana y Carne Molida.",
-  "imagen": "PRODUCTO-pizza-3.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1500
- },
- {
-  "id": 4,
-  "nombre": "Orsai",
-  "descripcion": "Salsa de Tomate, Mozzarella, Champiñones, Tomates Secos, Chorizo Colorado y Burrata",
-  "imagen": "PRODUCTO-pizza-7.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1600
- },
- {
-  "id": 5,
-  "nombre": "La Albiceleste",
-  "descripcion": "Fugazzeta Clásica: Mozzarella, Cebolla, Oregano, Pimienta y Aceitunas Negras.",
-  "imagen": "PRODUCTO-pizza-5.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1200
- },
- {
-  "id": 6,
-  "nombre": "Tango",
-  "descripcion": "Muzzarella, Salsa de Tomate, Pimientos Morrones, Aceitunas Negras, Tomates Cherry, Jamón Serrano, Semillas de Sésamo y Masa Integral.",
-  "imagen": "PRODUCTO-pizza-6.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1500
- },
- {
-  "id": 7,
-  "nombre": "Doctor Bilardo",
-  "descripcion": "Queso Parmesano, Salsa de Tomate, Rodajas de Tomates Secos y Pimienta Negra.",
-  "imagen": "PRODUCTO-pizza-4.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1300
- },
- {
-  "id": 8,
-  "nombre": "Matador Kempes",
-  "descripcion": "Salsa de Tomate, Albahaca, Tomates Cherry, Jitomate Amarillo, Aceite de Oliva y Burrata.",
-  "imagen": "PRODUCTO-pizza-8.jpg",
-  "categoria": "Pizza",
-  "esPromocion": false,
-  "precio": 1000
- },
- {
-  "id": 9,
-  "nombre": "Carne a Cuchillo",
-  "descripcion": "Carne Cortada a Cuchillo.",
-  "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Empanada",
-  "esPromocion": false,
-  "precio": 200
- },
- {
-  "id": 10,
-  "nombre": "Jamon y Queso",
-  "descripcion": "Jamon Cocido y Queso Mozzarella.",
-  "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Empanada",
-  "esPromocion": false,
-  "precio": 200
- },
- {
-  "id": 12,
-  "nombre": "Humita",
-  "descripcion": "Pasta de Maíz y Crema.",
-  "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Empanada",
-  "esPromocion": false,
-  "precio": 200
- },
- {
-  "id": 12,
-  "nombre": "Pollo",
-  "descripcion": "Pollo braseado a la cerveza.",
-  "imagen": "PRODUCTO-empanada.jpg",
-  "categoria": "Empanada",
-  "esPromocion": false,
-  "precio": 200
- },
- {
-  "id": 13,
-  "nombre": "Pizza a Elección + Bebida",
-  "descripcion": "Pizza a elección mas una cerveza o gaseosa.",
-  "imagen": "PRODUCTO-pizza-1.jpg",
-  "categoria": "Promocion",
-  "esPromocion": true,
-  "precio": 2200
- },
- {
-  "id": 14,
-  "nombre": "Docena de Empanadas + Bebida",
-  "descripcion": "Docena de empanadas a elección más una cerveza o gasesosa.",
-  "imagen": "PRODUCTO-pizza-5.jpg",
-  "categoria": "Promocion",
-  "esPromocion": true,
-  "precio": 2000
- },
- {
-  "id": 15,
-  "nombre": "Pizza + Docena de Empanadas + Bebida",
-  "descripcion": "Pizza a elección acompañado de una docena de empanadas con una cerveza o gaseosa.",
-  "imagen": "PRODUCTO-pizza-2.jpg",
-  "categoria": "Promocion",
-  "esPromocion": true,
-  "precio": 3100
- }
+  {
+    "id": 1,
+    "nombre": "La Scaloneta",
+    "descripcion": "Salsa de Tomate, Rúcula, Aceite de Oliva y Burrata.",
+    "imagen": "PRODUCTO-pizza-1.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1300
+  },
+  {
+    "id": 2,
+    "nombre": "Diego Armando Maradona",
+    "descripcion": "Mozzarella, Salsa de Tomate, Pepperoni, Champiñones, Pimiento Morrón y Aceitunas Negras.",
+    "imagen": "PRODUCTO-pizza-2.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1400
+  },
+  {
+    "id": 3,
+    "nombre": "Lionel Andres Messi",
+    "descripcion": "Provolone, Salsa de Tomate, Cantimpalo, Salchicha Italiana y Carne Molida.",
+    "imagen": "PRODUCTO-pizza-3.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1500
+  },
+  {
+    "id": 4,
+    "nombre": "Orsai",
+    "descripcion": "Salsa de Tomate, Mozzarella, Champiñones, Tomates Secos, Chorizo Colorado y Burrata",
+    "imagen": "PRODUCTO-pizza-7.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1600
+  },
+  {
+    "id": 5,
+    "nombre": "La Albiceleste",
+    "descripcion": "Fugazzeta Clásica: Mozzarella, Cebolla, Oregano, Pimienta y Aceitunas Negras.",
+    "imagen": "PRODUCTO-pizza-5.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1200
+  },
+  {
+    "id": 6,
+    "nombre": "Tango",
+    "descripcion": "Muzzarella, Salsa de Tomate, Pimientos Morrones, Aceitunas Negras, Tomates Cherry, Jamón Serrano, Semillas de Sésamo y Masa Integral.",
+    "imagen": "PRODUCTO-pizza-6.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1500
+  },
+  {
+    "id": 7,
+    "nombre": "Doctor Bilardo",
+    "descripcion": "Queso Parmesano, Salsa de Tomate, Rodajas de Tomates Secos y Pimienta Negra.",
+    "imagen": "PRODUCTO-pizza-4.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1300
+  },
+  {
+    "id": 8,
+    "nombre": "Matador Kempes",
+    "descripcion": "Salsa de Tomate, Albahaca, Tomates Cherry, Jitomate Amarillo, Aceite de Oliva y Burrata.",
+    "imagen": "PRODUCTO-pizza-8.jpg",
+    "categoria": "Pizza",
+    "esPromocion": false,
+    "precio": 1000
+  },
+  {
+    "id": 9,
+    "nombre": "Carne a Cuchillo",
+    "descripcion": "Carne Cortada a Cuchillo.",
+    "imagen": "PRODUCTO-empanada.jpg",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 10,
+    "nombre": "Jamon y Queso",
+    "descripcion": "Jamon Cocido y Queso Mozzarella.",
+    "imagen": "PRODUCTO-empanada.jpg",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 12,
+    "nombre": "Humita",
+    "descripcion": "Pasta de Maíz y Crema.",
+    "imagen": "PRODUCTO-empanada.jpg",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 12,
+    "nombre": "Pollo",
+    "descripcion": "Pollo braseado a la cerveza.",
+    "imagen": "PRODUCTO-empanada.jpg",
+    "categoria": "Empanada",
+    "esPromocion": false,
+    "precio": 200
+  },
+  {
+    "id": 13,
+    "nombre": "Pizza a Elección + Bebida",
+    "descripcion": "Pizza a elección mas una cerveza o gaseosa.",
+    "imagen": "PRODUCTO-pizza-1.jpg",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 2200
+  },
+  {
+    "id": 14,
+    "nombre": "Docena de Empanadas + Bebida",
+    "descripcion": "Docena de empanadas a elección más una cerveza o gasesosa.",
+    "imagen": "PRODUCTO-pizza-5.jpg",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 2000
+  },
+  {
+    "id": 15,
+    "nombre": "Pizza + Docena de Empanadas + Bebida",
+    "descripcion": "Pizza a elección acompañado de una docena de empanadas con una cerveza o gaseosa.",
+    "imagen": "PRODUCTO-pizza-2.jpg",
+    "categoria": "Promocion",
+    "esPromocion": true,
+    "precio": 3100
+  }
 ]

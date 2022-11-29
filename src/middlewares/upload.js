@@ -7,7 +7,6 @@ const storage = multer.diskStorage({
     cb(null, path.join(__dirname, "../../public/imgs/productos"));
   },
   filename: function (req, file, cb) {
-    // FALTA PONER LOGICA PARA QUE SE GUARDE COMO PIZZA O EMPANADA
     cb(
       null,
       "PRODUCTO" +

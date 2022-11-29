@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+// const bcrypt = require("bcryptjs");
 const usuariosFilePath = path.join(__dirname, "../data/users.json");
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, "utf-8"));
 
@@ -12,23 +13,25 @@ const controller = {
   },
   registerUser: (req, res) => {
     // proceso de registro de usuario.
-    const formData = req.body
+    console.log(req.body);
+    // const formData = req.body;
     const newUser = {
       id: Date.now(),
       nombre: req.body.nombre,
       apellido: req.body.apellido,
       email: req.body.email,
-      contrasenia: req.body.contrasenia,
-      // imagen: 
       telefono: req.body.telefono,
-    }
+      // contrasenia: bcrypt.hashSync(req.body.contrasenia, 7),
+      imagen: req.body.imagen,
+      contrasenia: req.body.contrasenia,
+    };
 
-    usuarios.push(newUser)
-    fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "))
-    return res.redirect('/')
+    usuarios.push(newUser);
+    fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "));
+    return res.redirect("/");
   },
   profile: (req, res) => {
-    res.render('users/perfilUsuario')
+    res.render("users/perfilUsuario");
   },
 };
 
