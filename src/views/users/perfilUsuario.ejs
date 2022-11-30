@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <%- include('../partials/head.ejs') %>
-        <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 
-        <title>Perfil</title>
-</head>
+    <title>Perfil</title>
+  </head>
 
-<body>
+  <body>
     <%- include('../partials/header.ejs') %>
-        <main class="container-perfil" id="perfil">
-            <form action="/users/perfil-usuario" method="get" class="form-perfil-user">
-                <p>
-                    <label for="nombre-usuario">
+    <main class="container-perfil" id="perfil">
+      <% if (usuario) { %>
+      <p><%= usuario.email %></p>
+      <% } %>
+      <img src="/imgs/usuarios/<%= usuario.imagen %>" ></img>
+    </main>
 
-                    </label>
-                    <input type="text" name="Nombre" id="nombre-usuario">
-                </p>
-                <p>
-                    <label for="apellido-usuario">
-
-                    </label>
-                    <input type="text" name="Apellido" id="apellido-usuario">
-                </p>
-                <p>
-                    <label for="imagen-de-usuario">
-
-                    </label>
-                    <input type="image" name="Imagen de Usuario" id="imagen-de-usuario">
-                </p>
-            </form>
-
-        </main>
-
-        <%- include('../partials/footer.ejs') %>
-</body>
+    <%- include('../partials/footer.ejs') %>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
