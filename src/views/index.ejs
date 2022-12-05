@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <%- include('./partials/head.ejs') %>
-  <script defer src="/js/slider.js"></script>
+  <head>
+    <%- include('./partials/head.ejs') %>
+    <script defer src="/js/slider.js"></script>
 
     <title>Orsai - Pizzas y Empanadas</title>
-</head>
+  </head>
 
-<body class="body-home">
-  <%- include('./partials/header.ejs') %>
+  <body class="body-home">
+    <%- include('./partials/header.ejs') %>
 
-  <!-- si va aca ocupa 100vw. sino tiene que ir justo antes de "promociones" -->
-  <%- include('./partials/slider.ejs') %> 
+    <!-- si va aca ocupa 100vw. sino tiene que ir justo antes de "promociones" -->
+    <%- include('./partials/slider.ejs') %>
     <main class="main-home">
       <!-- <section class="seccion-heroe">
         <ion-icon name="chevron-back-circle" class="flecha-anterior"></ion-icon>
@@ -22,40 +21,38 @@
       <section class="promociones">
         <h2 class="titulo-seccion">Promociones</h2>
         <div class="productos">
-          <% for (let pizza of productos) { %>
-            <% if (pizza.esPromocion === true) { %> 
-            <%- include('./partials/promocion.ejs', { pizza }) %>
-              <% } %>
-            <% } %>
+          <% for (let pizza of productos) { %> <% if (pizza.esPromocion ===
+          true) { %> <%- include('./partials/promocion.ejs', { pizza }) %> <% }
+          %> <% } %>
         </div>
       </section>
       <section class="pizzas">
         <h2 class="titulo-seccion"><a href="/productos">Pizzas</a></h2>
         <div class="productos">
-          <% for (let pizza of productos.slice(2,5)) { %>
-            <% if (pizza.categoria === "Pizza") { %> 
-            <%- include('./partials/pizzaIndex.ejs', { pizza }) %>
-              <% } %>
-            <% } %>
+          <% for (let pizza of productos.slice(2,5)) { %> <% if (pizza.categoria
+          === "Pizza") { %> <%- include('./partials/pizzaIndex.ejs', { pizza })
+          %> <% } %> <% } %>
         </div>
       </section>
       <section class="empanadas">
         <h2 class="titulo-seccion"><a href="/productos">Empanadas</a></h2>
         <div class="productos">
-          <% let acc = 0 %>
-          <% for (let empanada of productos) { %>
-            <% if (empanada.categoria === "Empanada" && acc != 3) { %> 
-              <%- include('./partials/empanada.ejs', {empanada}) %>
-              <% acc+= 1 %>
-            <% } %>
-          <% } %>
+          <% let acc = 0 %> <% for (let empanada of productos) { %> <% if
+          (empanada.categoria === "Empanada" && acc != 3) { %> <%-
+          include('./partials/empanada.ejs', {empanada}) %> <% acc+= 1 %> <% }
+          %> <% } %>
         </div>
       </section>
     </main>
 
     <%- include('./partials/footer.ejs') %>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/userProfile.css" />
 
     <title>Perfil</title>
   </head>
@@ -10,10 +10,36 @@
   <body>
     <%- include('../partials/header.ejs') %>
     <main class="container-perfil" id="perfil">
-      <% if (usuario) { %>
-      <p><%= usuario.email %></p>
-      <% } %>
-      <img src="/imgs/usuarios/<%= usuario.imagen %>" ></img>
+      <div class="user-info">
+        <div class="img-div">
+          <img src="/imgs/usuarios/<%= usuario.imagen %>" class="profile-img" />
+          <button class="btn btn-edit-profile btn-desktop">
+            Editar Perfil
+          </button>
+        </div>
+
+        <div class="user-info-sub">
+          <h1 class="user-title"><%= usuario.nombre %></h1>
+          <div>
+            <h2>Información de usuario</h2>
+          </div>
+          <div>
+            <p class="user-label">Nombre Completo</p>
+            <p class="user-full-name">
+              <%= usuario.nombre %> <%= usuario.apellido %>
+            </p>
+          </div>
+          <div>
+            <p class="user-label">E-mail</p>
+            <p class="user-email"><%= usuario.email %></p>
+          </div>
+          <div>
+            <p class="user-label">Teléfono</p>
+            <p class="user-email"><%= usuario.telefono %></p>
+          </div>
+          <button class="btn btn-edit-profile btn-mobile">Editar Perfil</button>
+        </div>
+      </div>
     </main>
 
     <%- include('../partials/footer.ejs') %>

@@ -23,8 +23,6 @@ const controller = {
         delete userToLogin.contrasenia;
         req.session.usuarioLogueado = userToLogin;
         // // if (req.body.remember) {} // COOKIES
-        // res.locals.isLogged = true;
-        // res.locals.loguedUser = req.session.usuarioLogueado;
         console.log("loguado");
         console.log(res.locals);
         console.log(req.session);
