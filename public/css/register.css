@@ -27,7 +27,7 @@ body {
 }
 
 /* contenedor principal */
-.container-registro {
+.container-register {
   display: flex;
   flex-direction: column;
   /* margin: 12rem 0; */
@@ -37,7 +37,7 @@ body {
 }
 
 /* form */
-.form-registro {
+.form-register {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -46,14 +46,14 @@ body {
   max-width: 400px;
 }
 
-.form-registro ion-icon {
+.form-register ion-icon {
   font-size: 2.3rem;
   /* color: #ae7e33; */
   color: #e5a030;
   margin-right: 5px;
 }
 
-.container-registro form p label {
+.container-register form p label {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
@@ -97,7 +97,7 @@ body {
   height: 2rem;
 }
 
-.enviar-registro {
+.send-register {
   margin-top: 10px;
   margin-bottom: 17px;
   height: 4.5rem;
@@ -105,24 +105,24 @@ body {
   transition: all 0.4s;
 }
 
-.enviar-registro:hover {
+.send-register:hover {
   background-color: #be8a36;
 }
 
-.cuenta-existente--login {
+.existing-account--login {
   margin: 0 auto;
   font-size: 1.6rem;
 }
 
 /* link iniciar sesion */
-.cuenta-existente--login a {
+.existing-account--login a {
   color: #36bf38;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s;
 }
 
-.cuenta-existente--login a:hover {
+.existing-account--login a:hover {
   text-decoration: none;
   color: #43e245;
 }
@@ -142,7 +142,7 @@ p,
       url("/imgs/register-background.jpg");
   }
 
-  .container-registro {
+  .container-register {
     align-items: flex-end;
     margin-right: 10vw;
   }

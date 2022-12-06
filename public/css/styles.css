@@ -121,12 +121,12 @@ header {
   font-size: 4rem;
 }
 
-.orsai-titulo ion-icon {
+.orsai-title ion-icon {
   font-size: 3rem;
 }
 
 .burger-menu,
-.carrito {
+.cart {
   font-size: 2.8rem;
 }
 
@@ -309,7 +309,7 @@ main {
   color: #666;
 }
 
-.agregar-carrito {
+.add-cart {
   display: flex;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -523,7 +523,7 @@ main {
 
 @media (min-width: 685px) {
   .burger-menu,
-  .carrito {
+  .cart {
     display: none;
   }
   header {

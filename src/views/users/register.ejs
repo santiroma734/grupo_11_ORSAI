@@ -11,8 +11,8 @@
 <body>
   <%- include('../partials/header.ejs') %>
 
-    <div class="container-registro">
-      <form action="/users/register" method="POST" enctype="multipart/form-data" class="form-registro">
+    <div class="container-register">
+      <form action="/users/register" method="POST" enctype="multipart/form-data" class="form-register">
         <p>
           <label for="nombre">
             <ion-icon name="person-circle"></ion-icon> Nombre
@@ -66,8 +66,8 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn enviar-registro">Registrarse</button>
-        <p class="cuenta-existente--login">
+        <button type="submit" class="btn send-register">Registrarse</button>
+        <p class="existing-account--login">
           ¿Ya tenés una cuenta? <a href="/users/login">Inicia sesión.</a>
         </p>
       </form>

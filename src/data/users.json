@@ -314,6 +314,7 @@
     "email": "santileklere@gmail.com",
     "telefono": "111111111",
     "contrasenia": "$2a$07$NySE2TLl/McO5drkyMTFCuJ/mKTgQwnKtvalxgL2FPCb8LgZR.2RS",
-    "imagen": "USUARIO-1669773318872.jpg"
+    "imagen": "USUARIO-1669773318872.jpg",
+    "esAdmin": true
   }
 ]
