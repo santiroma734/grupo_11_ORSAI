@@ -11,7 +11,6 @@ Colores
 /* ///////////////////// */
 
 body {
-  /* height: 100vh; */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
@@ -20,6 +19,7 @@ body {
     url("/imgs/register-background.jpg");
   background-size: cover;
   background-position-x: center;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,10 +30,10 @@ body {
 .container-register {
   display: flex;
   flex-direction: column;
-  /* margin: 12rem 0; */
-  margin-top: 10rem 0;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
+  margin-top: 10rem 0;
 }
 
 /* form */
@@ -48,7 +48,6 @@ body {
 
 .form-register ion-icon {
   font-size: 2.3rem;
-  /* color: #ae7e33; */
   color: #e5a030;
   margin-right: 5px;
 }
@@ -62,12 +61,12 @@ body {
 
 /* input fields */
 .inputs {
-  margin-bottom: 15px;
   width: 100%;
   height: 3.5rem;
   font-size: 1.6rem;
   border: none;
   border-radius: 5px;
+  margin-bottom: 15px;
   padding-left: 0.5rem;
 }
 
@@ -88,11 +87,9 @@ body {
 }
 
 .checkbox {
-  width: auto;
+  /* width: auto; */
   margin-bottom: 0;
   margin-right: 5px;
-  border: none;
-  outline: none;
   width: 2rem;
   height: 2rem;
 }
@@ -117,14 +114,14 @@ body {
 /* link iniciar sesion */
 .existing-account--login a {
   color: #36bf38;
-  font-weight: 700;
   text-decoration: none;
+  font-weight: 700;
   transition: all 0.3s;
 }
 
 .existing-account--login a:hover {
-  text-decoration: none;
   color: #43e245;
+  text-decoration: none;
 }
 
 p,

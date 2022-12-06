@@ -66,7 +66,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: none;
   margin-right: 5px;
   transition: all 0.2s;
 }
@@ -239,18 +238,18 @@ main {
   padding: 0 0;
 }
 
-.promociones img,
+.offers img,
 .pizzas img {
   width: 100%;
 }
 
-.titulo-seccion {
+.section-title {
   font-size: 2.4rem;
   margin-bottom: 20px;
   color: #333;
 }
 
-.titulo-seccion a {
+.section-title a {
   text-decoration: none;
   color: #333;
 }
@@ -576,7 +575,7 @@ main {
     display: block;
   }
 
-  .productos {
+  .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -634,7 +633,7 @@ main {
   }
 
   /* //// */
-  .promociones,
+  .offers,
   .pizzas,
   .empanadas {
     padding: 0;

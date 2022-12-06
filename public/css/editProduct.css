@@ -28,24 +28,24 @@ form {
   font-size: 1.5rem;
   width: 100%;
 }
-.titulo-edicion-producto {
+.product-edit-title {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
-.titulo-edicion-producto .nombre-producto-edit {
+.product-edit-title .product-name {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.nombre-producto-edit label {
+.product-name label {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
 }
-.nombre-producto-edit input {
+.product-name input {
   width: 100%;
   height: 3rem;
   background-color: white;
@@ -54,17 +54,17 @@ form {
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
 }
-.descripcion-producto {
+.product-description {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.descripcion-producto label {
+.product-description label {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
 }
-.descripcion-producto input {
+.product-description input {
   width: 100%;
   height: 5rem;
   background-color: white;
@@ -73,33 +73,33 @@ form {
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
 }
-.imagen-producto {
+.product-image {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.imagen-producto label {
+.product-image label {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
 }
-.imagen-producto input {
+.product-image input {
   display: flex;
   font-family: "Nunito", sans-serif;
   margin-top: 0.5rem;
   width: 100%;
 }
-.categoria-producto {
+.product-category {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.categoria-producto label {
+.product-category label {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
 }
-.categoria-producto select {
+.product-category select {
   width: 100%;
   height: 3rem;
   background-color: white;
@@ -108,17 +108,17 @@ form {
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
 }
-.precio-producto {
+.product-price {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.precio-producto label {
+.product-price label {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
 }
-.precio-producto input {
+.product-price input {
   width: 100%;
   height: 3rem;
   background-color: white;
@@ -127,12 +127,12 @@ form {
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
 }
-.botones-edicion {
+.buttons-form {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
-.botones-edicion button {
+.buttons-form button {
   display: flex;
   width: 49%;
   height: 3rem;
@@ -154,11 +154,11 @@ form {
   cursor: pointer;
   background-color: #36bf38;
 }
-.clear-all {
+.clear-form {
   background-color: crimson;
   color: white;
 }
-.clear-all:hover {
+.clear-form:hover {
   transform: scale(1.05);
   cursor: pointer;
   background-color: crimson;

@@ -18,29 +18,34 @@
         <img src="/imgs/foto-carousel-5.jpg" />
         <ion-icon name="chevron-forward-circle" class="flecha-siguiente"></ion-icon>
       </section> -->
-      <section class="promociones">
-        <h2 class="titulo-seccion">Promociones</h2>
-        <div class="productos">
-          <% for (let pizza of productos) { %> <% if (pizza.esPromocion ===
-          true) { %> <%- include('./partials/promocion.ejs', { pizza }) %> <% }
-          %> <% } %>
+      <section class="offers">
+        <h2 class="section-title">Promociones</h2>
+        <div class="products">
+          <% for (let pizza of products) { %> 
+            <% if (pizza.isOffer === true) { %> 
+                <%- include('./partials/offerCard.ejs', { pizza }) %> 
+              <% }%> 
+          <% } %>
         </div>
       </section>
       <section class="pizzas">
-        <h2 class="titulo-seccion"><a href="/productos">Pizzas</a></h2>
-        <div class="productos">
-          <% for (let pizza of productos.slice(2,5)) { %> <% if (pizza.categoria
-          === "Pizza") { %> <%- include('./partials/pizzaIndex.ejs', { pizza })
-          %> <% } %> <% } %>
+        <h2 class="section-title"><a href="/productos">Pizzas</a></h2>
+        <div class="products">
+          <% for (let pizza of products.slice(2,5)) { %> 
+            <% if (pizza.category === "Pizza") { %>
+              <%- include('./partials/pizzaIndex.ejs', { pizza })%> 
+            <% } %> 
+          <% } %>
         </div>
       </section>
       <section class="empanadas">
-        <h2 class="titulo-seccion"><a href="/productos">Empanadas</a></h2>
-        <div class="productos">
-          <% let acc = 0 %> <% for (let empanada of productos) { %> <% if
-          (empanada.categoria === "Empanada" && acc != 3) { %> <%-
-          include('./partials/empanada.ejs', {empanada}) %> <% acc+= 1 %> <% }
-          %> <% } %>
+        <h2 class="section-title"><a href="/productos">Empanadas</a></h2>
+        <div class="products">
+          <% let acc = 0 %> <% for (let empanada of products) { %> 
+            <% if (empanada.category === "Empanada" && acc != 3) { %> 
+              <%- include('./partials/empanadaCard.ejs', {empanada}) %> <% acc+= 1 %> 
+              <% } %> 
+          <% } %>
         </div>
       </section>
     </main>

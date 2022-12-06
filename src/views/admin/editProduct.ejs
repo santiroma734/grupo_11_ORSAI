@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include ('../partials/head.ejs')%>
+    <link rel="stylesheet" href="/css/editProduct.css" />
+
+    <title>Edicion de producto</title>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+      <div class="container-product-edit">
+        <div class="product-edit-title">
+          <p>Editando producto "<%= product.name %>"</p>
+        </div>
+        <form
+          action="/productos/<%= product.id %>/editar?_method=PUT"
+          method="POST"
+        >
+          <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
+                        enctype="multipart/form-data"> -->
+          <div class="product-name">
+            <label for="name">Nombre del Producto</label>
+            <input
+              type="text"
+              name="name"
+              value="<%= product.name %>"
+              id="name"
+            />
+          </div>
+          <div class="product-description">
+            <label for="description">Descripción</label>
+            <input
+              type="textarea"
+              name="description"
+              value="<%= product.description %>"
+              id="description"
+            />
+          </div>
+          <!-- <div class="product-image">
+                            <label for="image">Imagen</label>
+                            <div class="file-select">
+                                <input type="file" name="image" id="image" accept=".jpg">
+                                <input type="file" accept=".jpg">
+                                </input>
+                            </div>
+                        </div> -->
+          <div class="product-category">
+            <label for="category">Categoría</label>
+            <select name="category">
+              <option value="pizza">Pizza</option>
+              <option value="empanada">Empanada</option>
+              <option value="offer">Promoción</option>
+            </select>
+          </div>
+          <div class="product-price">
+            <label for="price">Precio</label>
+            <input
+              type="number"
+              name="price"
+              value="<%= product.price %>"
+              id="price"
+            />
+          </div>
+          <div class="buttons-form">
+            <button class="save-changes" type="submit" id="buttons">
+              Guardar Cambios
+            </button>
+            <button class="clear-form" type="reset" id="buttons">
+              Borrar Cambios
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

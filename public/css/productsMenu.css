@@ -76,7 +76,7 @@ h2 {
 }
 
 .pizza-menu:hover .descrip-producto-menu,
-.pizza-menu:hover .agregar-carrito-menu {
+.pizza-menu:hover .add-cart-menu {
   opacity: 1;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.pizza-menu:hover .img-producto {
+.pizza-menu:hover .product-img {
   transform: scale(1.075);
 }
 
@@ -99,7 +99,7 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.agregar-carrito-menu {
+.add-cart-menu {
   opacity: 0;
   height: 20%;
   position: absolute;
@@ -119,7 +119,7 @@ h2 {
   transition: all 0.4s;
 }
 
-.agregar-carrito-menu:hover {
+.add-cart-menu:hover {
   cursor: pointer;
   background-color: #36bf388e;
 }

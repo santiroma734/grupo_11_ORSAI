@@ -15,14 +15,14 @@ const controller = {
     })
     // Si el usuario existe
     if (userToLogin) {
-      const contraseniaCorrecta = bcrypt.compareSync(
-        req.body.contrasenia,
-        userToLogin.contrasenia
+      const correctPassword = bcrypt.compareSync(
+        req.body.password,
+        userToLogin.password
       )
       // Si la contraseña es correcta
-      if (contraseniaCorrecta) {
-        delete userToLogin.contrasenia
-        req.session.usuarioLogueado = userToLogin
+      if (correctPassword) {
+        delete userToLogin.password
+        req.session.loguedUser = userToLogin
         // COOKIES
         if (req.body.remember) {
           // expiración de las cookies = 7 días
@@ -36,7 +36,7 @@ const controller = {
       console.log("contraseña incorrecta")
       return res.render("users/login", {
         errors: {
-          contrasenia: {
+          password: {
             msg: "Contraseña Incorrecta",
           },
         },
@@ -60,12 +60,12 @@ const controller = {
     console.log(req)
     const newUser = {
       id: Date.now(),
-      nombre: req.body.nombre,
-      apellido: req.body.apellido,
+      name: req.body.name,
+      lastName: req.body.lastName,
       email: req.body.email,
-      telefono: req.body.telefono,
-      contrasenia: bcrypt.hashSync(req.body.contrasenia, 7),
-      imagen: req.file.filename,
+      phone: req.body.phone,
+      password: bcrypt.hashSync(req.body.password, 7),
+      image: req.file.filename,
     }
 
     usuarios.push(newUser)
@@ -73,7 +73,7 @@ const controller = {
     return res.redirect("/users/login")
   },
   profile: (req, res) => {
-    res.render("users/perfilUsuario", { usuario: req.session.usuarioLogueado })
+    res.render("users/perfilUsuario", { usuario: req.session.loguedUser })
   },
 }
 

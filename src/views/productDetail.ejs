@@ -13,14 +13,14 @@
     <main class="main-product-detail">
       <div class="container-det-producto">
         <div class="detail-div-img">
-          <img src="/imgs/productos/<%= producto.imagen %>" alt="" class="img-det-producto" />
+          <img src="/imgs/products/<%= product.image %>" alt="" class="img-det-producto" />
         </div>
         <div class="sub-container">
           <div class="detail-div-1">
             <div class="nombre-producto--descripcion">
-              <h1> <%= producto.nombre %> </h1>
+              <h1> <%= product.nombre %> </h1>
               <p class="descripcion-producto">
-                <%= producto.descripcion %>
+                <%= product.descripcion %>
               </p>
             </div>
             <div class="selects">
@@ -56,7 +56,7 @@
         </div>
         <div class="admin-btns">
           <div class="delete-btn">
-            <form action="/productos/<%= producto.id %>?_method=DELETE" method="POST">
+            <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
               <a>
                 <button class="btn btn-delete">
                   Eliminar Producto
@@ -65,7 +65,7 @@
             </form>     
           </div>
           <div class="edit-btn">
-            <a href="/productos/<%= producto.id %>/editar" class="btn-edit-link">
+            <a href="/admin/edit-product/<%= product.id %>" class="btn-edit-link">
               <button class="btn btn-edit">
                   Editar Producto
                 </button>
