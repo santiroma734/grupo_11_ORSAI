@@ -43,20 +43,20 @@ body {
   justify-self: center;
 
   width: 85vw;
-  max-width: 400px;
+  max-width: 40rem;
 }
 
 .form-register ion-icon {
   font-size: 2.3rem;
   color: #e5a030;
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .container-register form p label {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 /* input fields */
@@ -65,17 +65,17 @@ body {
   height: 3.5rem;
   font-size: 1.6rem;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
   padding-left: 0.5rem;
 }
 
 .inputs:focus {
-  outline: 1px solid #ffcc33;
+  outline: 0.1rem solid #ffcc33;
 }
 
 .checkboxes {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 .div-checkbox label {
@@ -83,20 +83,20 @@ body {
   align-items: center;
 
   font-size: 1.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .checkbox {
   /* width: auto; */
   margin-bottom: 0;
-  margin-right: 5px;
+  margin-right: 0.5rem;
   width: 2rem;
   height: 2rem;
 }
 
 .send-register {
-  margin-top: 10px;
-  margin-bottom: 17px;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
   height: 4.5rem;
   font-size: 1.6rem;
   transition: all 0.4s;
@@ -129,7 +129,7 @@ p,
   color: white;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 120rem) {
   body {
     background-image: linear-gradient(
         to left,

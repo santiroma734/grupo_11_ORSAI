@@ -36,8 +36,8 @@ h2 {
 .pizzas-menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .pizza-menu {
@@ -108,7 +108,7 @@ h2 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   background-color: rgba(150, 150, 150, 0.5);
 
@@ -124,18 +124,18 @@ h2 {
   background-color: #36bf388e;
 }
 
-@media (min-width: 685px) {
+@media (min-width: 68.5rem) {
   .pizzas-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 100rem) {
   .pizzas-menu {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 120rem) {
   main {
     padding: 0 10vw;
   }

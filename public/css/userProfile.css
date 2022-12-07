@@ -70,7 +70,7 @@ body {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 120rem) {
   .user-info {
     max-width: 65rem;
     margin: 0 auto;

@@ -43,7 +43,7 @@ body {
 .btn {
   padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background-color: #de8a01;
   color: #fff;
   font-weight: 700;
@@ -61,12 +61,12 @@ body {
   height: 2rem;
   width: 2rem;
   background-color: #d5d5d5;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
+  margin-right: 0.5rem;
   transition: all 0.2s;
 }
 
@@ -102,8 +102,8 @@ header {
   justify-content: space-between;
   padding: 2rem 5vw;
   background-color: rgb(217, 217, 205, 0.8);
-  box-shadow: rgb(50 50 93 / 2%) 0px 13px 27px -5px,
-    rgb(0 0 0 / 20%) 0px 8px 16px -8px;
+  box-shadow: rgb(50 50 93 / 2%) 0rem 1.3rem 2.7rem -0.5rem,
+    rgb(0 0 0 / 20%) 0 0.8rem 1.6rem --0.8rem;
 }
 
 /* burger menu, titulo orsai, carrito */
@@ -245,7 +245,7 @@ main {
 
 .section-title {
   font-size: 2.4rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: #333;
 }
 
@@ -259,10 +259,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   font-size: 1.6rem;
-  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
-  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
+  border-radius: 0.6rem;
   transition: all 0.4s;
   overflow: hidden;
   /* background-color: #ededed; */
@@ -325,9 +325,9 @@ main {
 
 .empanada {
   display: flex;
-  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
-  border-radius: 6px;
-  margin-bottom: 25px;
+  box-shadow: rgb(0 0 0 / 20%)  0.1rem 0.1rem 0.5rem 0;
+  border-radius: 0.6rem;
+  margin-bottom: 2.5rem;
   /* background-color: #d5d5d5; */
   /* background-color: #ededed; */
   background: linear-gradient(
@@ -376,7 +376,7 @@ main {
 }
 
 .empanada button {
-  border-radius: 0 0 6px 0;
+  border-radius: 0 0 0.6rem 0;
   height: 40%;
   width: 100%;
   align-self: flex-end;
@@ -404,7 +404,7 @@ main {
 .footer li {
   outline: none;
   text-decoration: none;
-  padding: 2px 1px 0;
+  padding: 0.2rem 0.1rem 0;
   color: #222;
   list-style: none;
 }
@@ -490,12 +490,12 @@ main {
 .footer-top,
 .footer-subtitulo {
   color: black;
-  padding: 3px 15px;
+  padding: 0.3rem 1.5rem;
   display: block;
 }
 
 .footer-hr {
-  height: 1px;
+  height: 0.1rem;
   border: none;
   background: black;
 }
@@ -504,13 +504,13 @@ main {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 76.8rem) {
   .footer__section {
     width: 50%;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 48rem) {
   .footer__section {
     width: 100%;
   }
@@ -520,7 +520,7 @@ main {
 /* Queries */
 /* ///////////////// */
 
-@media (min-width: 685px) {
+@media (min-width: 68.5rem) {
   .burger-menu,
   .cart {
     display: none;
@@ -537,9 +537,9 @@ main {
   .main-nav a {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 1.5rem;
     text-decoration: none;
     color: #333;
     transition: all 0.4s;
@@ -554,7 +554,7 @@ main {
   }
 
   .main-nav ion-icon {
-    margin-right: 3px;
+    margin-right: 0.3rem;
     font-size: 3rem;
   }
 
@@ -598,10 +598,10 @@ main {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 100rem) {
   .main-nav a {
-    font-size: 20px;
-    margin-left: 25px;
+    font-size: 2rem;
+    margin-left: 2.5rem;
   }
 
   .empanada {
@@ -622,7 +622,7 @@ main {
 }
 
 /* Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 120rem) {
   .orsai-titulo {
     font-size: 2.8rem;
   }
