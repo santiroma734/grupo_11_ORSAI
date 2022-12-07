@@ -33,7 +33,7 @@
         <div class="products">
           <% for (let pizza of products.slice(2,5)) { %> 
             <% if (pizza.category === "Pizza") { %>
-              <%- include('./partials/pizzaIndex.ejs', { pizza })%> 
+              <%- include('./partials/pizzaCard.ejs', { pizza })%> 
             <% } %> 
           <% } %>
         </div>

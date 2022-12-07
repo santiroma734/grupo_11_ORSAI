@@ -7,7 +7,7 @@ const upload = require("../middlewares/upload")
 router.get("/create-product", productsController.renderLoadProduct)
 router.post(
   "/create-product",
-  upload.single("image"),
+  upload.fields([{ name: "image", maxCount: 1 }]),
   productsController.storeNewProduct
 )
 

@@ -5,7 +5,7 @@
 
     <%- include('../partials/head.ejs') %>
 
-        <link rel="stylesheet" href="/css/productEdit.css" />
+        <link rel="stylesheet" href="/css/productManagement.css" />
 
         <title>Carga de producto</title>
 </head>
@@ -13,55 +13,43 @@
 <body>
     <%- include('../partials/header.ejs') %>
         <main class="edicionProducto">
-            <div class="container-product-edit">
-                <div class="titulo-edicion-producto">
-                    <p class="titulo">Carga de Producto</p>
+            <div class="container">
+                <div class="title-div">
+                    <p class="title">Carga de Producto</p>
                 </div>
-                <form action="/admin/crear-producto" method="POST" enctype="multipart/form-data">
-                    <div class="nombre-producto-edit">
-                        <label for="nombre">Nombre del Producto</label>
-                        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <form action="/admin/create-product" method="POST" enctype="multipart/form-data">
+                    <div class="product-name">
+                        <label for="name">Nombre del Producto</label>
+                        <input type="text" name="name" placeholder="Nombre" id="name">
                         </input>
                     </div>
-                    <div class="descripcion-producto">
-                        <label for="descripcion">Descripción</label>
-                        <input type="text" name="descripcion" placeholder="Descripción" id="descripcion">
+                    <div class="product-description">
+                        <label for="description">Descripción</label>
+                        <input type="text" name="description" placeholder="Descripción" id="description">
                         </input>
                     </div>
-                    <div class="categoria-producto">
-                        <label for="categoria">Categoría</label>
-                        <select name="categoria">
+                    <div class="product-category">
+                        <label for="category">Categoría</label>
+                        <select name="category">
                             <option value="Pizza">Pizza</option>
                             <option value="Empanada">Empanada</option>
                             <option value="Promocion">Promoción</option>
                         </select>
                     </div>
-                    <div class="precio-producto">
-                        <label for="precio">Precio</label>
-                        <input type="number" name="precio" placeholder="1000" id="precio"></input>
-                    </div>
-                    <div class="imagen-producto">
+                    <div class="product-image">
                         <label for="image">Imagen</label>
                         <div class="file-select">
                             <input type="file" name="image" id="image" accept=".jpg, .png">
                             </input>
                         </div>
                     </div>
-                    <!-- <div class="categoria-producto">
-                        <label for="categoria">Categoría</label>
-                        <select name="categoria">
-                            <option value="Pizza">Pizza</option>
-                            <option value="Empanada">Empanada</option>
-                            <option value="Promocion">Promoción</option>
-                        </select>
+                    <div class="product-price">
+                        <label for="price">Precio</label>
+                        <input type="number" name="price" placeholder="1000" id="price"></input>
                     </div>
-                    <div class="precio-producto">
-                        <label for="precio">Precio</label>
-                        <input type="number" name="precio" placeholder="1000" id="precio"></input>
-                    </div> -->
-                    <div class="botones-edicion">
+                    <div class="buttons-form">
                         <button class="save-changes" type="submit" id="botones-edicion">Cargar Producto</button>
-                        <button class="clear-all" type="reset" id="botones-ediccion">Borrar Datos</button>
+                        <button class="clear-form" type="reset" id="botones-ediccion">Borrar Datos</button>
                     </div>
                 </form>
             </div>

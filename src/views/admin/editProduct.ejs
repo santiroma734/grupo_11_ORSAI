@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <%- include ('../partials/head.ejs')%>
-    <link rel="stylesheet" href="/css/editProduct.css" />
+    <link rel="stylesheet" href="/css/productManagement.css" />
 
     <title>Edicion de producto</title>
   </head>
@@ -10,12 +10,12 @@
   <body>
     <%- include('../partials/header.ejs') %>
     <main>
-      <div class="container-product-edit">
-        <div class="product-edit-title">
+      <div class="container">
+        <div class="title-div">
           <p>Editando producto "<%= product.name %>"</p>
         </div>
         <form
-          action="/productos/<%= product.id %>/editar?_method=PUT"
+          action="/products/<%= product.id %>/edit?_method=PUT"
           method="POST"
         >
           <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
