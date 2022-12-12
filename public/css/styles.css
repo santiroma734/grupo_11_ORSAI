@@ -2,15 +2,9 @@
 Colores:
 marron: #6f2108
 rojo: #a6172d #87314e
-naranja: #fc913a
-verde: #88dba3 #3ac569  
-
-#1e81b0
-#dbdad5
-#e28743
-#eab676
-#21130d
-#873e23
+naranja: #c47f00 #de8a01 #fc913a
+verde: #5bcd3e
+grises: #222 #333 #666 #a5a5a5 #b9b9b9 #d5d5d5 #ebebeb #ece9e6
 */
 
 /* ///////////////// */
@@ -36,9 +30,9 @@ body {
   background-size: cover;
 }
 
-/* ///////////////// */
-/* Generales */
-/* ///////////////// */
+/* ///////////////////////// */
+/* Generales y reutilizables */
+/* ///////////////////////// */
 
 .btn {
   padding: 1rem;
@@ -91,9 +85,9 @@ body {
   display: block;
 }
 
-/* ///////////////// */
+/* ////// */
 /* Header */
-/* ///////////////// */
+/* ////// */
 
 header {
   width: 100%;
@@ -152,7 +146,7 @@ main {
   position: relative;
   user-select: none;
 
-  /* IN THE END */
+  /* AL FINAL */
   overflow: hidden;
 }
 
@@ -229,7 +223,6 @@ main {
 
 .dots-dot--active {
   background-color: #fc913a;
-  /* background-color: #888; */
   opacity: 1;
 }
 
@@ -268,8 +261,6 @@ main {
   border-radius: 0.6rem;
   transition: all 0.4s;
   overflow: hidden;
-  /* background-color: #ededed; */
-  /* background-color: #fff; */
   background: linear-gradient(to right, #ece9e6, #fff);
   background: linear-gradient(
     to right,
@@ -282,7 +273,6 @@ main {
 
 .promocion:hover,
 .pizza:hover {
-  /* transform: scale(1.03); */
   transform: translateY(-1rem);
   cursor: pointer;
 }
@@ -331,8 +321,6 @@ main {
   box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
   border-radius: 0.6rem;
   margin-bottom: 2.5rem;
-  /* background-color: #d5d5d5; */
-  /* background-color: #ededed; */
   background: linear-gradient(
     to right,
     rgb(255, 183, 94, 0.7),
@@ -412,7 +400,6 @@ main {
   list-style: none;
 }
 .footer li a:hover {
-  /* color: white; */
   color: #de8a01;
   cursor: pointer;
   transition: all 0.2s;
@@ -552,7 +539,6 @@ main {
 
   .main-nav a:hover {
     border-bottom: 0.5rem solid crimson;
-    /* color: white; */
     color: crimson;
   }
 

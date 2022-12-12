@@ -2,10 +2,14 @@
 Colores
 #d9d9cd
 #5b7a2f
+
+#43e245
 #36bf38
+#be8a36
+#e5a030
 #ffcc33
-#d99e40
-#ae7e33
+
+
 */
 
 /* ///////////////////// */
@@ -26,6 +30,17 @@ body {
   gap: 11rem;
 }
 
+p,
+.div-checkbox label {
+  color: white;
+}
+
+.form-register ion-icon {
+  font-size: 2.3rem;
+  color: #e5a030;
+  margin-right: 0.5rem;
+}
+
 /* contenedor principal */
 .container-register {
   display: flex;
@@ -44,12 +59,6 @@ body {
 
   width: 85vw;
   max-width: 40rem;
-}
-
-.form-register ion-icon {
-  font-size: 2.3rem;
-  color: #e5a030;
-  margin-right: 0.5rem;
 }
 
 .container-register form p label {
@@ -87,7 +96,6 @@ body {
 }
 
 .checkbox {
-  /* width: auto; */
   margin-bottom: 0;
   margin-right: 0.5rem;
   width: 2rem;
@@ -122,11 +130,6 @@ body {
 .existing-account--login a:hover {
   color: #43e245;
   text-decoration: none;
-}
-
-p,
-.div-checkbox label {
-  color: white;
 }
 
 @media (min-width: 120rem) {

@@ -73,7 +73,7 @@ const controller = {
     return res.redirect("/users/login")
   },
   profile: (req, res) => {
-    res.render("users/userProfile", { usuario: req.session.loguedUser })
+    res.render("users/userProfile", { user: req.session.loguedUser })
   },
 }
 
