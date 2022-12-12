@@ -13,7 +13,7 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/imgs/login-background.jpg");
+    url("/imgs/LOGIN-background.jpg");
   background-size: cover;
   background-position-y: center;
   height: 100vh;

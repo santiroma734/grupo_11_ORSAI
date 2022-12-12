@@ -9,7 +9,7 @@ const storage = multer.diskStorage({
   filename: function (req, file, cb) {
     cb(
       null,
-      "PRODUCTO" +
+      "PRODUCT" +
         "-" +
         req.body.category +
         "-" +

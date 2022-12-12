@@ -10,7 +10,7 @@ const controller = {
   },
   loginUser: (req, res) => {
     console.log(req.body)
-    const userToLogin = usuarios.find((user) => {
+    const userToLogin = usuarios.find(user => {
       return user.email === req.body.email
     })
     // Si el usuario existe
@@ -73,7 +73,7 @@ const controller = {
     return res.redirect("/users/login")
   },
   profile: (req, res) => {
-    res.render("users/perfilUsuario", { usuario: req.session.loguedUser })
+    res.render("users/userProfile", { usuario: req.session.loguedUser })
   },
 }
 

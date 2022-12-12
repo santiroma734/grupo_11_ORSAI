@@ -32,7 +32,7 @@ body {
 }
 
 .body-home {
-  background-image: url("../imgs/index-background.jpg");
+  background-image: url("../imgs/HOME-background.jpg");
   background-size: cover;
 }
 
@@ -176,7 +176,7 @@ main {
   object-fit: cover;
 }
 
-.slider__btn {
+.slider-btn {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -189,12 +189,12 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
-.slider__btn--left {
+.slider-btn--left {
   left: 3%;
   transform: translate(0, -50%);
 }
 
-.slider__btn--right {
+.slider-btn--right {
   right: 3%;
   transform: translate(0, -50%);
 }
@@ -207,7 +207,7 @@ main {
   display: flex;
 }
 
-.dots__dot {
+.dots-dot {
   border: none;
   background-color: #b9b9b9;
   opacity: 0.7;
@@ -218,13 +218,16 @@ main {
   cursor: pointer;
   transition: all 0.5s;
   -webkit-tap-highlight-color: transparent;
+  border: 2px solid #ebebeb;
+  box-shadow: rgba(84, 84, 84, 0.16) 0px 1px 4px,
+    rgb(84, 84, 84) 0px 0px 0px 3px;
 }
 
-.dots__dot:last-child {
+.dots-dot:last-child {
   margin: 0;
 }
 
-.dots__dot--active {
+.dots-dot--active {
   background-color: #fc913a;
   /* background-color: #888; */
   opacity: 1;
@@ -325,7 +328,7 @@ main {
 
 .empanada {
   display: flex;
-  box-shadow: rgb(0 0 0 / 20%)  0.1rem 0.1rem 0.5rem 0;
+  box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
   border-radius: 0.6rem;
   margin-bottom: 2.5rem;
   /* background-color: #d5d5d5; */
