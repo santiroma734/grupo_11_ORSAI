@@ -114,10 +114,6 @@ header {
   font-size: 4rem;
 }
 
-.orsai-title ion-icon {
-  font-size: 3rem;
-}
-
 .burger-menu,
 .cart {
   font-size: 2.8rem;
@@ -534,6 +530,11 @@ main {
 
   .orsai-title {
     padding-bottom: 0.8rem;
+    transition: all 0.3s;
+  }
+
+  .orsai-title ion-icon {
+    font-size: 3rem;
   }
 
   .main-nav a {
@@ -544,14 +545,18 @@ main {
     margin-left: 1.5rem;
     text-decoration: none;
     color: #333;
-    transition: all 0.4s;
+    transition: all 0.3s;
     padding-bottom: 1rem;
     border-bottom: 0.5rem solid rgba(220, 20, 60, 0);
   }
 
+  .orsai-title:hover {
+    color: #a6172d;
+  }
+
   .main-nav a:hover {
-    border-bottom: 0.5rem solid crimson;
-    color: crimson;
+    border-bottom: 0.5rem solid #a6172d;
+    color: #a6172d;
   }
 
   .main-nav ion-icon {

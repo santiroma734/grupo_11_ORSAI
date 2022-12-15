@@ -6,6 +6,8 @@
       <span>$<%= pizza.price %></span>
       <p><%= pizza.description %></p>
     </div>
-    <button class="btn add-cart-menu">Agregar al Pedido</button>
+    <a href="/products/<%= pizza.id %>">
+      <button class="btn add-cart-menu">Agregar al Pedido</button>
+    </a>
   </div>
 </div>
