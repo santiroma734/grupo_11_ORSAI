@@ -22,11 +22,11 @@ const controller = {
       // Si la contraseña es correcta
       if (correctPassword) {
         delete userToLogin.password
-        req.session.loguedUser = userToLogin
+        req.session.loggedUser = userToLogin
         // COOKIES
         if (req.body.remember) {
           // expiración de las cookies = 7 días
-          res.cookie("loguedUserEmail", userToLogin.email, {
+          res.cookie("Email", userToLogin.email, {
             maxAge: 1000 * 60 * 60 * 24 * 7,
           })
         }
@@ -73,7 +73,7 @@ const controller = {
     return res.redirect("/users/login")
   },
   profile: (req, res) => {
-    res.render("users/userProfile", { user: req.session.loguedUser })
+    res.render("users/userProfile", { user: req.session.loggedUser })
   },
 }
 

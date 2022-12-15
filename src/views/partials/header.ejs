@@ -15,7 +15,7 @@
     <a href="#">Quienes somos</a>
     <% if (locals.isLogged) { %>
     <a href="/users/profile">
-      <ion-icon name="person-circle"></ion-icon><%= locals.loguedUser.firstName
+      <ion-icon name="person-circle"></ion-icon><%= locals.loggedUser.firstName
       %>
     </a>
     <% } else { %>

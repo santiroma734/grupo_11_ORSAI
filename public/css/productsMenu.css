@@ -65,6 +65,7 @@ h2 {
 
 /* Price */
 .info-pizza-menu span {
+  margin-top: 1rem;
   /* color: #ffcc33; */
   color: #fc913a;
 }
@@ -125,7 +126,7 @@ h2 {
   }
 
   .info-pizza-menu {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1000px) {
@@ -134,11 +135,22 @@ h2 {
   }
 
   .info-pizza-menu {
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .name-pizza-menu {
+    margin: 0 10px;
+    margin-top: 20%;
   }
 }
 @media (min-width: 1200px) {
   main {
     padding: 0 10vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .info-pizza-menu {
+    font-size: 1.8rem;
   }
 }

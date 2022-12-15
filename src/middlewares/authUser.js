@@ -1,5 +1,5 @@
 const authUser = function (req, res, next) {
-  if (req.session.usuarioLogueado) {
+  if (req.session.loggedUser) {
     return res.redirect("/users/profile");
   }
   next();
