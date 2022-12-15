@@ -132,7 +132,7 @@ p,
   text-decoration: none;
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 1200px) {
   body {
     background-image: linear-gradient(
         to left,

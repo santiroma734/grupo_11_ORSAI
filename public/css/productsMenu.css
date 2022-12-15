@@ -1,25 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Porcentage del font-size del browser del user */
-  font-size: 62.5%;
-}
-
 body {
-  /* font-family: "Lato", sans-serif; */
-  font-family: "Nunito", sans-serif;
-  /* font-family: "Libre Baskerville", serif; */
-  /* height: 100vh; */
-  /* background-image: linear-gradient(
-    to bottom left,
-    rgb(255, 149, 78),
-    rgb(255, 196, 140)
-  ); */
   background-color: rgb(182, 158, 130);
 }
 
@@ -33,9 +12,13 @@ h2 {
   color: #333;
 }
 
+.pizzas-menu-section {
+  padding-top: 3rem;
+}
+
 .pizzas-menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   margin-bottom: 3rem;
 }
@@ -57,25 +40,41 @@ h2 {
   opacity: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  color: white;
+  color: #ebebeb;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   transition: all 0.4s;
+  padding: 0 5px;
 }
 
-.descrip-producto-menu {
+.name-pizza-menu {
+  background-image: linear-gradient(to right, #ffbe33, #ffe23a, #fff153);
+  padding: 7px 0;
+  margin: 0 20px;
+  margin-bottom: 5px;
+  margin-top: 30%;
+  color: #444;
+}
+
+/* Price */
+.info-pizza-menu span {
+  /* color: #ffcc33; */
+  color: #fc913a;
+}
+
+.descrip-product-menu {
   opacity: 0;
   transition: all 0.4s;
 }
 
-.pizza-menu:hover .descrip-producto-menu,
+.pizza-menu:hover .descrip-product-menu,
 .pizza-menu:hover .add-cart-menu {
   opacity: 1;
   cursor: pointer;
@@ -88,11 +87,6 @@ h2 {
 
 .pizza-menu:hover .product-img {
   transform: scale(1.075);
-}
-
-.empanadas .titulo-seccion {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .empanadas {
@@ -124,18 +118,26 @@ h2 {
   background-color: #36bf388e;
 }
 
-@media (min-width: 68.5rem) {
+@media (min-width: 685px) {
   .pizzas-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .info-pizza-menu {
+    font-size: 2.8rem;
+  }
 }
-@media (min-width: 100rem) {
+@media (min-width: 1000px) {
   .pizzas-menu {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .info-pizza-menu {
+    font-size: 2rem;
+  }
 }
-@media (min-width: 120rem) {
+@media (min-width: 1200px) {
   main {
     padding: 0 10vw;
   }

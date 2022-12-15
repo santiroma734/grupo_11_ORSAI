@@ -6,7 +6,7 @@
     ORSAI
     <ion-icon name="pizza-outline"></ion-icon>
   </a>
-  <a href="/pedido" class="header-link cart">
+  <a href="/order" class="header-link cart">
     <ion-icon name="cart-sharp"></ion-icon>
   </a>
   <ul class="main-nav">
@@ -14,14 +14,15 @@
     <a href="/products">Menú</a>
     <a href="#">Quienes somos</a>
     <% if (locals.isLogged) { %>
-      <a href="/users/profile">
-        <ion-icon name="person-circle"></ion-icon><%= locals.loguedUser.nombre %>
-      </a>
+    <a href="/users/profile">
+      <ion-icon name="person-circle"></ion-icon><%= locals.loguedUser.firstName
+      %>
+    </a>
     <% } else { %>
-      <a href="/users/login">
-        <ion-icon name="person-circle"></ion-icon>Ingresar
-      </a>
+    <a href="/users/login">
+      <ion-icon name="person-circle"></ion-icon>Ingresar
+    </a>
     <% } %>
-    <a href="/pedido"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
+    <a href="/order"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
   </ul>
 </header>

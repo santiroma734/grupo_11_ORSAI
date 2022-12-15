@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Tango",
-    "description": "Muzzarella, Salsa de Tomate, Pimientos Morrones, Aceitunas Negras, Tomates Cherry, Jamón Serrano, Semillas de Sésamo y Masa Integral.",
+    "description": "Muzzarella, Morrones, Aceitunas Negras, Tomates Cherry, Jamón Serrano, Semillas de Sésamo y Masa Integral.",
     "image": "PRODUCT-pizza-6.jpg",
     "category": "Pizza",
     "isOffer": false,
@@ -133,14 +133,5 @@
     "category": "Promocion",
     "isOffer": true,
     "price": 3100
-  },
-  {
-    "id": 1670378706545,
-    "name": "prueba input img",
-    "price": 31,
-    "isOffer": true,
-    "category": "Promocion",
-    "description": "aaa",
-    "image": "default.jpg"
   }
 ]

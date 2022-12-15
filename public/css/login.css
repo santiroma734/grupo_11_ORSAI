@@ -5,6 +5,15 @@ Colores
 #36bf38
 #ae7e33
 #ffcc33
+
+#35599f
+#36bf38
+#43e245 
+#ced2d6 
+#dee2e6 
+#fff
+#d34836 
+#e5a030 
 */
 
 body {
@@ -136,28 +145,20 @@ p label {
   font-size: 1.6rem;
 }
 
-.iniciar-con-f-g {
+.login-with-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: auto;
   height: auto;
 }
-.facebook {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 48%;
-  height: 5rem;
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  color: #35599f;
-  background: white;
-  box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
-  transition: all 0.4s;
+
+.login-with-div img {
+  width: 2.5rem;
+  margin-right: 5px;
 }
-.google {
+
+.login-with-btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -168,18 +169,19 @@ p label {
   font-size: 1.5rem;
   background-color: white;
   box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
-  color: #d34836;
   transition: all 0.4s;
+}
+
+.facebook {
+  color: #35599f;
+}
+.google {
+  color: #d34836;
 }
 
 .facebook:hover,
 .google:hover {
   background-color: #dee2e6;
-}
-
-.iniciar-con-f-g img {
-  width: 2.5rem;
-  margin-right: 3rem;
 }
 
 @media (min-width: 120rem) {

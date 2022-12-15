@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <%- include('../partials/head.ejs') %>
+  <head>
+    <%- include('../partials/head.ejs') %>
     <link rel="stylesheet" href="/css/login.css" />
 
     <title>Login</title>
-</head>
+  </head>
 
-<body>
-  <%- include('../partials/header.ejs') %>
+  <body>
+    <%- include('../partials/header.ejs') %>
     <main class="container-login">
       <form action="/users/login" method="POST" class="form-login">
         <p>
-          <label for="email">
-            <ion-icon name="mail"></ion-icon> Email
-          </label>
-          <input required type="email" name="email" placeholder="Email address" class="inputs" id="email" />
+          <label for="email"> <ion-icon name="mail"></ion-icon> Email </label>
+          <input
+            required
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="inputs"
+            id="email"
+          />
         </p>
         <p>
           <label for="password">
             <ion-icon name="lock-closed"></ion-icon> Contraseña
           </label>
-          <input required type="password" name="password" placeholder="Escriba la contraseña"
-            class="inputs password" id="password" />
+          <input
+            required
+            type="password"
+            name="password"
+            placeholder="Escriba la contraseña"
+            class="inputs password"
+            id="password"
+          />
         </p>
         <div class="checkboxes">
           <div class="remember-me">
             <label for="remember">
-              <input type="checkbox" name="remember" id="remember" value="remember" class="checkbox" />
+              <input
+                type="checkbox"
+                name="remember"
+                id="remember"
+                value="remember"
+                class="checkbox"
+              />
               Recuerdame
             </label>
           </div>
@@ -36,20 +52,40 @@
         </div>
         <button type="submit" class="btn submit-login">Ingresar</button>
         <p class="no-account--login">
-          Aun no tienes cuenta? <a class="register-link" href="/users/register"> Regístrate</a> </p>
-        <p class="login-with"> O inicia sesión con </p>
-        <div class="iniciar-con-f-g"><button type="" class="btn facebook" href="https://es-la.facebook.com"><img
-              src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />Facebook</button>
-
-          <button type="" class="btn google" href="https://www.google.com.ar/?hl=es"><img
-              src="https://img.icons8.com/color/48/000000/google-logo.png" /> Google</button>
-        </div>
+          Aun no tienes cuenta?
+          <a class="register-link" href="/users/register"> Regístrate</a>
         </p>
+        <p class="login-with">O inicia sesión con</p>
+        <div class="login-with-div">
+          <button
+            type=""
+            class="btn login-with-btn facebook"
+            href="https://es-la.facebook.com"
+          >
+            <img
+              src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+            />
+            Facebook
+          </button>
+          <button
+            type=""
+            class="btn login-with-btn google"
+            href="https://www.google.com.ar/?hl=es"
+          >
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" />
+            Google
+          </button>
+        </div>
       </form>
     </main>
     <%- include('../partials/footer.ejs') %>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

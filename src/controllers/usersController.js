@@ -1,8 +1,8 @@
 const path = require("path")
 const fs = require("fs")
 const bcrypt = require("bcryptjs")
-const usuariosFilePath = path.join(__dirname, "../data/users.json")
-const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, "utf-8"))
+const usersFilePath = path.join(__dirname, "../data/users.json")
+const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"))
 
 const controller = {
   login: (req, res) => {
@@ -10,7 +10,7 @@ const controller = {
   },
   loginUser: (req, res) => {
     console.log(req.body)
-    const userToLogin = usuarios.find(user => {
+    const userToLogin = users.find(user => {
       return user.email === req.body.email
     })
     // Si el usuario existe
@@ -60,7 +60,7 @@ const controller = {
     console.log(req)
     const newUser = {
       id: Date.now(),
-      name: req.body.name,
+      firstName: req.body.name,
       lastName: req.body.lastName,
       email: req.body.email,
       phone: req.body.phone,
@@ -68,8 +68,8 @@ const controller = {
       image: req.file.filename,
     }
 
-    usuarios.push(newUser)
-    fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "))
+    users.push(newUser)
+    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "))
     return res.redirect("/users/login")
   },
   profile: (req, res) => {
