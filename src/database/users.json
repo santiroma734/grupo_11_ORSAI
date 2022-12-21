@@ -1,142 +1,142 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "firstName": "Johan",
     "lastName": "Rawet",
     "email": "jrawet0@github.com",
     "password": "N4UPvbc",
     "image": "usuario1",
-    "isAdmin": true,
-    "phone": 2034348475
+    "isAdmin": 1,
+    "phone": "2034348475"
   },
   {
-    "id": 2,
+    "id": "2",
     "firstName": "Susy",
     "lastName": "McKenney",
     "email": "smckenney1@weibo.com",
     "password": "YYQZD31",
     "image": "usuario2",
-    "isAdmin": true,
-    "phone": 3765407546
+    "isAdmin": 1,
+    "phone": "3765407546"
   },
   {
-    "id": 3,
+    "id": "3",
     "firstName": "Ella",
     "lastName": "Paylor",
     "email": "epaylor2@nydailynews.com",
     "password": "0XniG2Zk9",
     "image": "usuario3",
-    "isAdmin": true,
-    "phone": 8045759175
+    "isAdmin": 1,
+    "phone": "8045759175"
   },
   {
-    "id": 4,
+    "id": "4",
     "firstName": "Ingelbert",
     "lastName": "Najera",
     "email": "inajera3@baidu.com",
     "password": "W7457XnGvHMm",
-    "isAdmin": true,
-    "phone": 2636482173
+    "isAdmin": 1,
+    "phone": "2636482173"
   },
   {
-    "id": 5,
+    "id": "5",
     "firstName": "Lorrie",
     "lastName": "Fidilis",
     "email": "lfidilis4@businessinsider.com",
     "password": "wGaDDqIG4",
     "image": "usuario5",
-    "isAdmin": false,
-    "phone": 9376639806
+    "isAdmin": 0,
+    "phone": "9376639806"
   },
   {
-    "id": 6,
+    "id": "6",
     "firstName": "Heall",
     "lastName": "Charnley",
     "email": "hcharnley5@marketwatch.com",
     "password": "sZF1Oa5J3",
     "image": "usuario6",
-    "isAdmin": false,
-    "phone": 3584638045
+    "isAdmin": 0,
+    "phone": "3584638045"
   },
   {
-    "id": 7,
+    "id": "7",
     "firstName": "Arline",
     "lastName": "Ateridge",
     "email": "aateridge6@redcross.org",
     "password": "1n3OoK",
     "image": "usuario7",
-    "isAdmin": false,
-    "phone": 5773717016
+    "isAdmin": 0,
+    "phone": "5773717016"
   },
   {
-    "id": 8,
+    "id": "8",
     "firstName": "Tiffany",
     "lastName": "Cankett",
     "email": "tcankett7@sciencedaily.com",
     "password": "40uf1U",
     "image": "usuario8",
-    "isAdmin": false,
-    "phone": 6041367869
+    "isAdmin": 0,
+    "phone": "6041367869"
   },
   {
-    "id": 9,
+    "id": "9",
     "firstName": "Katha",
     "lastName": "Climson",
     "email": "kclimson8@aol.com",
     "password": "b1JTut",
     "image": "usuario9",
-    "isAdmin": false,
-    "phone": 9115754002
+    "isAdmin": 0,
+    "phone": "9115754002"
   },
   {
-    "id": 10,
+    "id": "10",
     "firstName": "Kermie",
     "lastName": "Whyteman",
     "email": "kwhyteman9@vkontakte.ru",
     "password": "OOFN8cq",
     "image": "usuario10",
-    "isAdmin": false,
-    "phone": 4378486336
+    "isAdmin": 0,
+    "phone": "4378486336"
   },
   {
-    "id": 11,
+    "id": "11",
     "firstName": "Ag",
     "lastName": "Normandale",
     "email": "anormandalea@boston.com",
     "password": "x63pxh7",
     "image": "usuario11",
-    "isAdmin": false,
-    "phone": 2716324911
+    "isAdmin": 0,
+    "phone": "2716324911"
   },
   {
-    "id": 12,
+    "id": "12",
     "firstName": "Carmela",
     "lastName": "Martinie",
     "email": "cmartinieb@ucla.edu",
     "password": "QtIwo2h7d",
     "image": "usuario12",
-    "isAdmin": false,
-    "phone": 3568645351
+    "isAdmin": 0,
+    "phone": "3568645351"
   },
   {
-    "id": 13,
+    "id": "13",
     "firstName": "Teodora",
     "lastName": "Hovee",
     "email": "thoveec@omniture.com",
     "password": "mpsi7ZoB8HVu",
     "image": "usuario13",
-    "isAdmin": false,
-    "phone": 2355711457
+    "isAdmin": 0,
+    "phone": "2355711457"
   },
   {
-    "id": 14,
+    "id": "14",
     "firstName": "Fedora",
     "lastName": "Bitterton",
     "email": "fbittertond@foxnews.com",
     "password": "TRoqn1tgp",
     "image": "usuario14",
-    "isAdmin": false,
-    "phone": 9767161737
+    "isAdmin": 0,
+    "phone": "9767161737"
   },
   {
     "id": 15,
@@ -145,161 +145,161 @@
     "email": "dsayere@wsj.com",
     "password": "Q7V1rri70",
     "image": "usuario15",
-    "isAdmin": false,
-    "phone": 6899299374
+    "isAdmin": 0,
+    "phone": "6899299374"
   },
   {
-    "id": 16,
+    "id": "16",
     "firstName": "Winn",
     "lastName": "Teager",
     "email": "wteagerf@bluehost.com",
     "password": "spO6u3GV3",
     "image": "usuario16",
-    "isAdmin": false,
-    "phone": 1839576258
+    "isAdmin": 0,
+    "phone": "1839576258"
   },
   {
-    "id": 17,
+    "id": "17",
     "firstName": "Dicky",
     "lastName": "Rzehor",
     "email": "drzehorg@quantcast.com",
     "password": "O4azRlbBf",
     "image": "usuario17",
-    "isAdmin": false,
-    "phone": 8193886982
+    "isAdmin": 0,
+    "phone": "8193886982"
   },
   {
-    "id": 18,
+    "id": "18",
     "firstName": "Rosie",
     "lastName": "Braganza",
     "email": "rbraganzah@hao123.com",
     "password": "YwIOVeyMdL",
     "image": "usuario18",
-    "isAdmin": false,
-    "phone": 9982958680
+    "isAdmin": 0,
+    "phone": "9982958680"
   },
   {
-    "id": 19,
+    "id": "19",
     "firstName": "Mei",
     "lastName": "Ivanishchev",
     "email": "mivanishchevi@addthis.com",
     "password": "NmRhgBpt",
     "image": "usuario19",
-    "isAdmin": false,
-    "phone": 9888283425
+    "isAdmin": 0,
+    "phone": "9888283425"
   },
   {
-    "id": 20,
+    "id": "20",
     "firstName": "Rianon",
     "lastName": "Hixley",
     "email": "rhixleyj@ftc.gov",
     "password": "N7c6ZrHe",
     "image": "usuario20",
-    "isAdmin": false,
-    "phone": 756900949
+    "isAdmin": 0,
+    "phone": "756900949"
   },
   {
-    "id": 21,
+    "id": "21",
     "firstName": "Cirilo",
     "lastName": "Reynoollds",
     "email": "creynoolldsk@plala.or.jp",
     "password": "oMizSBZUjh1",
     "image": "usuario21",
-    "isAdmin": false,
-    "phone": 8521838532
+    "isAdmin": 0,
+    "phone": "8521838532"
   },
   {
-    "id": 22,
+    "id": "22",
     "firstName": "Filberto",
     "lastName": "Oppie",
     "email": "foppiel@google.pl",
     "password": "4KMtDMEvX",
     "image": "usuario22",
-    "isAdmin": false,
-    "phone": 5923297625
+    "isAdmin": 0,
+    "phone": "5923297625"
   },
   {
-    "id": 23,
+    "id": "23",
     "firstName": "Briggs",
     "lastName": "Nuton",
     "email": "bnutonm@ucsd.edu",
     "password": "JS8NBl",
     "image": "usuario23",
-    "isAdmin": false,
-    "phone": 7747660640
+    "isAdmin": 0,
+    "phone": "7747660640"
   },
   {
-    "id": 24,
+    "id": "24",
     "firstName": "Lonnie",
     "lastName": "Pauls",
     "email": "lpaulsn@comsenz.com",
     "password": "OHsPzkVQK",
     "image": "usuario24",
-    "isAdmin": false,
-    "phone": 7914831752
+    "isAdmin": 0,
+    "phone": "7914831752"
   },
   {
-    "id": 25,
+    "id": "25",
     "firstName": "Claiborne",
     "lastName": "Wildsmith",
     "email": "cwildsmitho@sakura.ne.jp",
     "password": "Gjpswn8",
     "image": "usuario25",
-    "isAdmin": false,
-    "phone": 3323407254
+    "isAdmin": 0,
+    "phone": "3323407254"
   },
   {
-    "id": 26,
+    "id": "26",
     "firstName": "Amalita",
     "lastName": "Clayhill",
     "email": "aclayhillp@washington.edu",
     "password": "a2ydiID7v2",
     "image": "usuario26",
-    "isAdmin": false,
-    "phone": 6739246918
+    "isAdmin": 0,
+    "phone": "6739246918"
   },
   {
-    "id": 27,
+    "id": "27",
     "firstName": "Dael",
     "lastName": "Cuffley",
     "email": "dcuffleyq@issuu.com",
     "password": "iHDOcNUSQ",
     "image": "usuario27",
-    "isAdmin": false,
-    "phone": 6187101559
+    "isAdmin": 0,
+    "phone": "6187101559"
   },
   {
-    "id": 28,
+    "id": "28",
     "firstName": "Pate",
     "lastName": "Wareing",
     "email": "pwareingr@arizona.edu",
     "password": "N4NSZL9yMp",
     "image": "usuario28",
-    "isAdmin": false,
-    "phone": 1006696947
+    "isAdmin": 0,
+    "phone": " 1006696947"
   },
   {
-    "id": 29,
+    "id": "29",
     "firstName": "Clarissa",
     "lastName": "Richford",
     "email": "crichfords@google.cn",
     "password": "cx4Yw1DDmq",
     "image": "usuario29",
-    "isAdmin": false,
-    "phone": 9512893758
+    "isAdmin": 0,
+    "phone": "9512893758"
   },
   {
-    "id": 30,
+    "id": "30",
     "firstName": "Janine",
     "lastName": "Albion",
     "email": "jalbiont@hugedomains.com",
     "password": "ad6mbv",
     "image": "usuario30",
-    "isAdmin": false,
-    "phone": 1081978879
+    "isAdmin": 0,
+    "phone": "1081978879"
   },
   {
-    "id": 1669768692701,
+    "id": "1669768692701",
     "firstName": "Maximo",
     "lastName": "Cozzetti",
     "email": "maxcozetti@gmail.com",
@@ -308,13 +308,13 @@
     "image": "Luis_Alberto_Spinetta_en_1976.jpg"
   },
   {
-    "id": 1669773319029,
+    "id": "1669773319029",
     "firstName": "Santi",
     "lastName": "Leklere",
     "email": "santileklere@gmail.com",
     "phone": "111111111",
     "password": "$2a$07$NySE2TLl/McO5drkyMTFCuJ/mKTgQwnKtvalxgL2FPCb8LgZR.2RS",
     "image": "USUARIO-1669773318872.jpg",
-    "isAdmin": true
+    "isAdmin": 1
   }
 ]

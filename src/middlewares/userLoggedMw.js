@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const usuariosFilePath = path.join(__dirname, "../data/users.json");
+const usuariosFilePath = path.join(__dirname, "../database/users.json");
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, "utf-8"));
 
 module.exports = function userLoggedMw(req, res, next) {
