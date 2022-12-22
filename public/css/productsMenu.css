@@ -120,7 +120,7 @@ h2 {
 
 .add-cart-menu:hover {
   cursor: pointer;
-  background-color: #36bf388e;
+  background-color: rgb(76, 174, 79, 0.7);
 }
 
 @media (min-width: 685px) {

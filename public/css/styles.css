@@ -66,7 +66,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 .checkbox:after {
@@ -629,8 +629,10 @@ main {
   } */
 
   .main-nav a:hover {
-    border-bottom: 0.5rem solid #a6172d;
-    color: #a6172d;
+    /* border-bottom: 0.5rem solid #a6172d;
+    color: #a6172d; */
+    border-bottom: 0.5rem solid #c94617;
+    color: #c94617;
   }
 
   .main-nav ion-icon {
