@@ -19,17 +19,17 @@
                 </div>
                 <form action="/admin/create-product" method="POST" enctype="multipart/form-data">
                     <div class="product-name">
-                        <label for="name">Nombre del Producto</label>
+                        <label for="name"><ion-icon name="information-circle"></ion-icon>Nombre del Producto</label>
                         <input type="text" name="name" placeholder="Nombre" id="name">
                         </input>
                     </div>
                     <div class="product-description">
-                        <label for="description">Descripción</label>
+                        <label for="description"><ion-icon name="document-text"></ion-icon>Descripción</label>
                         <input type="text" name="description" placeholder="Descripción" id="description">
                         </input>
                     </div>
                     <div class="product-category">
-                        <label for="category">Categoría</label>
+                        <label for="category"><ion-icon name="pizza"></ion-icon>Categoría</label>
                         <select name="category">
                             <option value="Pizza">Pizza</option>
                             <option value="Empanada">Empanada</option>
@@ -37,18 +37,18 @@
                         </select>
                     </div>
                     <div class="product-image">
-                        <label for="image">Imagen</label>
+                        <label for="image"><ion-icon name="image"></ion-icon>Imagen</label>
                         <div class="file-select">
                             <input type="file" name="image" id="image" accept=".jpg, .png">
                             </input>
                         </div>
                     </div>
                     <div class="product-price">
-                        <label for="price">Precio</label>
+                        <label for="price"><ion-icon name="pricetag"></ion-icon>Precio</label>
                         <input type="number" name="price" placeholder="1000" id="price"></input>
                     </div>
                     <div class="buttons-form">
-                        <button class="save-changes" type="submit" id="botones-edicion">Cargar Producto</button>
+                        <button class="save-changes" type="submit" id="botones-edicion">Cargar</button>
                         <button class="clear-form" type="reset" id="botones-ediccion">Borrar Datos</button>
                     </div>
                 </form>

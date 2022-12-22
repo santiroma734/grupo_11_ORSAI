@@ -4,6 +4,14 @@ body {
   height: 100vh;
   background-color: rgb(182, 158, 130);
   font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/imgs/LOAD_PRODUCT-background.jpg");
+  background-size: cover;
+  background-position-x: center;
 }
 main {
   display: flex;
@@ -34,132 +42,112 @@ form {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  color: #ebebeb;
 }
 .title-div .product-name {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.product-name label {
+
+label {
   display: flex;
-  align-items: flex-start;
-  font-weight: bold;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #ebebeb;
 }
-.product-name input {
+
+label ion-icon {
+  margin-right: 5px;
+  color: #fc913a;
+}
+
+input,
+select {
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   background-color: white;
   border-radius: 0.5rem;
   border: none;
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
 }
+
+input:focus {
+  outline: 0.1rem solid #fc913a;
+}
+
 .product-description {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.product-description label {
-  display: flex;
-  align-items: flex-start;
-  font-weight: bold;
-}
-.product-description input {
-  width: 100%;
-  height: 3rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  border: none;
-  padding-left: 0.5rem;
-  font-family: "Nunito", sans-serif;
-}
+
 .product-image {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.product-image label {
-  display: flex;
-  align-items: flex-start;
-  font-weight: bold;
-}
+
 .product-image input {
-  display: flex;
-  font-family: "Nunito", sans-serif;
+  padding-left: unset;
+  background-color: unset;
   margin-top: 0.5rem;
-  width: 100%;
+  color: #ebebeb;
 }
 .product-category {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.product-category label {
-  display: flex;
-  align-items: flex-start;
-  font-weight: bold;
-}
-.product-category select {
-  width: 100%;
-  height: 3rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  border: none;
-  padding-left: 0.5rem;
-  font-family: "Nunito", sans-serif;
-}
+
 .product-price {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-}
-.product-price label {
-  display: flex;
-  align-items: flex-start;
-  font-weight: bold;
-}
-.product-price input {
-  width: 100%;
-  height: 3rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  border: none;
-  padding-left: 0.5rem;
-  font-family: "Nunito", sans-serif;
 }
 .buttons-form {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
+
 .buttons-form button {
-  display: flex;
   width: 49%;
-  height: 3rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0;
+  /* box-shadow: rgb(0 0 0 / 20%) 0.1rem 0.1rem 0.5rem 0; */
   border-radius: 0.5rem;
   border: none;
   font-family: "Nunito", sans-serif;
   transition: all 0.4s;
 }
 .save-changes {
-  background-color: #36bf38;
+  background-color: #8acd3e;
+  background-color: #fc913a;
+  /* #43e245 #36bf38 */
   color: white;
-}
-.save-changes:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  background-color: #36bf38;
 }
 .clear-form {
   background-color: crimson;
+  background-color: #626262;
+
   color: white;
 }
-.clear-form:hover {
-  transform: scale(1.05);
+
+.save-changes:hover {
+  /* transform: scale(1.05); */
   cursor: pointer;
-  background-color: crimson;
+  background-color: #7bbf2d;
+  background-color: #d8782a;
+}
+.clear-form:hover {
+  /* transform: scale(1.05); */
+  cursor: pointer;
+  /* background-color: rgb(202, 33, 67); */
+  background-color: #555;
 }
