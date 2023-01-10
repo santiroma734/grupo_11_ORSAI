@@ -5,49 +5,40 @@ module.exports = (sequelize, dataTypes) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    firstName: {
+    name: {
       type: dataTypes.STRING,
       allowNull: false,
     },
-    lastName: {
+    description: {
       type: dataTypes.STRING,
-      allowNull: false,
-    },
-    email: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
-    password: {
-      type: dataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     image: {
       type: dataTypes.STRING,
       allowNull: true,
     },
-    phone: {
-      type: dataTypes.STRING,
+    price: {
+      type: dataTypes.INTEGER,
       allowNull: true,
     },
-    idUserCategory: {
+    idCategory: {
       type: dataTypes.INTEGER,
       allowNull: false,
       foreignKey: true,
     },
   };
-
   const config = {
-    tableName: "users",
+    tableName: "products",
     timestamps: false,
   };
-  const User = sequelize.define("User", columns, config);
+  const Product = sequelize.define("Product", columns, config);
 
-  User.associate = (models) => {
-    User.belongsTo(models.UserCategory, {
+  Product.associate = (models) => {
+    Product.belongsTo(models.Category, {
       as: "categories",
-      foreignKey: "id_user_category",
+      foreignKey: "id_category",
     });
   };
 
-  return User;
+  return Product;
 };

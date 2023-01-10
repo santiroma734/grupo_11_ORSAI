@@ -3,6 +3,9 @@ const fs = require("fs");
 const bcrypt = require("bcryptjs");
 const usersFilePath = path.join(__dirname, "../database/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+const db = require("../database/models");
+
+const Users = db.User;
 
 const controller = {
   login: (req, res) => {
@@ -10,8 +13,11 @@ const controller = {
   },
   loginUser: (req, res) => {
     console.log(req.body);
-    const userToLogin = users.find((user) => {
-      return user.email === req.body.email;
+    // const userToLogin = users.find((user) => {
+    //   return user.email === req.body.email;
+    // });
+    const userToLogin = Users.findOne({
+      where: { email: req.body.email },
     });
     // Si el usuario existe
     if (userToLogin) {
