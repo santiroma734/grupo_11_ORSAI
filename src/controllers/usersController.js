@@ -73,7 +73,10 @@ const controller = {
       phone: req.body.phone,
       password: bcrypt.hashSync(req.body.password, 7),
       image: req.file.filename,
+      idUserCategory: 2,
     };
+    console.log(newUser);
+    Users.create(newUser);
 
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
