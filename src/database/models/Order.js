@@ -44,4 +44,6 @@ module.exports = (sequelize, dataTypes) => {
       foreignKey: "id_product",
     });
   };
+
+  return Order;
 };

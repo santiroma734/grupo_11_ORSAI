@@ -11,14 +11,15 @@ const controller = {
   login: (req, res) => {
     res.render("users/login");
   },
-  loginUser: (req, res) => {
+  loginUser: async (req, res) => {
     console.log(req.body);
     // const userToLogin = users.find((user) => {
     //   return user.email === req.body.email;
     // });
-    const userToLogin = Users.findOne({
+    const userToLogin = await Users.findOne({
       where: { email: req.body.email },
     });
+    console.log(userToLogin);
     // Si el usuario existe
     if (userToLogin) {
       const correctPassword = bcrypt.compareSync(

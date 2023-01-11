@@ -8,10 +8,12 @@ module.exports = (sequelize, dataTypes) => {
     firstName: {
       type: dataTypes.STRING,
       allowNull: false,
+      field: "first_name",
     },
     lastName: {
       type: dataTypes.STRING,
       allowNull: false,
+      field: "first_name",
     },
     email: {
       type: dataTypes.STRING,
@@ -33,6 +35,7 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.INTEGER,
       allowNull: false,
       foreignKey: true,
+      field: "id_user_category",
     },
   };
 
