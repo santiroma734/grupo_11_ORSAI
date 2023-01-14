@@ -15,7 +15,7 @@
         <h2 class="section-title highlight"><p>Pizzas</p></h2>
         <div class="pizzas-menu">
           <% for (let pizza of products) { %> 
-            <% if (pizza.category === "Pizza"){ %> 
+            <% if (pizza.category.name === "Pizza"){ %> 
               <%- include('./partials/pizzaMenu.ejs', {pizza}) %> 
             <% } %> 
           <% } %>
@@ -25,7 +25,7 @@
         <h2 class="section-title highlight"><p>Empanadas</p></h2>
         <div class="products">
           <% for (let empanada of products) { %> 
-            <% if (empanada.category === "Empanada") { %> 
+            <% if (empanada.category.name === "Empanada") { %> 
               <%- include('./partials/empanadaCard.ejs',{empanada}) %> 
             <% } %> 
           <% } %>

@@ -22,7 +22,7 @@
         <h2 class="section-title highlight"><p>Promociones</p></h2>
         <div class="products">
           <% for (let pizza of products) { %> 
-            <% if (pizza.isOffer === true) { %> 
+            <% if (pizza.category.name === "Offer") { %> 
               <%- include('./partials/offerCard.ejs', { pizza }) %> 
             <% }%>
           <% }%>
@@ -34,7 +34,7 @@
         </h2>
         <div class="products">
           <% for (let pizza of products.slice(2,5)) { %> 
-            <% if (pizza.category === "Pizza") { %>
+            <% if (pizza.category.name === "Pizza") { %>
               <%- include('./partials/pizzaCard.ejs', { pizza })%>
             <% } %> 
           <% } %>
@@ -47,7 +47,7 @@
         <div class="products">
           <% let acc = 0 %>
           <% for (let empanada of products) { %>
-            <% if (empanada.category === "Empanada" && acc != 3) { %>
+            <% if (empanada.category.name === "Empanada" && acc != 3) { %>
               <%- include('./partials/empanadaCard.ejs', {empanada}) %> 
               <% acc+= 1 %>
             <% } %>

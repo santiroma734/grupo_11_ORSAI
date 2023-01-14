@@ -25,6 +25,7 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.INTEGER,
       allowNull: false,
       foreignKey: true,
+      field: "id_category",
     },
   };
   const config = {
@@ -35,7 +36,7 @@ module.exports = (sequelize, dataTypes) => {
 
   Product.associate = (models) => {
     Product.belongsTo(models.Category, {
-      as: "categories",
+      as: "category",
       foreignKey: "id_category",
     });
   };

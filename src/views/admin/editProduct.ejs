@@ -15,7 +15,7 @@
           <p>Editando producto "<%= product.name %>"</p>
         </div>
         <form
-          action="/products/<%= product.id %>/edit?_method=PUT"
+          action="/admin/edit-product/<%= product.id %>?_method=PUT"
           method="POST"
         >
           <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
@@ -49,9 +49,9 @@
           <div class="product-category">
             <label for="category">Categoría</label>
             <select name="category">
-              <option value="pizza">Pizza</option>
-              <option value="empanada">Empanada</option>
-              <option value="offer">Promoción</option>
+              <option value="Pizza" <%= product.category.name === "Pizza" && "selected"%>>Pizza</option>
+              <option value="Empanada" <%= product.category.name === "Empanada" && "selected"%>>Empanada</option>
+              <option value="Offer" <%= product.category.name === "Offer" && "selected"%>>Promoción</option>
             </select>
           </div>
           <div class="product-price">

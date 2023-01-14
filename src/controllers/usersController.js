@@ -1,8 +1,8 @@
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 const bcrypt = require("bcryptjs");
-const usersFilePath = path.join(__dirname, "../database/users.json");
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+// const usersFilePath = path.join(__dirname, "../database/users.json");
+// const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const db = require("../database/models");
 
 const Users = db.User;
@@ -78,9 +78,9 @@ const controller = {
     console.log(newUser);
     Users.create(newUser);
 
-    users.push(newUser);
-    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
-    return res.redirect("/users/login");
+    // users.push(newUser);
+    // fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
+    // return res.redirect("/users/login");
   },
   profile: (req, res) => {
     res.render("users/userProfile", { user: req.session.loggedUser });
