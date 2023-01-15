@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const productsController = require("../controllers/productsController");
+const authAdmin = require("../middlewares/authAdmin");
 const upload = require("../middlewares/upload");
+
+// admin auth middleware
+router.use(authAdmin);
 
 // Carga de Producto
 router.get("/create-product", productsController.renderLoadProduct);

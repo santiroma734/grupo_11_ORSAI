@@ -26,6 +26,11 @@ form {
   flex-direction: column;
   width: 100%;
 }
+
+.logout-btn-form {
+  width: unset;
+}
+
 .container {
   display: flex;
   flex-direction: column;

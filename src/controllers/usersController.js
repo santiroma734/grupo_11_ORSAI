@@ -12,14 +12,15 @@ const controller = {
     res.render("users/login");
   },
   loginUser: async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     // const userToLogin = users.find((user) => {
     //   return user.email === req.body.email;
     // });
     const userToLogin = await Users.findOne({
       where: { email: req.body.email },
+      include: { model: db.UserCategory, as: "category" },
     });
-    console.log(userToLogin);
+    // console.log(userToLogin);
     // Si el usuario existe
     if (userToLogin) {
       const correctPassword = bcrypt.compareSync(
@@ -37,10 +38,10 @@ const controller = {
             maxAge: 1000 * 60 * 60 * 24 * 7,
           });
         }
-        console.log("logueado");
+        console.log("Usuario logueado");
         return res.redirect("/users/profile");
       }
-      console.log("contraseña incorrecta");
+      console.log("Contraseña Incorrecta");
       return res.render("users/login", {
         errors: {
           password: {
@@ -64,7 +65,7 @@ const controller = {
   },
   registerUser: (req, res) => {
     // proceso de registro de usuario.
-    console.log(req);
+    // console.log(req);
     const newUser = {
       id: Date.now(),
       firstName: req.body.name,
@@ -75,7 +76,7 @@ const controller = {
       image: req.file.filename,
       idUserCategory: 2,
     };
-    console.log(newUser);
+    // console.log(newUser);
     Users.create(newUser);
 
     // users.push(newUser);
@@ -84,6 +85,11 @@ const controller = {
   },
   profile: (req, res) => {
     res.render("users/userProfile", { user: req.session.loggedUser });
+  },
+  logoutUser: (req, res) => {
+    res.clearCookie("Email");
+    req.session.destroy();
+    res.redirect("/");
   },
 };
 

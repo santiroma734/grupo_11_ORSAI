@@ -605,7 +605,8 @@ main {
     font-size: 3rem;
   }
 
-  .main-nav a {
+  .main-nav a,
+  .main-nav .logout-btn {
     display: flex;
     align-items: center;
     font-size: 1.6rem;
@@ -618,13 +619,22 @@ main {
     border-bottom: 0.5rem solid rgba(220, 20, 60, 0);
   }
 
+  .logout-btn {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    border: none;
+    background-color: transparent;
+  }
+
   /* .orsai-title:hover {
     color: #a6172d;
   } */
 
-  .main-nav a:hover {
+  .main-nav a:hover,
+  .main-nav .logout-btn:hover {
     /* border-bottom: 0.5rem solid #a6172d;
     color: #a6172d; */
+    cursor: pointer;
     border-bottom: 0.5rem solid #c94617;
     color: #c94617;
   }
@@ -684,7 +694,8 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .main-nav a {
+  .main-nav a,
+  .main-nav .logout-btn {
     font-size: 2rem;
     margin-left: 2.5rem;
   }

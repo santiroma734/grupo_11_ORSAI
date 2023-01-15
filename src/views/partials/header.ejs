@@ -10,19 +10,24 @@
     <ion-icon name="cart-sharp"></ion-icon>
   </a>
   <ul class="main-nav">
+    <% if (locals.loggedUser?.category.name === "admin") { %> 
     <a href="/admin/create-product">Crear Producto</a>
+    <% } %> 
     <a href="/products">Menú</a>
-    <a href="#">Quienes somos</a>
+    <!-- <a href="#">Quienes somos</a> -->
     <% if (locals.isLogged) { %>
-    <a href="/users/profile">
-      <ion-icon name="person-circle"></ion-icon><%= locals.loggedUser.firstName
+      <a href="/users/profile">
+        <ion-icon name="person-circle"></ion-icon><%= locals.loggedUser.firstName
       %>
     </a>
+    <form action="/users/logout" method="POST" class="logout-btn-form">
+      <button type="submit" class="logout-btn"><ion-icon name="log-out"></ion-icon>Logout</button>
+    </form>
     <% } else { %>
-    <a href="/users/login">
-      <ion-icon name="person-circle"></ion-icon>Ingresar
-    </a>
-    <% } %>
-    <a href="/order"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
-  </ul>
+      <a href="/users/login">
+        <ion-icon name="person-circle"></ion-icon>Ingresar
+      </a>
+      <% } %>
+      <a href="/order"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
+    </ul>
 </header>

@@ -47,7 +47,7 @@ module.exports = (sequelize, dataTypes) => {
 
   User.associate = (models) => {
     User.belongsTo(models.UserCategory, {
-      as: "categories",
+      as: "category",
       foreignKey: "id_user_category",
     });
   };
