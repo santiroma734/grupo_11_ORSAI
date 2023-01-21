@@ -10,19 +10,22 @@
     <ion-icon name="cart-sharp"></ion-icon>
   </a>
   <ul class="main-nav">
-    <a href="/admin/create-product">Crear Producto</a>
-    <a href="/products">Menú</a>
-    <a href="#">Quienes somos</a>
+    <a href="/admin/create-product" class="header-link">Crear Producto</a>
+    <a href="/products" class="header-link">Menú</a>
+    <a href="#" class="header-link">Quienes somos</a>
     <% if (locals.isLogged) { %>
-    <a href="/users/profile">
+    <a href="/users/profile" class="header-link">
       <ion-icon name="person-circle"></ion-icon><%= locals.loggedUser.firstName
       %>
     </a>
     <% } else { %>
-    <a href="/users/login">
+    <a href="/users/login" class="header-link">
       <ion-icon name="person-circle"></ion-icon>Ingresar
     </a>
     <% } %>
-    <a href="/order"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
+    <a href="/order" class="header-link"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
   </ul>
+  <a href="#" class="header-link close-nav">
+    <ion-icon name="close-sharp"></ion-icon>
+  </a>
 </header>
