@@ -17,9 +17,13 @@
         </div>
         <div class="sub-container">
           <div class="detail-div-1">
-            <div class="nombre-producto--descripcion">
-              <h1> <%= product.name %> </h1>
-              <p class="descripcion-producto">
+            <div class="name-price-description">
+              <h1 class="title"><%= product.name %></h1>
+              <div class="price highlight">
+
+                <h1 >$<%= product.price %></h1>
+              </div>
+              <p class="description">
                 <%= product.description %>
               </p>
             </div>
@@ -54,24 +58,26 @@
             </div>
           </div>
         </div>
-        <div class="admin-btns">
-          <div class="delete-btn">
-            <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
-              <a>
-                <button class="btn btn-delete">
-                  Eliminar Producto
-                </button>
-              </a>
-            </form>     
+        <% if (locals.loggedUser.category.name === "admin") { %> 
+          <div class="admin-btns">
+            <div class="delete-btn">
+              <form action="/admin/delete-product/<%= product.id %>?_method=DELETE" method="POST">
+                <a>
+                  <button class="btn btn-delete">
+                    Eliminar Producto
+                  </button>
+                </a>
+              </form>     
+            </div>
+            <div class="edit-btn">
+              <a href="/admin/edit-product/<%= product.id %>" class="btn-edit-link">
+                <button class="btn btn-edit">
+                    Editar Producto
+                  </button>
+                </a>
+            </div>
           </div>
-          <div class="edit-btn">
-            <a href="/admin/edit-product/<%= product.id %>" class="btn-edit-link">
-              <button class="btn btn-edit">
-                  Editar Producto
-                </button>
-              </a>
-          </div>
-        </div>
+        <% } %> 
       </div>
     </main>
     <%- include('./partials/footer.ejs') %>

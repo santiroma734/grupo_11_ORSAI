@@ -116,6 +116,13 @@ header {
   align-items: center;
 }
 
+.logout-btn {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  border: none;
+  background-color: transparent;
+}
+
 .header-link ion-icon {
   font-size: 4rem;
 }
@@ -653,13 +660,14 @@ main {
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    transition: all 0.4s;
+    transition: all 0.3s;
 
     opacity: 0;
     visibility: hidden;
     /* transform: translateX(100%); */
   }
-  .main-nav a {
+  .main-nav a,
+  .logout-btn {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
@@ -703,7 +711,8 @@ main {
     font-size: 3rem;
   }
 
-  .main-nav a {
+  .main-nav a,
+  .main-nav .logout-btn {
     display: flex;
     align-items: center;
     font-size: 1.6rem;
@@ -716,13 +725,18 @@ main {
     border-bottom: 0.5rem solid rgba(220, 20, 60, 0);
   }
 
-  /* .orsai-title:hover {
-    color: #a6172d;
-  } */
+  .logout-btn {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    border: none;
+    background-color: transparent;
+  }
 
-  .main-nav a:hover {
+  .main-nav a:hover,
+  .main-nav .logout-btn:hover {
     /* border-bottom: 0.5rem solid #a6172d;
     color: #a6172d; */
+    cursor: pointer;
     border-bottom: 0.5rem solid #c94617;
     color: #c94617;
   }
@@ -782,7 +796,8 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .main-nav a {
+  .main-nav a,
+  .main-nav .logout-btn {
     font-size: 2rem;
     margin-left: 2.5rem;
   }

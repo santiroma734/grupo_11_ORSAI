@@ -316,5 +316,15 @@
     "password": "$2a$07$NySE2TLl/McO5drkyMTFCuJ/mKTgQwnKtvalxgL2FPCb8LgZR.2RS",
     "image": "USUARIO-1669773318872.jpg",
     "isAdmin": 1
+  },
+  {
+    "id": 1673471832694,
+    "firstName": "Luis",
+    "lastName": "Spinetta",
+    "email": "luispinetta@gmail.com",
+    "phone": "1100000000",
+    "password": "$2a$07$EDIBvHPy8BWLLjPdNyaZSuDiyCki3cw0qxtsANJwI7D.XjdzvWaKS",
+    "image": "USUARIO-1673471832564.jpg",
+    "idUserCategory": 2
   }
 ]

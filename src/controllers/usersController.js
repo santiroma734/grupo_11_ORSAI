@@ -1,18 +1,26 @@
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 const bcrypt = require("bcryptjs");
-const usersFilePath = path.join(__dirname, "../database/users.json");
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+// const usersFilePath = path.join(__dirname, "../database/users.json");
+// const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+const db = require("../database/models");
+
+const Users = db.User;
 
 const controller = {
   login: (req, res) => {
     res.render("users/login");
   },
-  loginUser: (req, res) => {
-    console.log(req.body);
-    const userToLogin = users.find((user) => {
-      return user.email === req.body.email;
+  loginUser: async (req, res) => {
+    // console.log(req.body);
+    // const userToLogin = users.find((user) => {
+    //   return user.email === req.body.email;
+    // });
+    const userToLogin = await Users.findOne({
+      where: { email: req.body.email },
+      include: { model: db.UserCategory, as: "category" },
     });
+    // console.log(userToLogin);
     // Si el usuario existe
     if (userToLogin) {
       const correctPassword = bcrypt.compareSync(
@@ -30,10 +38,10 @@ const controller = {
             maxAge: 1000 * 60 * 60 * 24 * 7,
           });
         }
-        console.log("logueado");
+        console.log("Usuario logueado");
         return res.redirect("/users/profile");
       }
-      console.log("contraseña incorrecta");
+      console.log("Contraseña Incorrecta");
       return res.render("users/login", {
         errors: {
           password: {
@@ -57,7 +65,7 @@ const controller = {
   },
   registerUser: (req, res) => {
     // proceso de registro de usuario.
-    console.log(req);
+    // console.log(req);
     const newUser = {
       id: Date.now(),
       firstName: req.body.name,
@@ -66,14 +74,22 @@ const controller = {
       phone: req.body.phone,
       password: bcrypt.hashSync(req.body.password, 7),
       image: req.file.filename,
+      idUserCategory: 2,
     };
+    // console.log(newUser);
+    Users.create(newUser);
 
-    users.push(newUser);
-    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
-    return res.redirect("/users/login");
+    // users.push(newUser);
+    // fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
+    // return res.redirect("/users/login");
   },
   profile: (req, res) => {
     res.render("users/userProfile", { user: req.session.loggedUser });
+  },
+  logoutUser: (req, res) => {
+    res.clearCookie("Email");
+    req.session.destroy();
+    res.redirect("/");
   },
 };
 

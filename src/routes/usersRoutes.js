@@ -8,7 +8,7 @@ const authUser = require("../middlewares/authUser");
 router.get("/login", authUser, usersController.login);
 router.post("/login", usersController.loginUser);
 router.get("/register", authUser, usersController.register);
-router.post("/register", upload.single("imagen"), usersController.registerUser);
+router.post("/register", upload.single("image"), usersController.registerUser);
 router.get("/profile", authGuest, usersController.profile);
-
+router.post("/logout", usersController.logoutUser);
 module.exports = router;

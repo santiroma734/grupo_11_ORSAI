@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(182, 158, 130);
+  background-image: url("../imgs/HOME-background.jpg");
+  background-size: cover;
   height: 100vh;
 }
 main {
@@ -31,7 +33,37 @@ main {
   width: 100%;
 }
 
-.descripcion-producto {
+.title {
+  color: #222;
+  font-weight: 900;
+}
+
+.price {
+  /* color: #444; */
+  background-image: linear-gradient(
+    to right,
+    rgba(36, 123, 39, 0.8),
+    rgb(76, 175, 80, 0.8),
+    rgba(77, 233, 83, 0.8)
+  );
+  /* color: #4caf50; */
+  color: #fff;
+  /* background-color: #222; */
+}
+
+.price h1 {
+  transform: skew(20deg);
+  font-weight: 400;
+}
+
+.highlight {
+  margin: 0;
+  width: 30%;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.description {
   margin-bottom: 1.2rem;
   font-size: 1.6rem;
 }
@@ -68,8 +100,14 @@ label {
   border-top-left-radius: 0.6rem !important;
   border-top-right-radius: 0.6rem !important;
   width: 100%;
-  height: 3.5rem;
+  height: 4rem;
+  background-color: #4caf50;
 }
+
+.agregar-carrito:hover {
+  background-color: #3ba23e;
+}
+
 .admin-btns {
   display: flex;
   justify-content: space-between;
@@ -130,6 +168,22 @@ label {
     flex-direction: column;
     justify-content: space-between;
     width: 49%;
+  }
+
+  .name-price-description {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* justify-content: space-between; */
+  }
+
+  /* .name-price-description .price {
+    width: 40%;
+  } */
+
+  .name-price-description .description {
+    width: 100%;
   }
 
   .detail-div-2 {
