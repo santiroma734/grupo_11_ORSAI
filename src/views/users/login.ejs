@@ -14,26 +14,32 @@
         <p>
           <label for="email"> <ion-icon name="mail"></ion-icon> Email </label>
           <input
-            required
             type="email"
             name="email"
             placeholder="Email address"
             class="inputs"
             id="email"
+            value="<%= locals.oldData ? oldData.email : null %>"
           />
+          <% if (locals.errors && errors.email) { %>
+            <p class="form-error"><%= errors.email.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="password">
             <ion-icon name="lock-closed"></ion-icon> Contraseña
           </label>
           <input
-            required
             type="password"
             name="password"
             placeholder="Escriba la contraseña"
             class="inputs password"
             id="password"
+            value="<%= locals.oldData ? oldData.password : null %>"
           />
+          <% if (locals.errors && errors.password) { %>
+            <p class="form-error"><%= errors.password.msg %></p>
+          <% } %>
         </p>
         <div class="checkboxes">
           <div class="remember-me">

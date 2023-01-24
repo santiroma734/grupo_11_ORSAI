@@ -59,9 +59,9 @@ form ion-icon {
   max-width: 40rem;
 }
 
-.password {
+/* .password {
   margin-bottom: 0.5rem !important;
-}
+} */
 
 p label {
   display: flex;

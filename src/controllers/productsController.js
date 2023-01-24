@@ -4,6 +4,7 @@
 // const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const db = require("../database/models");
 const Products = db.Product;
+const { validationResult } = require("express-validator");
 
 const controller = {
   index: async (req, res) => {
@@ -32,6 +33,17 @@ const controller = {
     res.render("admin/loadProduct");
   },
   storeNewProduct: async (req, res) => {
+    const resultProductsValidations = validationResult(req);
+
+    console.log(resultProductsValidations);
+
+    if (resultProductsValidations.errors.length > 0) {
+      return res.render("admin/loadProduct", {
+        errors: resultProductsValidations.mapped(),
+        oldData: req.body,
+      });
+    }
+
     let newProduct = {
       name: req.body.name,
       price: Number(req.body.price),
@@ -42,7 +54,7 @@ const controller = {
           ? 2
           : 3,
       description: req.body.description,
-      image: req.file ? req.file.filename : "default.jpg",
+      image: req.files.image ? req.files.image[0].filename : "default.jpg",
     };
 
     try {
@@ -70,7 +82,18 @@ const controller = {
 
   saveProductChanges: async (req, res) => {
     const id = Number(req.params.id);
-    const product = await Products.findByPk(id);
+    const product = await Products.findByPk(id, {
+      include: { model: db.Category, as: "category" },
+    });
+    const resultProductsValidations = validationResult(req);
+
+    if (resultProductsValidations.errors.length > 0) {
+      return res.render("admin/editProduct", {
+        errors: resultProductsValidations.mapped(),
+        oldData: req.body,
+        product,
+      });
+    }
 
     try {
       await product.update({

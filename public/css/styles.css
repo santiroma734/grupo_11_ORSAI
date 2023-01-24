@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .body-home {
@@ -152,7 +152,7 @@ header {
   visibility: hidden;
   transform: translateX(100%);
 }
-.main-nav a {
+.main-nav .header-link {
   display: flex;
   align-items: center;
   font-size: 2.5rem;
@@ -635,6 +635,15 @@ main {
   font-weight: bold;
 }
 
+.form-error {
+  color: crimson;
+  font-size: 1.6rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
 /* ///////////////// */
 /* Queries */
 /* ///////////////// */
@@ -645,9 +654,9 @@ main {
   }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 684px) {
   .main-nav {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
@@ -666,7 +675,7 @@ main {
     visibility: hidden;
     /* transform: translateX(100%); */
   }
-  .main-nav a,
+  .main-nav .header-link,
   .logout-btn {
     display: flex;
     align-items: center;
@@ -689,6 +698,7 @@ main {
   .mob-nav-open .close-nav {
     display: block;
     z-index: 200;
+    font-size: 4rem;
   }
 }
 
@@ -711,7 +721,7 @@ main {
     font-size: 3rem;
   }
 
-  .main-nav a,
+  .main-nav .header-link,
   .main-nav .logout-btn {
     display: flex;
     align-items: center;
@@ -732,7 +742,7 @@ main {
     background-color: transparent;
   }
 
-  .main-nav a:hover,
+  .main-nav .header-link:hover,
   .main-nav .logout-btn:hover {
     /* border-bottom: 0.5rem solid #a6172d;
     color: #a6172d; */
@@ -796,7 +806,7 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .main-nav a,
+  .main-nav .header-link,
   .main-nav .logout-btn {
     font-size: 2rem;
     margin-left: 2.5rem;
