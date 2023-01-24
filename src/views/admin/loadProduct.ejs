@@ -20,12 +20,20 @@
                 <form action="/admin/create-product" method="POST" enctype="multipart/form-data">
                     <div class="product-name">
                         <label for="name"><ion-icon name="information-circle"></ion-icon>Nombre del Producto</label>
-                        <input type="text" name="name" placeholder="Nombre" id="name">
+                        <input type="text" name="name" placeholder="Nombre" id="name" value="<%= locals.oldData ? oldData.name : null %>"
+                        />
+                        <% if (locals.errors && errors.name) { %>
+                          <p class="form-error"><%= errors.name.msg %></p>
+                        <% } %>
                         </input>
                     </div>
                     <div class="product-description">
                         <label for="description"><ion-icon name="document-text"></ion-icon>Descripción</label>
-                        <input type="text" name="description" placeholder="Descripción" id="description">
+                        <input type="text" name="description" placeholder="Descripción" id="description"  value="<%= locals.oldData ? oldData.description : null  %>"
+                        />
+                        <% if (locals.errors && errors.description) { %>
+                          <p class="form-error"><%= errors.description.msg %></p>
+                        <% } %>
                         </input>
                     </div>
                     <div class="product-category">
@@ -41,11 +49,17 @@
                         <div class="file-select">
                             <input type="file" name="image" id="image" accept=".jpg, .png">
                             </input>
+                            <% if (locals.errors && errors.image) { %>
+                                <p class="form-error"><%= errors.image.msg %></p>
+                             <% } %>
                         </div>
                     </div>
                     <div class="product-price">
                         <label for="price"><ion-icon name="pricetag"></ion-icon>Precio</label>
                         <input type="number" name="price" placeholder="1000" id="price"></input>
+                        <% if (locals.errors && errors.price) { %>
+                            <p class="form-error"><%= errors.price.msg %></p>
+                        <% } %>
                     </div>
                     <div class="buttons-form">
                         <button class="save-changes" type="submit" id="botones-edicion">Cargar</button>

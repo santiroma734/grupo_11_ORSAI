@@ -17,38 +17,56 @@
           <label for="name">
             <ion-icon name="person-circle"></ion-icon> Nombre
           </label>
-          <input type="text" name="name" id="name" placeholder="Nombre" class="inputs" required />
+          <input type="text" name="name" id="name" placeholder="Nombre" class="inputs" value="<%= locals.oldData ? oldData.name : null %>"  />
+          <% if (locals.errors && errors.name) { %>
+            <p class="form-error"><%= errors.name.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="lastName">
             <ion-icon name="person-circle"></ion-icon> Apellido
           </label>
-          <input type="text" name="lastName" id="lastName" placeholder="Apellido" class="inputs" required />
+          <input type="text" name="lastName" id="lastName" placeholder="Apellido" class="inputs" value="<%= locals.oldData ? oldData.lastName : null %>"  />
+          <% if (locals.errors && errors.lastName) { %>
+            <p class="form-error"><%= errors.lastName.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="email">
             <ion-icon name="mail"></ion-icon> Email
           </label>
-          <input type="email" name="email" id="email" placeholder="Dirección email" class="inputs" required />
+          <input type="email" name="email" id="email" placeholder="Dirección email" class="inputs" value="<%= locals.oldData ? oldData.email : null %>"  />
+          <% if (locals.errors && errors.email) { %>
+            <p class="form-error"><%= errors.email.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="phone">
             <ion-icon name="call"></ion-icon> Teléfono Celular
           </label>
-          <input type="tel" name="phone" id="phone" placeholder="11-0000-0000" class="inputs" required />
+          <input type="tel" name="phone" id="phone" placeholder="11-0000-0000" class="inputs" value="<%= locals.oldData ? oldData.phone : null %>"  />
+          <% if (locals.errors && errors.phone) { %>
+            <p class="form-error"><%= errors.phone.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="password">
             <ion-icon name="lock-closed"></ion-icon> Contraseña
           </label>
-          <input type="password" name="password" id="password" placeholder="Escriba su contraseña" class="inputs"
-            required />
+          <input type="password" name="password" id="password" placeholder="Escriba su contraseña" class="inputs" value="<%= locals.oldData ? oldData.password : null %>"
+             />
+          <% if (locals.errors && errors.password) { %>
+            <p class="form-error"><%= errors.password.msg %></p>
+          <% } %>
         </p>
         <p>
           <label for="imagen">
             <ion-icon name="image"></ion-icon> Imagen de perfil
           </label>
-          <input type="file" name="image" id="image" class="inputs" accept=".jpg, .png" required/>
+          <input type="file" name="image" id="image" class="inputs" accept=".jpg, .png" />
+          <% if (locals.errors && errors.image) { %>
+            <p class="form-error"><%= errors.image.msg %></p>
+          <% } %>
         </p>
         <div class="checkboxes">
           <div class="div-checkbox">
@@ -61,7 +79,7 @@
           <div class="div-checkbox">
             <label for="privacy-policy"">
               <input type="checkbox" name="privacy-policy"" id="privacy-policy"" value="privacy-policy" class="checkbox"
-                required />
+                 />
               Acepto las Políticas de Privacidad.
             </label>
           </div>

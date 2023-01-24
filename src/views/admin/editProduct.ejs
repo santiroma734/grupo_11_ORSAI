@@ -25,18 +25,26 @@
             <input
               type="text"
               name="name"
-              value="<%= product.name %>"
               id="name"
-            />
+              value="<%= locals.oldData ? oldData.name : null %>"
+              />
+              <% if (locals.errors && errors.name) { %>
+                <p class="form-error"><%= errors.name.msg %></p>
+              <% } %>
+            
           </div>
           <div class="product-description">
             <label for="description">Descripción</label>
             <input
               type="textarea"
               name="description"
-              value="<%= product.description %>"
               id="description"
-            />
+              value="<%= locals.oldData ? oldData.description : product.description  %>"
+              />
+              <% if (locals.errors && errors.description) { %>
+                <p class="form-error"><%= errors.description.msg %></p>
+              <% } %>
+          
           </div>
           <!-- <div class="product-image">
                             <label for="image">Imagen</label>
@@ -59,9 +67,12 @@
             <input
               type="number"
               name="price"
-              value="<%= product.price %>"
+              value="<%= locals.oldData ? oldData.price : product.price  %>"
               id="price"
             />
+            <% if (locals.errors && errors.price) { %>
+              <p class="form-error"><%= errors.price.msg %></p>
+            <% } %>
           </div>
           <div class="buttons-form">
             <button class="save-changes" type="submit" id="buttons">

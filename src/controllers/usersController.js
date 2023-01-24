@@ -1,9 +1,6 @@
-// const path = require("path");
-// const fs = require("fs");
 const bcrypt = require("bcryptjs");
-// const usersFilePath = path.join(__dirname, "../database/users.json");
-// const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const db = require("../database/models");
+const { validationResult } = require("express-validator");
 
 const Users = db.User;
 
@@ -12,21 +9,37 @@ const controller = {
     res.render("users/login");
   },
   loginUser: async (req, res) => {
-    // console.log(req.body);
-    // const userToLogin = users.find((user) => {
-    //   return user.email === req.body.email;
-    // });
+    // Validaciones
+    const resultLoginValidations = validationResult(req);
+
+    if (resultLoginValidations.errors.length > 0) {
+      return res.render("users/login", {
+        errors: resultLoginValidations.mapped(),
+        oldData: req.body,
+      });
+    }
+
     const userToLogin = await Users.findOne({
       where: { email: req.body.email },
       include: { model: db.UserCategory, as: "category" },
     });
-    // console.log(userToLogin);
+
+    if (!userToLogin) {
+      return res.render("users/login", {
+        errors: {
+          email: { msg: "No hay un usuario registrado con ese email" },
+        },
+        oldData: req.body,
+      });
+    }
+
     // Si el usuario existe
     if (userToLogin) {
       const correctPassword = bcrypt.compareSync(
         req.body.password,
         userToLogin.password
       );
+
       // Si la contraseña es correcta
       if (correctPassword) {
         delete userToLogin.password;
@@ -41,6 +54,7 @@ const controller = {
         console.log("Usuario logueado");
         return res.redirect("/users/profile");
       }
+
       console.log("Contraseña Incorrecta");
       return res.render("users/login", {
         errors: {
@@ -63,9 +77,30 @@ const controller = {
   register: (req, res) => {
     res.render("users/register");
   },
-  registerUser: (req, res) => {
+  registerUser: async (req, res) => {
+    // Validaciones
+    const resultValidateRegister = validationResult(req);
+    const emailInDB = await Users.findOne({
+      where: { email: req.body.email },
+    });
+
+    if (resultValidateRegister.errors.length > 0) {
+      return res.render("users/register", {
+        errors: resultValidateRegister.mapped(),
+        oldData: req.body,
+      });
+    }
+
+    if (emailInDB) {
+      return res.render("users/register", {
+        errors: {
+          email: { msg: "Este email ya está registrado" },
+        },
+        oldData: req.body,
+      });
+    }
+
     // proceso de registro de usuario.
-    // console.log(req);
     const newUser = {
       id: Date.now(),
       firstName: req.body.name,
@@ -76,12 +111,9 @@ const controller = {
       image: req.file.filename,
       idUserCategory: 2,
     };
-    // console.log(newUser);
     Users.create(newUser);
 
-    // users.push(newUser);
-    // fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
-    // return res.redirect("/users/login");
+    return res.redirect("/users/login");
   },
   profile: (req, res) => {
     res.render("users/userProfile", { user: req.session.loggedUser });

@@ -58,7 +58,8 @@
             </div>
           </div>
         </div>
-        <% if (locals.loggedUser.category.name === "admin") { %> 
+
+        <% if (locals.loggedUser && locals.loggedUser.category.name === "admin") { %> 
           <div class="admin-btns">
             <div class="delete-btn">
               <form action="/admin/delete-product/<%= product.id %>?_method=DELETE" method="POST">

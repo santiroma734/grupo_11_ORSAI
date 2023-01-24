@@ -78,6 +78,7 @@ select {
   padding-left: 0.5rem;
   font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 input:focus {
