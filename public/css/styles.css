@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
+  overflow: hidden;
 }
 
 .body-home {
@@ -115,6 +116,13 @@ header {
   align-items: center;
 }
 
+.logout-btn {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  border: none;
+  background-color: transparent;
+}
+
 .header-link ion-icon {
   font-size: 4rem;
 }
@@ -124,9 +132,60 @@ header {
   font-size: 2.8rem;
 }
 
-.main-nav {
-  display: none;
+/* .main-nav {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
 }
+.main-nav a {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid rgba(220, 20, 60, 0);
+}
+
+.mob-nav-open .main-nav {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+*/
+
+.close-nav {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* .mob-nav-open .close-nav {
+  display: block;
+  z-index: 200;
+} */
 
 /* ///////////////// */
 
@@ -586,6 +645,53 @@ main {
   }
 }
 
+@media (max-width: 685px) {
+  .main-nav {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+
+    opacity: 0;
+    visibility: hidden;
+    /* transform: translateX(100%); */
+  }
+  .main-nav a,
+  .logout-btn {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid rgba(220, 20, 60, 0);
+  }
+
+  .mob-nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mob-nav-open .close-nav {
+    display: block;
+    z-index: 200;
+  }
+}
+
 @media (min-width: 685px) {
   .burger-menu,
   .cart {
@@ -625,10 +731,6 @@ main {
     border: none;
     background-color: transparent;
   }
-
-  /* .orsai-title:hover {
-    color: #a6172d;
-  } */
 
   .main-nav a:hover,
   .main-nav .logout-btn:hover {
