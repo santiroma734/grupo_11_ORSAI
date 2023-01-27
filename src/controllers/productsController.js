@@ -1,7 +1,3 @@
-// const path = require("path");
-// const fs = require("fs");
-// const productsFilePath = path.join(__dirname, "../database/products.json");
-// const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const db = require("../database/models");
 const Products = db.Product;
 const { validationResult } = require("express-validator");
@@ -20,7 +16,6 @@ const controller = {
 
   detalle: async (req, res) => {
     const id = Number(req.params.id);
-    // const product = products.find((p) => p.id === id);
     try {
       const product = await Products.findByPk(id);
       res.render("productDetail", { product });
