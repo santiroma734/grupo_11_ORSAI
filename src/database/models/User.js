@@ -37,11 +37,21 @@ module.exports = (sequelize, dataTypes) => {
       foreignKey: true,
       field: "id_user_category",
     },
+    createdAt: {
+      type: "TIMESTAMP",
+      allowNull: false,
+      field: "created_at",
+    },
+    updatedAt: {
+      type: "TIMESTAMP",
+      allowNull: false,
+      field: "updated_at",
+    },
   };
 
   const config = {
     tableName: "users",
-    timestamps: false,
+    timestamps: true,
   };
   const User = sequelize.define("User", columns, config);
 

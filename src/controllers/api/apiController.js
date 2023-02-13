@@ -7,7 +7,7 @@ const controller = {
   getAllProducts: async (req, res) => {
     try {
       let products = await Products.findAll({
-        attributes: ["id", "name", "description"],
+        attributes: ["id", "name", "description", "price", "image"],
         include: { model: db.Category, as: "category" },
       });
 
@@ -52,8 +52,16 @@ const controller = {
   getAllUsers: async (req, res) => {
     try {
       let users = await Users.findAll({
-        attributes: ["id", "first_name", "last_name", "email"],
+        attributes: [
+          "id",
+          "firstName",
+          "lastName",
+          "email",
+          "image",
+          "createdAt",
+        ],
         include: { model: db.UserCategory, as: "category" },
+        order: [["created_at", "ASC"]],
       });
 
       users = users.map((user) => {
