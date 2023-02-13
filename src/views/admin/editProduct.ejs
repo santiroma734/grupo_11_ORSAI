@@ -16,7 +16,7 @@
         </div>
         <form
           action="/admin/edit-product/<%= product.id %>?_method=PUT"
-          method="POST"
+          method="POST" enctype="multipart/form-data"
         >
           <!-- <form action="/productos/ producto.id /editar?_method=PUT" method="POST"
                         enctype="multipart/form-data"> -->
@@ -46,20 +46,12 @@
               <% } %>
           
           </div>
-          <!-- <div class="product-image">
-                            <label for="image">Imagen</label>
-                            <div class="file-select">
-                                <input type="file" name="image" id="image" accept=".jpg">
-                                <input type="file" accept=".jpg">
-                                </input>
-                            </div>
-                        </div> -->
           <div class="product-category">
             <label for="category">Categoría</label>
             <select name="category">
-              <option value="Pizza" <%= product.category.name === "Pizza" && "selected"%>>Pizza</option>
-              <option value="Empanada" <%= product.category.name === "Empanada" && "selected"%>>Empanada</option>
-              <option value="Offer" <%= product.category.name === "Offer" && "selected"%>>Promoción</option>
+              <option value="Pizza" <%= locals.oldData && oldData.category === "Pizza" ? "selected" : product.category.name === "Pizza" && "selected"%>>Pizza</option>
+              <option value="Empanada" <%= locals.oldData && oldData.category === "Empanada" ? "selected" : product.category.name === "Empanada" && "selected"%>>Empanada</option>
+              <option value="Offer" <%= locals.oldData && oldData.category === "Offer" ? "selected" : product.category.name === "Offer" && "selected"%>>Promoción</option>
             </select>
           </div>
           <div class="product-price">
@@ -72,6 +64,15 @@
             />
             <% if (locals.errors && errors.price) { %>
               <p class="form-error"><%= errors.price.msg %></p>
+            <% } %>
+          </div>
+          <div class="product-image">
+            <label for="image">Imagen</label>
+            <div class="file-select">
+              <input type="file" name="image" id="image" accept=".jpg, .png" />
+            </div>
+            <% if (locals.errors && errors.image) { %>
+              <p class="form-error"><%= errors.image.msg %></p>
             <% } %>
           </div>
           <div class="buttons-form">

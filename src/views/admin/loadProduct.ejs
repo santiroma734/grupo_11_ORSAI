@@ -39,9 +39,9 @@
                     <div class="product-category">
                         <label for="category"><ion-icon name="pizza"></ion-icon>Categoría</label>
                         <select name="category">
-                            <option value="Pizza">Pizza</option>
-                            <option value="Empanada">Empanada</option>
-                            <option value="Promocion">Promoción</option>
+                            <option value="Pizza" <%= locals.oldData ? oldData.category === "Pizza" && "selected" : null%>>Pizza</option>
+                            <option value="Empanada" <%= locals.oldData ? oldData.category === "Empanada" && "selected" : null%>>Empanada</option>
+                            <option value="Offer" <%= locals.oldData ? oldData.category === "Offer" && "selected" : null%>>Promoción</option>
                         </select>
                     </div>
                     <div class="product-image">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="product-price">
                         <label for="price"><ion-icon name="pricetag"></ion-icon>Precio</label>
-                        <input type="number" name="price" placeholder="1000" id="price"></input>
+                        <input type="number" name="price" placeholder="1000" id="price" value="<%= locals.oldData ? oldData.price : null  %>"></input>
                         <% if (locals.errors && errors.price) { %>
                             <p class="form-error"><%= errors.price.msg %></p>
                         <% } %>

@@ -82,6 +82,28 @@ const controller = {
     });
     const resultProductsValidations = validationResult(req);
 
+    if (
+      resultProductsValidations.errors.length === 1 &&
+      resultProductsValidations.errors[0].param == "image" &&
+      resultProductsValidations.errors[0].value == undefined
+    ) {
+      try {
+        await product.update({
+          name: req.body.name,
+          price: Number(req.body.price),
+          idCategory:
+            req.body.category === "Pizza"
+              ? 1
+              : req.body.category === "Empanada"
+              ? 2
+              : 3,
+          description: req.body.description,
+        });
+        return res.redirect(`/products/${id}`);
+      } catch (err) {
+        return res.send(err);
+      }
+    }
     if (resultProductsValidations.errors.length > 0) {
       return res.render("admin/editProduct", {
         errors: resultProductsValidations.mapped(),
@@ -101,6 +123,7 @@ const controller = {
             ? 2
             : 3,
         description: req.body.description,
+        image: req.files.image ? req.files.image[0].filename : "default.jpg",
       });
       res.redirect(`/products/${id}`);
     } catch (err) {

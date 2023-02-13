@@ -23,7 +23,7 @@ router.get("/edit-product/:id", productsController.renderEditProduct);
 
 router.put(
   "/edit-product/:id",
-  // upload.single("product-image"),
+  upload.fields([{ name: "image", maxCount: 1 }]),
   productsValidations,
   productsController.saveProductChanges
 );
