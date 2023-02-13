@@ -6,9 +6,12 @@
     ORSAI
     <ion-icon name="pizza-outline"></ion-icon>
   </a>
-  <a href="/order" class="header-link cart">
+  <% if (locals.isLogged) { %>
+    <a href="/order" class="header-link cart"> <ion-icon name="cart-sharp"></ion-icon></a>
+  <% } %>
+  <!-- <a href="/order" class="header-link cart">
     <ion-icon name="cart-sharp"></ion-icon>
-  </a>
+  </a> -->
   <ul class="main-nav">
     <% if (locals.loggedUser?.category.name === "admin") { %> 
     <a href="/admin/create-product"class="header-link">Crear Producto</a>
@@ -27,7 +30,9 @@
       <ion-icon name="person-circle"></ion-icon>Ingresar
     </a>
     <% } %>
-    <a href="/order" class="header-link"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
+    <% if (locals.isLogged) { %>
+      <a href="/order" class="header-link"> <ion-icon name="cart-sharp"></ion-icon>$0.00 </a>
+    <% } %>
     <a href="#" class="close-nav">
       <ion-icon name="close-sharp"></ion-icon>
     </a>
