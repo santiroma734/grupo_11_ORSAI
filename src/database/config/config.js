@@ -14,8 +14,8 @@ module.exports = {
     dialect: "mysql",
   },
   production: {
-    username: "c1fmu6owp9wxig0t95ry",
-    password: "pscale_pw_Bw1toR14xfR91bCSgoxmKoIaQRDVNdxy6dLp7iU0D5U",
+    username: "60fuvr3lvmrw6b14i7e6",
+    password: "pscale_pw_VQmWHRn6G8pTM4ZWgRgbclWPjPpPwUvRQL93zFMyWSj",
     database: "orsai_db",
     host: "us-east.connect.psdb.cloud",
     dialect: "mysql",
