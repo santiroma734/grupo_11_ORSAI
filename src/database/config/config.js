@@ -14,10 +14,10 @@ module.exports = {
     dialect: "mysql",
   },
   production: {
-    username: "root",
-    password: null,
+    username: "hcifffwfmjrlo9wgb3rf",
+    password: "pscale_pw_Bw1toR14xfR91bCSgoxmKoIaQRDVNdxy6dLp7iU0D5U",
     database: "orsai_db",
-    host: "127.0.0.1",
+    host: "us-east.connect.psdb.cloud",
     dialect: "mysql",
   },
 };
