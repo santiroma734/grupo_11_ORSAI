@@ -37,8 +37,10 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname + "/src/views"));
 app.use(express.static(path.join(__dirname + "/public")));
 
-app.listen(3030, () => {
-  console.log("Servidor funcionando");
+const port = process.env.PORT || 3030;
+
+app.listen(port, () => {
+  console.log(`Servidor funcionando en el puerto ${port}`);
 });
 app.use(userLoggedMw);
 app.use("/", mainRoutes);

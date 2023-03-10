@@ -1,11 +1,11 @@
 {
-  "name": "proyecto-integrador-grupo-11",
+  "name": "orsai",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
