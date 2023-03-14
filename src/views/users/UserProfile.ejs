@@ -13,11 +13,10 @@
       <div class="user-info">
         <div class="img-div">
           <img src="/imgs/users/<%= user.image %>" class="profile-img" />
-          <button class="btn btn-edit-profile btn-desktop">
+          <button class="btn btn-edit-profile btn-desktop" disabled>
             Editar Perfil
           </button>
         </div>
-
         <div class="user-info-sub">
           <h1 class="user-title"><%= user.firstName %></h1>
           <div>
@@ -37,11 +36,10 @@
             <p class="user-label">Teléfono</p>
             <p class="user-email"><%= user.phone %></p>
           </div>
-          <button class="btn btn-edit-profile btn-mobile">Editar Perfil</button>
+          <button class="btn btn-edit-profile btn-mobile" disabled>Editar Perfil</button>
         </div>
       </div>
     </main>
-
     <%- include('../partials/footer.ejs') %>
     <script
       type="module"
