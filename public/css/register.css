@@ -20,7 +20,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.55)
     ),
-    url("/imgs/REGISTER-background.jpg");
+    url("/imgs/register-background.jpg");
   background-size: cover;
   background-position-x: center;
 

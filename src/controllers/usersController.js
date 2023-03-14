@@ -9,69 +9,74 @@ const controller = {
     res.render("users/login");
   },
   loginUser: async (req, res) => {
-    // Validaciones
-    const resultLoginValidations = validationResult(req);
+    try {
+      // Validaciones
+      const resultLoginValidations = validationResult(req);
 
-    if (resultLoginValidations.errors.length > 0) {
-      return res.render("users/login", {
-        errors: resultLoginValidations.mapped(),
-        oldData: req.body,
-      });
-    }
-
-    const userToLogin = await Users.findOne({
-      where: { email: req.body.email },
-      include: { model: db.UserCategory, as: "category" },
-    });
-
-    if (!userToLogin) {
-      return res.render("users/login", {
-        errors: {
-          email: { msg: "No hay un usuario registrado con ese email" },
-        },
-        oldData: req.body,
-      });
-    }
-
-    // Si el usuario existe
-    if (userToLogin) {
-      const correctPassword = bcrypt.compareSync(
-        req.body.password,
-        userToLogin.password
-      );
-
-      // Si la contraseña es correcta
-      if (correctPassword) {
-        delete userToLogin.password;
-        req.session.loggedUser = userToLogin;
-        // COOKIES
-        if (req.body.remember) {
-          // expiración de las cookies = 7 días
-          res.cookie("Email", userToLogin.email, {
-            maxAge: 1000 * 60 * 60 * 24 * 7,
-          });
-        }
-        console.log("Usuario logueado");
-        return res.redirect("/users/profile");
+      if (resultLoginValidations.errors.length > 0) {
+        return res.render("users/login", {
+          errors: resultLoginValidations.mapped(),
+          oldData: req.body,
+        });
       }
 
-      console.log("Contraseña Incorrecta");
-      return res.render("users/login", {
-        errors: {
-          password: {
-            msg: "Contraseña Incorrecta",
-          },
-        },
+      const userToLogin = await Users.findOne({
+        where: { email: req.body.email },
+        include: { model: db.UserCategory, as: "category" },
       });
-    }
-    if (!userToLogin) {
-      return res.render("users/login", {
-        errors: {
-          email: {
-            msg: "Este e-mail no esta en nuestra BD",
+
+      if (!userToLogin) {
+        return res.render("users/login", {
+          errors: {
+            email: { msg: "No hay un usuario registrado con ese email" },
           },
-        },
-      });
+          oldData: req.body,
+        });
+      }
+
+      // Si el usuario existe
+      if (userToLogin) {
+        const correctPassword = bcrypt.compareSync(
+          req.body.password,
+          userToLogin.password
+        );
+
+        // Si la contraseña es correcta
+        if (correctPassword) {
+          delete userToLogin.password;
+          req.session.loggedUser = userToLogin;
+          // COOKIES
+          if (req.body.remember) {
+            // expiración de las cookies = 7 días
+            res.cookie("Email", userToLogin.email, {
+              maxAge: 1000 * 60 * 60 * 24 * 7,
+            });
+          }
+          console.log("Usuario logueado");
+          return res.redirect("/users/profile");
+        }
+
+        console.log("Contraseña Incorrecta");
+        return res.render("users/login", {
+          errors: {
+            password: {
+              msg: "Contraseña Incorrecta",
+            },
+          },
+        });
+      }
+      if (!userToLogin) {
+        return res.render("users/login", {
+          errors: {
+            email: {
+              msg: "Este e-mail no esta en nuestra BD",
+            },
+          },
+        });
+      }
+    } catch (err) {
+      console.log(err);
+      res.send(err);
     }
   },
   register: (req, res) => {
