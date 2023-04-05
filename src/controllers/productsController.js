@@ -76,18 +76,18 @@ const controller = {
   },
 
   saveProductChanges: async (req, res) => {
-    const id = Number(req.params.id);
-    const product = await Products.findByPk(id, {
-      include: { model: db.Category, as: "category" },
-    });
-    const resultProductsValidations = validationResult(req);
+    try {
+      const id = Number(req.params.id);
+      const product = await Products.findByPk(id, {
+        include: { model: db.Category, as: "category" },
+      });
+      const resultProductsValidations = validationResult(req);
 
-    if (
-      resultProductsValidations.errors.length === 1 &&
-      resultProductsValidations.errors[0].param == "image" &&
-      resultProductsValidations.errors[0].value == undefined
-    ) {
-      try {
+      if (
+        resultProductsValidations.errors.length === 1 &&
+        resultProductsValidations.errors[0].param == "image" &&
+        resultProductsValidations.errors[0].value == undefined
+      ) {
         await product.update({
           name: req.body.name,
           price: Number(req.body.price),
@@ -100,19 +100,16 @@ const controller = {
           description: req.body.description,
         });
         return res.redirect(`/products/${id}`);
-      } catch (err) {
-        return res.send(err);
       }
-    }
-    if (resultProductsValidations.errors.length > 0) {
-      return res.render("admin/editProduct", {
-        errors: resultProductsValidations.mapped(),
-        oldData: req.body,
-        product,
-      });
-    }
 
-    try {
+      if (resultProductsValidations.errors.length > 0) {
+        return res.render("admin/editProduct", {
+          errors: resultProductsValidations.mapped(),
+          oldData: req.body,
+          product,
+        });
+      }
+
       await product.update({
         name: req.body.name,
         price: Number(req.body.price),
@@ -129,8 +126,6 @@ const controller = {
     } catch (err) {
       res.send(err);
     }
-
-    // fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
   },
   deleteProduct: async (req, res) => {
     const id = Number(req.params.id);

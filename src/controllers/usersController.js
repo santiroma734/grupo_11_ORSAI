@@ -83,42 +83,46 @@ const controller = {
     res.render("users/register");
   },
   registerUser: async (req, res) => {
-    // Validaciones
-    const resultValidateRegister = validationResult(req);
-    const emailInDB = await Users.findOne({
-      where: { email: req.body.email },
-    });
-
-    if (resultValidateRegister.errors.length > 0) {
-      return res.render("users/register", {
-        errors: resultValidateRegister.mapped(),
-        oldData: req.body,
+    try {
+      // Validaciones
+      const resultValidateRegister = validationResult(req);
+      const emailInDB = await Users.findOne({
+        where: { email: req.body.email },
       });
+
+      if (resultValidateRegister.errors.length > 0) {
+        return res.render("users/register", {
+          errors: resultValidateRegister.mapped(),
+          oldData: req.body,
+        });
+      }
+
+      if (emailInDB) {
+        return res.render("users/register", {
+          errors: {
+            email: { msg: "Este email ya está registrado" },
+          },
+          oldData: req.body,
+        });
+      }
+
+      // proceso de registro de usuario.
+      const newUser = {
+        id: Date.now(),
+        firstName: req.body.name,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        phone: req.body.phone,
+        password: bcrypt.hashSync(req.body.password, 7),
+        image: req.file.filename,
+        idUserCategory: 2,
+      };
+      Users.create(newUser);
+
+      return res.redirect("/users/login");
+    } catch (err) {
+      res.send(err);
     }
-
-    if (emailInDB) {
-      return res.render("users/register", {
-        errors: {
-          email: { msg: "Este email ya está registrado" },
-        },
-        oldData: req.body,
-      });
-    }
-
-    // proceso de registro de usuario.
-    const newUser = {
-      id: Date.now(),
-      firstName: req.body.name,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      phone: req.body.phone,
-      password: bcrypt.hashSync(req.body.password, 7),
-      image: req.file.filename,
-      idUserCategory: 2,
-    };
-    Users.create(newUser);
-
-    return res.redirect("/users/login");
   },
   profile: (req, res) => {
     res.render("users/userProfile", { user: req.session.loggedUser });
