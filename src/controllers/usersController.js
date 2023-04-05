@@ -125,7 +125,7 @@ const controller = {
     }
   },
   profile: (req, res) => {
-    res.render("users/userProfile", { user: req.session.loggedUser });
+    res.render("users/UserProfile", { user: req.session.loggedUser });
   },
   logoutUser: (req, res) => {
     res.clearCookie("Email");
